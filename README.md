@@ -35,7 +35,7 @@ import SadadPaymentSDK
    
    
    
-2)User following code for open framework from your project.
+2)Use following code for open framework from your project.
    
    
    
