@@ -48,7 +48,7 @@ import SadadPaymentSDK
 
 `vc.delegate = self`
 
-`vc.isSandbox = true`
+`vc.isSandbox = false`
 
 `vc.strAccessToken = strAccessToken`
 
