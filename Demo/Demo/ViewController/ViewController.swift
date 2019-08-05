@@ -35,9 +35,9 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
     
     var strAccessToken:String = ""
     
-    var ProductOneAmount:Int = 0
-    var ProductSecondAmont:Int = 0
-    var TotalAmount:Int = 0
+    var ProductOneAmount:Double = 0.0
+    var ProductSecondAmont:Double = 0.0
+    var TotalAmount:Double = 0.0
     
     let arrProduct:NSMutableArray = NSMutableArray()
     var peeoplebyID = [Int: Product] ()
@@ -178,7 +178,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
                             let storyboard = UIStoryboard(name: "mainStoryboard", bundle: podBundle)
                             let vc = storyboard.instantiateViewController(withIdentifier: "SelectPaymentMethodVC") as! SelectPaymentMethodVC
                             vc.delegate = self
-                            vc.isSandbox = true
+                            vc.isSandbox = false
                             vc.strAccessToken = strAccessToken
                             vc.amount = self.TotalValue()
                             vc.arrProductDetails = self.arrProduct
@@ -233,8 +233,8 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
     }
     
     
-    func TotalValue() -> Int{
-        let TotalAmount:Int =  ProductSecondAmont + ProductOneAmount
+    func TotalValue() -> Double{
+        let TotalAmount:Double =  ProductSecondAmont + ProductOneAmount
         
         if TotalAmount != 0{
             btnLoadFramework.isEnabled = true
@@ -242,7 +242,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
             btnLoadFramework.isEnabled = false
         }
         
-        self.lblTotalAmout.text = "Total Amount : \(TotalAmount).00 QAR"
+        self.lblTotalAmout.text = "Total Amount : \(TotalAmount) QAR"
         
         return TotalAmount
     }

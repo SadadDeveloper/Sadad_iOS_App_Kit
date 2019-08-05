@@ -18,9 +18,9 @@
 		908A0BAC226DFE6600B4F1E9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908A0BAB226DFE6600B4F1E9 /* Constant.swift */; };
 		908A0BCA226E1ABB00B4F1E9 /* Failure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 908A0BC8226E1ABA00B4F1E9 /* Failure.mp3 */; };
 		908A0BCB226E1ABB00B4F1E9 /* Success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 908A0BC9226E1ABA00B4F1E9 /* Success.mp3 */; };
-		90FB73562292BEB300AC5A18 /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FB73552292BEB200AC5A18 /* SadadPaymentSDK.framework */; };
-		90FB73572292BEB800AC5A18 /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FB73552292BEB200AC5A18 /* SadadPaymentSDK.framework */; };
-		90FB73582292BEB800AC5A18 /* SadadPaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90FB73552292BEB200AC5A18 /* SadadPaymentSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90C0122622F8540600AD5872 /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C0122522F8540600AD5872 /* SadadPaymentSDK.framework */; };
+		90C0122722F8541100AD5872 /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C0122522F8540600AD5872 /* SadadPaymentSDK.framework */; };
+		90C0122822F8541100AD5872 /* SadadPaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90C0122522F8540600AD5872 /* SadadPaymentSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9884D8F7B68775109FBCEF92 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D48CB9B6EE0C484830BF13 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				90FB73582292BEB800AC5A18 /* SadadPaymentSDK.framework in Embed Frameworks */,
+				90C0122822F8541100AD5872 /* SadadPaymentSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +55,7 @@
 		908A0BAB226DFE6600B4F1E9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		908A0BC8226E1ABA00B4F1E9 /* Failure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Failure.mp3; sourceTree = "<group>"; };
 		908A0BC9226E1ABA00B4F1E9 /* Success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Success.mp3; sourceTree = "<group>"; };
-		90FB73552292BEB200AC5A18 /* SadadPaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SadadPaymentSDK.framework; sourceTree = "<group>"; };
+		90C0122522F8540600AD5872 /* SadadPaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SadadPaymentSDK.framework; sourceTree = "<group>"; };
 		C08D9E8F0FF25DC26E8C4BFA /* Pods_DemoImplementFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoImplementFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09831638863976E9FE961A9 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		F4D48CB9B6EE0C484830BF13 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,8 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90FB73572292BEB800AC5A18 /* SadadPaymentSDK.framework in Frameworks */,
-				90FB73562292BEB300AC5A18 /* SadadPaymentSDK.framework in Frameworks */,
+				90C0122722F8541100AD5872 /* SadadPaymentSDK.framework in Frameworks */,
+				90C0122622F8540600AD5872 /* SadadPaymentSDK.framework in Frameworks */,
 				9884D8F7B68775109FBCEF92 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,7 +79,7 @@
 		0ED262AE223BB9D200E2D130 = {
 			isa = PBXGroup;
 			children = (
-				90FB73552292BEB200AC5A18 /* SadadPaymentSDK.framework */,
+				90C0122522F8540600AD5872 /* SadadPaymentSDK.framework */,
 				908203BB226AF2AB009CDC1F /* Demo */,
 				0ED262B8223BB9D200E2D130 /* Products */,
 				3258B793CED1721014540CC3 /* Pods */,
