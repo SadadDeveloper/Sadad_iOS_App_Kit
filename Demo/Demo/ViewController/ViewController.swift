@@ -35,9 +35,9 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
     
     var strAccessToken:String = ""
     
-    var ProductOneAmount:Double = 0.0
-    var ProductSecondAmont:Double = 0.0
-    var TotalAmount:Double = 0.0
+    var ProductOneAmount:Int = 0
+    var ProductSecondAmont:Int = 0
+    var TotalAmount:Int = 0
     
     let arrProduct:NSMutableArray = NSMutableArray()
     var peeoplebyID = [Int: Product] ()
@@ -125,23 +125,23 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
             tempDIC.setValue("OUDY Perfume", forKey: "itemname")
             tempDIC.setValue(ProductSecondAmont, forKey: "quantity")
             tempDIC.setValue(ProductSecondAmont, forKey: "amount")
-             arrProduct.add(tempDIC)
+            arrProduct.add(tempDIC)
         }
     
         GenerateToken()
     }
     
     func ResponseData(DataDIC: NSMutableDictionary) {
-        let objTransferResponse  = self.storyboard?.instantiateViewController(withIdentifier: "TransferResponseVC") as! TransferResponseVC
-        
-        objTransferResponse.strMessage = DataDIC.value(forKey: "message") as! String
-        objTransferResponse.statusCode = DataDIC.value(forKey: "statusCode") as! Int
-        
-        if let strDic = DataDIC.value(forKey: "data") as? NSDictionary{
-            objTransferResponse.transferResponse = strDic
-            self.navigationController?.pushViewController(objTransferResponse, animated: true)
+        DispatchQueue.main.async {
+            let objTransferResponse  = self.storyboard?.instantiateViewController(withIdentifier: "TransferResponseVC") as! TransferResponseVC
+            objTransferResponse.strMessage = DataDIC.value(forKey: "message") as! String
+            objTransferResponse.statusCode = DataDIC.value(forKey: "statusCode") as! Int
+            
+            if let strDic = DataDIC.value(forKey: "data") as? NSDictionary{
+                objTransferResponse.transferResponse = strDic
+                self.navigationController?.pushViewController(objTransferResponse, animated: true)
+            }
         }
-        
     }
     
     
@@ -162,28 +162,27 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
         
         let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error) in
-            if let response = response {
+            if response != nil {
             }
             if let data = data {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    print("json",json)
+                    
                     let TempResponse = json as! NSDictionary
                     if let strAccessToken = TempResponse.value(forKey: "accessToken") as? String{
                         self.strAccessToken = strAccessToken
                 
                         DispatchQueue.main.async {
-                        
                             let podBundle = Bundle(for: SelectPaymentMethodVC.self)
                             let storyboard = UIStoryboard(name: "mainStoryboard", bundle: podBundle)
                             let vc = storyboard.instantiateViewController(withIdentifier: "SelectPaymentMethodVC") as! SelectPaymentMethodVC
                             vc.delegate = self
-                            vc.isSandbox = false
+                            vc.isSandbox = true
                             vc.strAccessToken = strAccessToken
                             vc.amount = self.TotalValue()
                             vc.arrProductDetails = self.arrProduct
-                            vc.modalPresentationStyle = .overCurrentContext
                             let navigationController = UINavigationController(rootViewController: vc)
+                            navigationController.modalPresentationStyle = .overCurrentContext
                             self.present(navigationController, animated: true, completion: nil)
                         }
                     }
@@ -233,8 +232,8 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
     }
     
     
-    func TotalValue() -> Double{
-        let TotalAmount:Double =  ProductSecondAmont + ProductOneAmount
+    func TotalValue() -> Int{
+        let TotalAmount:Int =  ProductSecondAmont + ProductOneAmount
         
         if TotalAmount != 0{
             btnLoadFramework.isEnabled = true
@@ -242,7 +241,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
             btnLoadFramework.isEnabled = false
         }
         
-        self.lblTotalAmout.text = "Total Amount : \(TotalAmount) QAR"
+        self.lblTotalAmout.text = "Total Amount : \(TotalAmount).00 QAR"
         
         return TotalAmount
     }

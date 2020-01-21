@@ -1,11 +1,8 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (C) 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>.
+ * Copyright (C) 2019, CosmicMind, Inc. <http://cosmicmind.com>.
  * All rights reserved.
- *
- * Original Inspiration & Author
- * Copyright (c) 2016 Luke Zhao <me@lkzhao.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -233,7 +230,7 @@ extension UIViewController {
     var current: UIViewController? = self
     
     while nil == target && nil != current {
-      if let childViewControllers = (current as? UINavigationController)?.childViewControllers ?? current!.navigationController?.childViewControllers {
+      if let childViewControllers = (current as? UINavigationController)?.children ?? current!.navigationController?.children {
         
         for vc in childViewControllers.reversed() {
           if self != vc, withMatchBlock(vc) {
@@ -299,7 +296,7 @@ extension UIViewController {
     }
     
     if let nc = navigationController {
-      var v = nc.childViewControllers
+      var v = nc.children
       
       if !v.isEmpty {
         v.removeLast()
@@ -322,7 +319,7 @@ extension UIViewController {
         next.view.window?.addSubview(next.view)
         
         guard let pvc = presentingVC else {
-          UIApplication.shared.keyWindow?.rootViewController = next
+          Application.shared.keyWindow?.rootViewController = next
           return
         }
         

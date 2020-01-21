@@ -1,11 +1,8 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (C) 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>.
+ * Copyright (C) 2019, CosmicMind, Inc. <http://cosmicmind.com>.
  * All rights reserved.
- *
- * Original Inspiration & Author
- * Copyright (c) 2016 Luke Zhao <me@lkzhao.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -207,8 +204,6 @@ extension Motion {
    */
   public class func animate(group animations: [CAAnimation], timingFunction: CAMediaTimingFunction = .easeInOut, duration: CFTimeInterval = 0.5) -> CAAnimationGroup {
     let group = CAAnimationGroup()
-    group.fillMode = MotionAnimationFillModeToValue(mode: .both)
-    group.isRemovedOnCompletion = false
     group.animations = animations
     group.duration = duration
     group.timingFunction = timingFunction
@@ -271,7 +266,7 @@ open class MotionTransition: NSObject {
   
   /// Whether or not we are presenting the destination view controller.
   public internal(set) var isPresenting = true
-    
+  
   /**
    A boolean indicating if the transition is of modal type.
    True if `viewController.present(_:animated:completion:)` or
@@ -437,10 +432,10 @@ open class MotionTransition: NSObject {
     
     progressRunner.start(progress: progress * duration, duration: duration, isReversed: !isFinishing)
   }
-
+  
   private func delegate(respondingTo selector: Selector?) -> NSObjectProtocol? {
     guard let selector = selector else { return nil }
-
+    
     /// Workaround for recursion happening during navigationController transtion.
     /// Avoiding private selectors (e.g _shouldCrossFadeBottomBars)
     guard !selector.description.starts(with: "_") else { return nil }
@@ -531,7 +526,7 @@ internal extension MotionTransition {
    - Returns: A boolean indicating if the plugin is enabled or not.
    */
   static func isEnabled(plugin: MotionPlugin.Type) -> Bool {
-    return nil != enabledPlugins.index(where: { return $0 == plugin })
+    return nil != enabledPlugins.firstIndex(where: { return $0 == plugin })
   }
   
   /**
@@ -548,7 +543,7 @@ internal extension MotionTransition {
    - Parameter plugin: A MotionPlugin.Type.
    */
   static func disable(plugin: MotionPlugin.Type) {
-    guard let index = enabledPlugins.index(where: { return $0 == plugin }) else {
+    guard let index = enabledPlugins.firstIndex(where: { return $0 == plugin }) else {
       return
     }
     
@@ -578,15 +573,24 @@ public extension MotionTransition {
   func setContainerBackgroundColorForNextTransition(_ color: UIColor) {
     containerBackgroundColor = color
   }
+  
+  /**
+   Set the completion callback closure for the next transition.
+   - Parameter _ completion: An optional closure receiving a Boolean indicating if transition is finishing or cancelling.
+   */
+  func setCompletionCallbackForNextTransition(_ completion: ((Bool) -> Void)?) {
+    completionCallback = completion
+  }
 }
 
 internal extension MotionTransition {
   /**
    Processes the start transition delegation methods.
+   - Parameter transitionContext: An optional UIViewControllerContextTransitioning.
    - Parameter fromViewController: An optional UIViewController.
    - Parameter toViewController: An optional UIViewController.
    */
-  func processStartTransitionDelegation(fromViewController: UIViewController?, toViewController: UIViewController?) {
+  func processStartTransitionDelegation(transitionContext: UIViewControllerContextTransitioning?, fromViewController: UIViewController?, toViewController: UIViewController?) {
     guard let fvc = fromViewController else {
       return
     }
@@ -595,9 +599,9 @@ internal extension MotionTransition {
       return
     }
     
-    if !isModalTransition {
-        fvc.beginAppearanceTransition(false, animated: true)
-        tvc.beginAppearanceTransition(true, animated: true)
+    if transitionContext == nil {
+      fvc.beginAppearanceTransition(false, animated: true)
+      tvc.beginAppearanceTransition(true, animated: true)
     }
     
     processForMotionDelegate(viewController: fvc) { [weak self] in
@@ -634,9 +638,9 @@ internal extension MotionTransition {
       return
     }
     
-    if !isModalTransition {
-        tvc.endAppearanceTransition()
-        fvc.endAppearanceTransition()
+    if transitionContext == nil {
+      tvc.endAppearanceTransition()
+      fvc.endAppearanceTransition()
     }
     
     processForMotionDelegate(viewController: fvc) { [weak self] in
@@ -675,8 +679,12 @@ internal extension MotionTransition {
       return
     }
     
-    tvc.endAppearanceTransition()
-    fvc.endAppearanceTransition()
+    if transitionContext == nil {
+      tvc.beginAppearanceTransition(false, animated: true)
+      tvc.endAppearanceTransition()
+      fvc.beginAppearanceTransition(true, animated: true)
+      fvc.endAppearanceTransition()
+    }
     
     processForMotionDelegate(viewController: fvc) { [weak self] in
       guard let `self` = self else {
@@ -696,7 +704,7 @@ internal extension MotionTransition {
       $0.motionDidCancelTransition?(motion: self)
     }
     
-    transitionContext?.finishInteractiveTransition()
+    transitionContext?.cancelInteractiveTransition()
   }
 }
 

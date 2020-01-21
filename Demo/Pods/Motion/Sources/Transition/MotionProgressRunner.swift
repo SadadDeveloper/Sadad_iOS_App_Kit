@@ -1,11 +1,8 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (C) 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>.
+ * Copyright (C) 2019, CosmicMind, Inc. <http://cosmicmind.com>.
  * All rights reserved.
- *
- * Original Inspiration & Author
- * Copyright (c) 2016 Luke Zhao <me@lkzhao.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -43,7 +40,7 @@ class MotionProgressRunner {
   internal var progress: TimeInterval = 0
   internal var duration: TimeInterval = 0
   internal var displayLink: CADisplayLink?
-  internal var isReversed: Bool = false
+  internal var isReversed = false
   
   @objc
   func displayUpdate(_ link: CADisplayLink) {
@@ -72,12 +69,12 @@ class MotionProgressRunner {
     self.duration = duration
     
     displayLink = CADisplayLink(target: self, selector: #selector(displayUpdate(_:)))
-    displayLink!.add(to: RunLoop.main, forMode: RunLoopMode(rawValue: RunLoopMode.commonModes.rawValue))
+    displayLink!.add(to: RunLoop.main, forMode: RunLoop.Mode(rawValue: RunLoop.Mode.common.rawValue))
   }
   
   func stop() {
     displayLink?.isPaused = true
-    displayLink?.remove(from: RunLoop.main, forMode: RunLoopMode(rawValue: RunLoopMode.commonModes.rawValue))
+    displayLink?.remove(from: RunLoop.main, forMode: RunLoop.Mode(rawValue: RunLoop.Mode.common.rawValue))
     displayLink = nil
   }
 }

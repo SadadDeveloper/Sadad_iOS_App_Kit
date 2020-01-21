@@ -1,11 +1,8 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (C) 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>.
+ * Copyright (C) 2019, CosmicMind, Inc. <http://cosmicmind.com>.
  * All rights reserved.
- *
- * Original Inspiration & Author
- * Copyright (c) 2016 Luke Zhao <me@lkzhao.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -34,6 +31,11 @@ internal class MotionCoreAnimationViewContext: MotionAnimatorViewContext {
   
   /// A reference to the animation timing function.
   fileprivate var timingFunction = CAMediaTimingFunction.standard
+  
+  /// The computed current time of the snapshot layer.
+  var currentTime: TimeInterval {
+    return snapshot.layer.convertTime((animator as! MotionCoreAnimator<MotionCoreAnimationViewContext>).currentTime, from: nil)
+  }
   
   /// Current animations.
   var animations = [(CALayer, String, CAAnimation)]()
@@ -257,7 +259,7 @@ fileprivate extension MotionCoreAnimationViewContext {
       anim = a
     }
     
-    anim.fillMode = kCAFillModeBoth
+    anim.fillMode = CAMediaTimingFillMode.both
     anim.isRemovedOnCompletion = false
     anim.beginTime = beginTime
     

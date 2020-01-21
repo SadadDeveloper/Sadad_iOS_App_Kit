@@ -1,11 +1,8 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (C) 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>.
+ * Copyright (C) 2019, CosmicMind, Inc. <http://cosmicmind.com>.
  * All rights reserved.
- *
- * Original Inspiration & Author
- * Copyright (c) 2016 Luke Zhao <me@lkzhao.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,6 +26,29 @@
 import UIKit
 
 internal class MotionCoreAnimator<T: MotionAnimatorViewContext>: MotionAnimator {
+  /**
+   Backing field for storing CACurrentMediaTime to ensure all
+   animations begin at the exact same time.
+   
+   Should be invalidated using invalidateCurrentTime method
+   after firing all animations.
+   */
+  private var storedCurrentTime: TimeInterval?
+  
+  /// Current time for the animator.
+  var currentTime: TimeInterval {
+    if nil == storedCurrentTime {
+      storedCurrentTime = CACurrentMediaTime()
+    }
+    
+    return storedCurrentTime!
+  }
+  
+  /// Invalidates stored current time.
+  func invalidateCurrentTime() {
+    storedCurrentTime = nil
+  }
+  
   weak public var motion: MotionTransition!
   
   /// A reference to the MotionContext.
@@ -46,6 +66,7 @@ internal class MotionCoreAnimator<T: MotionAnimatorViewContext>: MotionAnimator 
     }
     
     viewToContexts.removeAll()
+    invalidateCurrentTime()
   }
   
   /**
@@ -55,7 +76,7 @@ internal class MotionCoreAnimator<T: MotionAnimatorViewContext>: MotionAnimator 
    view is appearing.
    */
   func canAnimate(view: UIView, isAppearing: Bool) -> Bool {
-    guard let state = context[view] else {
+    guard let state = targetState(for: view) else {
       return false
     }
     
@@ -103,6 +124,8 @@ internal class MotionCoreAnimator<T: MotionAnimatorViewContext>: MotionAnimator 
       d = max(d, v.startAnimations())
     }
     
+    invalidateCurrentTime()
+    
     return d
   }
   
@@ -114,6 +137,8 @@ internal class MotionCoreAnimator<T: MotionAnimatorViewContext>: MotionAnimator 
     for v in viewToContexts.values {
       v.seek(to: progress)
     }
+    
+    invalidateCurrentTime()
   }
   
   /**
@@ -127,13 +152,10 @@ internal class MotionCoreAnimator<T: MotionAnimatorViewContext>: MotionAnimator 
     var duration: TimeInterval = 0
     
     for (_, v) in viewToContexts {
-      if nil == v.targetState.duration {
-        v.duration = max(v.duration, v.snapshot.optimizedDuration(targetState: v.targetState) + progress)
-      }
-      
       duration = max(duration, v.resume(at: progress, isReversed: isReversed))
     }
     
+    invalidateCurrentTime()
     return duration
   }
   
@@ -148,6 +170,26 @@ internal class MotionCoreAnimator<T: MotionAnimatorViewContext>: MotionAnimator 
     }
     
     v.apply(state: state)
+    
+    invalidateCurrentTime()
+  }
+  
+  /**
+   Returns MotionTargetState for the given view.
+   - Parameter for view: A UIView.
+   - Returns: A MotionTargetState.
+   */
+  func targetState(for view: UIView) -> MotionTargetState? {
+    return context[view]
+  }
+  
+  /**
+   Returns snapshot view for the given view.
+   - Parameter for view: A UIView.
+   - Returns: A snapshot UIView.
+   */
+  func snapshotView(for view: UIView) -> UIView {
+    return context.snapshotView(for: view)
   }
 }
 
@@ -159,7 +201,7 @@ fileprivate extension MotionCoreAnimator {
    view is appearing.
    */
   func createViewContext(view: UIView, isAppearing: Bool) {
-    viewToContexts[view] = T(animator: self, snapshot: context.snapshotView(for: view), targetState: context[view]!, isAppearing: isAppearing)
+    viewToContexts[view] = T(animator: self, snapshot: snapshotView(for: view), targetState: targetState(for: view)!, isAppearing: isAppearing)
   }
 }
 

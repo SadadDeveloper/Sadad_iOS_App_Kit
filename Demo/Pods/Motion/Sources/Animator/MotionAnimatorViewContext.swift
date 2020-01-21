@@ -1,11 +1,8 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (C) 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>.
+ * Copyright (C) 2019, CosmicMind, Inc. <http://cosmicmind.com>.
  * All rights reserved.
- *
- * Original Inspiration & Author
- * Copyright (c) 2016 Luke Zhao <me@lkzhao.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +25,7 @@
 
 import UIKit
 
-internal class MotionAnimatorViewContext {
+internal class MotionAnimatorViewContext: NSObject {
   /// An optional reference to a MotionAnimator.
   var animator: MotionAnimator?
   
@@ -43,11 +40,6 @@ internal class MotionAnimatorViewContext {
   
   /// Animation duration time.
   var duration: TimeInterval = 0
-  
-  /// The computed current time of the snapshot layer.
-  var currentTime: TimeInterval {
-    return snapshot.layer.convertTime(CACurrentMediaTime(), from: nil)
-  }
   
   /// A container view for the transition.
   var container: UIView? {

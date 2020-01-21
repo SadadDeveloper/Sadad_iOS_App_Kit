@@ -1,11 +1,8 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (C) 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>.
+ * Copyright (C) 2019, CosmicMind, Inc. <http://cosmicmind.com>.
  * All rights reserved.
- *
- * Original Inspiration & Author
- * Copyright (c) 2016 Luke Zhao <me@lkzhao.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -65,6 +62,8 @@ extension MotionTransition {
       progress = 0
       totalDuration = 0
       state = .possible
+      defaultAnimation = .auto
+      containerBackgroundColor = .black
       isModalTransition = false
     }
     
@@ -109,7 +108,7 @@ extension MotionTransition {
       if isPresenting != isFinishing, !isContainerController {
         // Only happens when present a .overFullScreen view controller.
         // bug: http://openradar.appspot.com/radar?id=5320103646199808
-        UIApplication.shared.keyWindow?.addSubview(isPresenting ? fv : tv)
+        Application.shared.keyWindow?.addSubview(isPresenting ? fv : tv)
       }
     }
     
@@ -122,6 +121,7 @@ extension MotionTransition {
     }
     
     transitionContainer?.isUserInteractionEnabled = true
+    transitioningViewController?.view.isUserInteractionEnabled = true
     
     completionCallback?(isFinishing)
     
@@ -139,9 +139,36 @@ extension MotionTransition {
       processEndTransitionDelegation(transitionContext: tContext, fromViewController: fvc, toViewController: tvc)
     } else {
       processCancelTransitionDelegation(transitionContext: tContext, fromViewController: fvc, toViewController: tvc)
-      tContext?.cancelInteractiveTransition()
     }
     
     tContext?.completeTransition(isFinishing)
+    
+    let isModalDismissal = isModalTransition && !isPresenting
+    if isModalDismissal {
+      Application.shared.fixRootViewY()
+    }
+  }
+}
+
+
+private extension UIApplication {
+  /**
+   When in-call, hotspot, or recording status bar is enabled, just after (custom) modal
+   dismissal transition animation ends `UITransitionView` is removed from the hierarchy
+   and that removal was moving `rootViewController.view` 20 points upwards. This function
+   should be called after transitioningContext.completeTransition(_:) upon modal dismissal
+   transition. It applies the work that `UITransitionView` should ideally have done after
+   custom modal dismissal. `UIKit` modal dismissals do not suffer from this.
+   
+   Fixes issue-44. See issue-44 for more info.
+   */
+  func fixRootViewY() {
+    guard statusBarFrame.height == 40, let window = keyWindow, let vc = window.rootViewController else {
+      return
+    }
+    
+    if vc.view.frame.maxY + 20 == window.frame.height {
+      vc.view.frame.origin.y += 20
+    }
   }
 }

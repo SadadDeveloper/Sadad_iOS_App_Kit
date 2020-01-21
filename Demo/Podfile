@@ -9,5 +9,6 @@ target 'Demo' do
 pod 'IQKeyboardManagerSwift'
 pod 'Material'
 pod 'KBNumberPad'
+# pod 'PayCardsRecognizer'
 
 end

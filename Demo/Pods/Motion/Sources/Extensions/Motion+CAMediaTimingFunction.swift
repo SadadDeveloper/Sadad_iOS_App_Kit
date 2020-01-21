@@ -1,11 +1,8 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (C) 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>.
+ * Copyright (C) 2019, CosmicMind, Inc. <http://cosmicmind.com>.
  * All rights reserved.
- *
- * Original Inspiration & Author
- * Copyright (c) 2016 Luke Zhao <me@lkzhao.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -30,10 +27,10 @@ import UIKit
 
 public extension CAMediaTimingFunction {
   //  Default
-  static let linear = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-  static let easeIn = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-  static let easeOut = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-  static let easeInOut = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+  static let linear = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+  static let easeIn = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
+  static let easeOut = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+  static let easeInOut = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
   
   //  Material
   static let standard = CAMediaTimingFunction(controlPoints: 0.4, 0.0, 0.2, 1.0)

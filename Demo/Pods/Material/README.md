@@ -5,6 +5,7 @@
 Welcome to **Material,** a UI/UX framework for creating beautiful applications. Material's animation system has been completely reworked to take advantage of [Motion](https://github.com/CosmicMind/Motion), a library dedicated to animations and transitions.
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
 [![Version](https://img.shields.io/cocoapods/v/Material.svg?style=flat)](http://cocoapods.org/pods/Material)
 [![License](https://img.shields.io/cocoapods/l/Material.svg?style=flat)](https://github.com/CosmicMind/Material/blob/master/LICENSE.md)
 ![Xcode 8.2+](https://img.shields.io/badge/Xcode-8.2%2B-blue.svg)
@@ -60,7 +61,47 @@ Take a look at [Sample Projects](https://github.com/CosmicMind/Samples) to get y
 > **Embedded frameworks require a minimum deployment target of iOS 8+.**
 > - [Download Material](https://github.com/CosmicMind/Material/archive/master.zip)
 
-Read [Material - It's time to download](https://www.cosmicmind.com/danieldahan/lesson/6) to learn how to install Material & Motion using [GitHub](http://github.com), [CocoaPods](http://cocoapods.org), and [Carthage](https://github.com/Carthage/Carthage).
+## CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate Material's core features into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'Material', '~> 3.1.0'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+## Carthage
+
+Carthage is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with Homebrew using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+To integrate Material into your Xcode project using Carthage, specify it in your Cartfile:
+
+```bash
+github "CosmicMind/Material"
+```
+
+Run `carthage update` to build the framework and drag the built `Material.framework` into your Xcode project.
 
 ## Change Log
 
@@ -72,7 +113,7 @@ Icons is a library of Google and CosmicMind icons that are available for use wit
 
 ![Icon](http://www.cosmicmind.com/gifs/marketplace/icons.png)
 
-[Learn More](http://cosmicmind.com/material/icons)
+[Learn More](https://github.com/CosmicMind/Material/blob/master/Sources/iOS/Icon/Icon.swift)
 
 ## Colors
 
@@ -200,19 +241,25 @@ So much more inside. Enjoy!
 
 ## License
 
-Copyright (C) 2015 - 2018, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>. All rights reserved.
+The MIT License (MIT)
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Copyright (C) 2019, CosmicMind, Inc. <http://cosmicmind.com>.
+All rights reserved.
 
-*   Redistributions of source code must retain the above copyright notice, this     
-    list of conditions and the following disclaimer.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-*   Redistributions in binary form must reproduce the above copyright notice,
-    this list of conditions and the following disclaimer in the documentation
-    and/or other materials provided with the distribution.
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-*   Neither the name of CosmicMind nor the names of its
-    contributors may be used to endorse or promote products derived from
-    this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

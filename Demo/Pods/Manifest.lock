@@ -1,13 +1,13 @@
 PODS:
-  - IQKeyboardManagerSwift (6.2.0)
+  - IQKeyboardManagerSwift (6.5.4)
   - KBNumberPad (1.0.1)
-  - Material (2.16.4):
-    - Material/Core (= 2.16.4)
-  - Material/Core (2.16.4):
-    - Motion (~> 1.4.3)
-  - Motion (1.4.3):
-    - Motion/Core (= 1.4.3)
-  - Motion/Core (1.4.3)
+  - Material (3.1.8):
+    - Material/Core (= 3.1.8)
+  - Material/Core (3.1.8):
+    - Motion (~> 3.1.1)
+  - Motion (3.1.3):
+    - Motion/Core (= 3.1.3)
+  - Motion/Core (3.1.3)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
@@ -15,18 +15,18 @@ DEPENDENCIES:
   - Material
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - IQKeyboardManagerSwift
     - KBNumberPad
     - Material
     - Motion
 
 SPEC CHECKSUMS:
-  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
   KBNumberPad: 37f5ebdd1065575afbe2a95c5a2084562d3f28d8
-  Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
-  Motion: 153ba49692997888556c7a95207278a8b1f8be95
+  Material: a2a3f400a3b549d53ef89e56c58c4535b29db387
+  Motion: cf1e060e489f6661126374d5c60dbd2ed991605c
 
-PODFILE CHECKSUM: bcf12e9adae2702156c22eb84c3fd1c4f9ea0703
+PODFILE CHECKSUM: a55afe2cb6506394ca5da3585a7d20eccd4ee220
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
