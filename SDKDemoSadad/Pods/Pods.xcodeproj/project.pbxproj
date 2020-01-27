@@ -1,0 +1,2077 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0006170B22110E1869EFAC5CA153811D /* Motion+CG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF20DC9D4267FEED6253FEF8902394 /* Motion+CG.swift */; };
+		01049C85C77D422682C435ECB04A6C22 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C026D92BC976B4474920E02C1DA73 /* SpringAnimation.swift */; };
+		03200324FD43BFCDE340DB93B7CDE7B1 /* Material+MotionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102A2D4C0E436C01C3F061B550CF5A1 /* Material+MotionAnimation.swift */; };
+		0564E54A6F03094F6F39F7D2325CE0D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B28AFC9C01B464099A86DE68D0E2071 /* CoreGraphics.framework */; };
+		088CE1759F3601BFA19FE9FB746A9323 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454ECAC6C1E7D63713E08930BBD9FA17 /* Border.swift */; };
+		08EF738CC92813CBD4B07A295EA54EBB /* Depth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC844CC911B340559B142C1BD57843 /* Depth.swift */; };
+		0A7DA4AA07AFD52BBEC1D51C077DA639 /* Material+NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D975AB78A7797205EBB5D2AFD99A336 /* Material+NSMutableAttributedString.swift */; };
+		0E3BB9CB1D120A7B9367AE9D31559680 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D605C74CE053C4097BD6EC7893714A14 /* Roboto-Light.ttf */; };
+		102F4487BC4ADC3C2B56A0470E0A9468 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9894BB5ABDD6693DC4E5A8DFCFB67 /* IQKeyboardManagerConstantsInternal.swift */; };
+		113574E2A1B293F85A952DFD9BEE340E /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CA51CF6B05C67185E6466E03DAC8F /* TableView.swift */; };
+		130808F19DDBD12DEAE3DF87A2ECA080 /* MotionSnapshotType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177AB8B024755ED2EE7B5260844A95E6 /* MotionSnapshotType.swift */; };
+		13F284D88058B067468E5B76E767CD33 /* DisplayStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1830DE586F9E671177065CB24A109 /* DisplayStyle.swift */; };
+		1730C7837FD3A7A5E1CCBE4AB3EFF8D2 /* PulseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E28D93FDEAD2E60A0349EAED497BA /* PulseView.swift */; };
+		18289E05576230979F9457E5DBC291CB /* RobotoFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0108156379896E6167CA503F760BE2 /* RobotoFont.swift */; };
+		197F29F0B5737C299E0F9979B173022F /* ErrorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F1682849A8BF6769DFC50FB22D541 /* ErrorTextField.swift */; };
+		19F1DC4C3135BEF9AB711737227D6767 /* Material+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3F9DE2E45839F6C0FE669FB78949C /* Material+UIView.swift */; };
+		1B7A3EBD2D3C7FCAB30113BC25535356 /* MotionTransition+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4EBDBE8C10AA03CE117C3E74897E74 /* MotionTransition+UIViewControllerTransitioningDelegate.swift */; };
+		1C1F6C17F2CE9BE89A774EF0C4ED96D7 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69ED1967187144CA7C88ABD2D358A4E /* IgnoreSubviewModifiersPreprocessor.swift */; };
+		1D2FC70FAC25E84CDA51BBCB37B135CF /* ImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7927769D81FE57FEBC921914605FED /* ImageCard.swift */; };
+		1F0FE1AD10DFEB8C59B9B0CC348FA13F /* Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9FE1AD9A029E99FB9D405E5FAA259C /* Offset.swift */; };
+		201377E61338169A98F571ECE727D02F /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910409D1254DE3FDB5C62CD20E2047C7 /* Shape.swift */; };
+		234FB0A5E6A53D8AAAC4BEF5909E0A3B /* NavigationDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72D0DD84D1F8F46F23CD20E0119960 /* NavigationDrawerController.swift */; };
+		259D6FC80BCFE785471F743B1F533970 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B140A94627F5660C7BB57E4E6B9671C4 /* IQNSArray+Sort.swift */; };
+		263FF783C4AAE71E369B61AA7EC76CFB /* Motion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B36088BFCA8F14AA1EEAFFCF516E1B /* Motion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D2F500B6EE12B63373A3F48D2D405A /* CardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC4B8135EB52A81D0C9C90F42FF10D1 /* CardCollectionViewController.swift */; };
+		28A8AFA00A797AAACE7ED9E0F08CD84A /* Material+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7ECC56A95B2063E1E44FCF81767E4 /* Material+CALayer.swift */; };
+		29105FE40BEEFA1C3798B65665691951 /* MotionTransition+Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11450EE72687C08C5FC3AD8A87C53804 /* MotionTransition+Start.swift */; };
+		2964A4832ED09F9CB441D25FB2F7B76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FD2C90129643700357BC928BCB94EA /* Foundation.framework */; };
+		29E8DAF1E5C681ABCDDE9F19BD145E72 /* Motion+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87E1C9D7D140EC8D5E37F0715BE910 /* Motion+Array.swift */; };
+		2BB32D2396106B3E1F801F8E97D619A6 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3972506C03D9692E65F14878B4BFA1 /* Screen.swift */; };
+		2C22C09C0F7892D26803F36454BA06A6 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D989A59585358B323B0A4A26942E77 /* CollectionViewController.swift */; };
+		2D07D930EA9EBCB08364058B38D09EEF /* MotionTransition+Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AA691C8DC98676EA3FE6E5232AF2AB /* MotionTransition+Complete.swift */; };
+		2F8E65AEE0E6415AA63E22B1730243DC /* LayoutAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F7AFA1E9CA2E7DF01CD54B9B7DBF6D /* LayoutAttribute.swift */; };
+		3172B313FC9228FA29133CB4661C1FB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FD2C90129643700357BC928BCB94EA /* Foundation.framework */; };
+		3194205545DBC4D9EC887D827FC121B6 /* MotionTransition+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29566791ED7A217F99F0C2A64E1EA623 /* MotionTransition+UITabBarControllerDelegate.swift */; };
+		31D703D828F6AE734F2514E5F01B2EC8 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5796D672ABCF38E71408F60430BA9A /* CollectionView.swift */; };
+		32FC91CE97C3634F2DC5A0C38D53ACFB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA877B194002235A82AC5A3335ED8CAC /* Roboto-Medium.ttf */; };
+		3D640AF97D86B9896B8B66A15F4C2C91 /* MotionCAAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B78D57251C6F89562EA11BB358138 /* MotionCAAnimation.swift */; };
+		3F091C427A3E96117C902E8EA143729E /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0305AA720A60560284195E57BB52E1 /* IQKeyboardManager.swift */; };
+		3F93B911E02C0435E8C04A2268C0B961 /* DynamicFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D53B5CA829F5C4B7389ACBF93E73D3 /* DynamicFontType.swift */; };
+		43DC8094200CABA8964759707B499828 /* TextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A5DAC0BD7B9E9F3C8CA9671881555 /* TextStorage.swift */; };
+		43E4399D3BBC2DF02FD5BB9A650727D0 /* MotionAnimationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9805121A0A2C813BCB9F091C021DD5 /* MotionAnimationState.swift */; };
+		44E0211C739DAD1F8B68E963F94D686D /* BaseButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E910ECE579CB3526B3A7A9F723E8F5B /* BaseButtonGroup.swift */; };
+		4543EA09ABCE9542CE1ECC2EBC47F238 /* Material+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB42E9F9F27A558917CE4532F5FA7544 /* Material+UIButton.swift */; };
+		46B114070A3496B40D0FB90997E8E2C2 /* Motion+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91BB9CC67D1FE4F48394A61517AE42D /* Motion+UIView.swift */; };
+		4737103B10A1C40C5301D0512B9310E4 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918AF79EC031C5E619F6230DDCE5FC1 /* IQKeyboardReturnKeyHandler.swift */; };
+		4B771F4A5D061390489CDA585CA7C073 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A89A08A655DC095D576597E22D5151E /* TextField.swift */; };
+		4C069FA7FAA45154DA92CF5DF3BCDCA9 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194B13ACDAB41CD4291D3E2F2C47A3F /* IQUITextFieldView+Additions.swift */; };
+		4E9338C9B5DF3FF578B895BE5368E904 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43D71A0CAE75359E807DAA24715E6B6 /* CheckButton.swift */; };
+		4F0CF2AD58CF0D08BC090E7AF0DD63D7 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB416F8B698D69B3EA39EB79BE0D9A80 /* IQInvocation.swift */; };
+		4F14DF9602A4ED880CBE58CB5610DD8D /* MotionViewOrderStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B17123DB4EDA9E9E95918BF14AE5406 /* MotionViewOrderStrategy.swift */; };
+		500BAF451A7967DE2044EF7A4F5FE90F /* Material+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A594B1A439A133319901F9C7BE015732 /* Material+Array.swift */; };
+		5044FEAEF09468B6964F9F37A1F1F45C /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027EA9459A02A7874265B67D8C43A426 /* IQPreviousNextView.swift */; };
+		512A0C8BB29BDBEA5360B8261F708F1D /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10D0E71E6969AB27F8B3FB71A5F2931B /* Roboto-Thin.ttf */; };
+		5146BC68FF3AF1AC3F8E9F880519AA71 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68064A1B615860A1DBB3782C955E35A8 /* CornerRadius.swift */; };
+		534D3410E2F7AE028C266BABFB9722C1 /* Snackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2B4B301887372EF87896A206F3EC13 /* Snackbar.swift */; };
+		536B822006EE70AAFFD5B5C37D3469DA /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF95898E41DE210CACBFBC854FAE31 /* TextView.swift */; };
+		53F51196F939F58ACFAAA8FAECB45F69 /* BottomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8044F8331BEF8160F91A197E1F4EF7C0 /* BottomNavigationController.swift */; };
+		55273422BE2786407924ADB52166FD5D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26754440B7FC0E2CBB4AFC6D2A421980 /* Card.swift */; };
+		556D973C0A9432948D24BA73F9038892 /* CheckButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633A9E75CB5FE5A2B5588A3152ABBBF /* CheckButtonGroup.swift */; };
+		5644F103031A7F63855599F2D40EB720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC229EA93C6E264D221AF88C8B9DEE0 /* Assets.xcassets */; };
+		5CD0484767E462BABAD6183B061BD688 /* MotionTransition+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D8ABFAA0E50B595429DC43222BCF68 /* MotionTransition+Animate.swift */; };
+		5D9F50E76AB29C36824B1EB803BE5C1D /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32C881F25FCF97086B0C9C803E45B09 /* Bar.swift */; };
+		5FA2BA2844BBFD666B1614AB9FEEC175 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A282B3071CB3F669A02293275CCF88 /* Theme.swift */; };
+		608209D01CA72BC54D7B3676F2620336 /* ChipBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1EE64F3A5768916735A76F50388F93 /* ChipBar.swift */; };
+		61739ABA670A4B38EC52F7B968A1B3E8 /* Material+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0C799732DAF07EAAECFF46E7C1D48 /* Material+String.swift */; };
+		62A85277D0462C43B80A05E8822794BB /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5DD9490A907358F84CC07F8316FD90 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6356CDF85B0E3D24A453F53C5E0B6522 /* BaseIconLayerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0286D975B55B2325BA47E4472674F43 /* BaseIconLayerButton.swift */; };
+		6476E6D6975488050D1E559D08EEB9FF /* FABMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C1B59800573673FF05274A1F7C824 /* FABMenu.swift */; };
+		69B0DE0C0C1C34E40C87BFD57A854763 /* Material-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 105D9516C6D312365AE8CFBA88E58C2A /* Material-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ABCA03B75DDE5663ADB665B8DB51BE0 /* Material+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D443D1BD74E0836722793549D6442891 /* Material+UIFont.swift */; };
+		6BE59F0E97C4A8A4EDC1551B3137C0F5 /* TransitionPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D2A525078844E7F8A450159A105D7 /* TransitionPreprocessor.swift */; };
+		6CA920C7F7A11FE483EB6D9C8FD988B0 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C6DCCB90D2E4CBC9A718C34C79E86E /* Application.swift */; };
+		6DEBAE1E891433F30BCCB9FCE0204375 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099BB3539D7F5F461D3F5AE72A598AE /* CardCollectionViewCell.swift */; };
+		6EDDB5F5E550F19DD8DACF563DD546D7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761A766AE15B76D1FC87000321E946B /* TabBar.swift */; };
+		70F3F32A93C48B6EA801618210EF0A57 /* Material+UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B99F3F1AF252354678C4B99C4DA770 /* Material+UIWindow.swift */; };
+		71CCB382A30ECA493CB241760DB58A0C /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97998C3C318CD471DDB387E65D4BCE /* EdgeInsets.swift */; };
+		71DA0FF7EA1EE1458FCA02C3F591E4EE /* MotionTransitionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE822B963D0E1E624CA247C87F86BB0 /* MotionTransitionObserver.swift */; };
+		73AC1769CC47D6AE9C44FF3AFBDC7C40 /* MotionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA8F41D77CE48F3F5040AFEEE09E51 /* MotionAnimator.swift */; };
+		74341DA37F4B926FDF4CB2599CAC547A /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3B7674F8948618E019F44115F80E9 /* IQUIViewController+Additions.swift */; };
+		7761098033B0197D56C5632CFF559BF0 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7E2383D2A11FE755DD4EF5AF55E217 /* CollectionReusableView.swift */; };
+		7902F8AD75D94829D63EFACDEE48E20E /* MotionViewPropertyViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B0DCD2C62A7429E0101807F5C2DAC /* MotionViewPropertyViewContext.swift */; };
+		7BB93FB7156EDFA81BB7C1163A1B76C9 /* SearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9B96F50FA931B7FBA6F00E5101ACF2 /* SearchBarController.swift */; };
+		7C060C4BF17E38B78398DD857DAD1C2D /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953ADB6F8DE85BF5192907C01FDA4A19 /* RadioButton.swift */; };
+		7D595E4F34CC89A187D113B8CD36A002 /* Material+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FB83F5A73DC27AB8B89B746CF7B0B3 /* Material+UILabel.swift */; };
+		7DD2C85318475786587B3DBCFF9D441A /* Motion+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D7FC64BB50852D666D968C0335CF /* Motion+UIKit.swift */; };
+		7F5AFBF055F5152B4904F960EDC6E9BE /* FABButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46854A50E656DCDCF2AF6C35CB1F685E /* FABButton.swift */; };
+		7FB3576FD619DD256294BAD7E5F83CBE /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0530527551A4DBF7FC040F95B55DA /* IQTextView.swift */; };
+		7FEF27603287CA097769DDA483C0C57C /* InterimSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A746E6151917FFBB716FCDCD318780D /* InterimSpace.swift */; };
+		80E11FD69D033FCE6B389CD8B07AAAC8 /* Pods-SDKDemoSadad-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E691AEB7760FD84106A274377858F532 /* Pods-SDKDemoSadad-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82ED516EBC9B8F39AB654084EE00A201 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2BDA6868495A7FF035E0A51E085BDC /* Font.swift */; };
+		84371702E425911E42C81850CA52F4D1 /* MotionPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B6034487578FD17B2E11300787D3C /* MotionPlugin.swift */; };
+		85CF5ACCB5EF997818FA9943F0AFCF9A /* Material-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8768F1DBC2C4710E1910B3808F3688 /* Material-dummy.m */; };
+		87D5192022D6484A985358F7CC5AFC97 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED5050209FFBD66F77EA7AE57DC65F /* Button.swift */; };
+		8B439A47AA5FDEF67AD63BDDB808AC5A /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25FDEF588E27BA07F96C5C40A0B7B62 /* IQUIView+Hierarchy.swift */; };
+		8BB2D2D77E1E554C167F5CA4B12D9EEA /* Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E04B76FD76F07DB902D017F99F0DFC /* Motion.framework */; };
+		8C170944F8BC2844C7C9DC8E75442708 /* MotionCoreAnimationViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C152D9010B3B62380323A7120AAE2 /* MotionCoreAnimationViewContext.swift */; };
+		8CBC2728A60A1D7C1A5199D7DE9A5B3B /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67C1656E7E76A870B092D6A4E3EB47 /* LayoutConstraint.swift */; };
+		8CE47890049CAC6B297E070B40DACDD7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473954E003464B8AC97442C5F63E949 /* Color.swift */; };
+		8D519ACEAF008717B9A942BCDCC9CDA0 /* KBNumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF004793F9A8230CC89CCC63B71277C /* KBNumberPad.swift */; };
+		8F67375C6F03581EE7A759DD26B967A2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33F6422C8FBAD58C687C6F7695615F /* CollectionViewCell.swift */; };
+		8F92DE493E66A26C230C75F95BEB6C77 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D5CD7A52874D6DEF0ED076FB3402C4 /* QuartzCore.framework */; };
+		908FC12CBB4A3AF46A6EB1B7E4C865A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FD2C90129643700357BC928BCB94EA /* Foundation.framework */; };
+		90A97E6D273ABD4ED704CB69E582428E /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD3F104526A17AC030D47BF50E1FB4 /* PulseAnimation.swift */; };
+		93DAA28D4673C8A98BAF8CD1AB0F6D4F /* FABMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF15346336CB1514673137A5AD334A0 /* FABMenuController.swift */; };
+		963D6E9BF53C87CBD1E5D4A9D54E48DF /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3628978ABE2EC95978D06A9EF3DC5D2 /* Toolbar.swift */; };
+		9678D388DCBDEF7477678DF02E02D446 /* MotionProgressRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C95CBF03C0A07F6C78C48312C185E1 /* MotionProgressRunner.swift */; };
+		96F39E8C85EBC856DBAB65AE418B8BCB /* KBNumberPad-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE49D1327B63C07C5D4A0F3F83AD1B3 /* KBNumberPad-dummy.m */; };
+		980E5594F8DBCE362764AEDC2F086E36 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EB599E3BFA1DA114688CFB03773D5F /* IQToolbar.swift */; };
+		98B5A8455522C10F482DDBD367CFE128 /* ConditionalPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D76EF394800F29AD74434E6DF26E45 /* ConditionalPreprocessor.swift */; };
+		9ABF25133E52C98365BA074CF589E658 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667C3DBD3A6ABDD7300DF6720B764BD5 /* TableViewController.swift */; };
+		9D49743EEFEAA5E5D6EC0DB9F43A9D1D /* Motion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AA06503583D0E73C902E3F70A50EDF /* Motion-dummy.m */; };
+		9E143EB3D3A3339080DF179139C070DA /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADD346C95D2176E6DA5E7AD84F31DE /* Editor.swift */; };
+		9EC13A9BBC06C2C69393C0F476BE1B29 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D96C8F16E59404C685155288E4013 /* StatusBarController.swift */; };
+		A12BC659142DE299230FE798FAAFD7E4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1076422F454EE5B355B73AF19EC560E5 /* Grid.swift */; };
+		A20673352C5D711197E2606C7FBAD573 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683D5268DD8B0F6BDCA59F364118303 /* ViewController.swift */; };
+		A277AD383451A8CA4E9FD876C29C1D00 /* RadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58326FDD93294297C0F49FC83D713BF4 /* RadioButtonGroup.swift */; };
+		A6D78C565877FB5C16B7FCF41CAB726F /* com.cosmicmind.material.icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4F6A2860CB523B85235F862573290FC /* com.cosmicmind.material.icons.bundle */; };
+		A76CC761BC5E16D6A03107D25207822D /* Motion+CAMediaTimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0414C2E841BEED90C9A1111723AF6FC /* Motion+CAMediaTimingFunction.swift */; };
+		A8E8D8127E633FFA7E51B8C92DC6DB9C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A71224EBBFFAA534FADC6BB814C55B /* View.swift */; };
+		A940EF237D240E94284FBA957FD41438 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF218054E8B192F29976C3F5B7E47DF4 /* Divider.swift */; };
+		A9FD3C02381DBE440779BC28995301C7 /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6231AAD6E396547F96D92FAE73F23 /* TransitionController.swift */; };
+		ABA5A290A219FA6DD4801ED462CC880C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6057F7B838AD4767F5444592675DCBDD /* NavigationController.swift */; };
+		ABAAB0415AF851835207F72A9D895BCE /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50DD4BBC8CD852E0AB975D8824FC119 /* CollectionViewLayout.swift */; };
+		AD91E5DF8C838678746075D5330A4097 /* MotionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637DED99DCEE8B7DFCA1D33206810CB /* MotionModifier.swift */; };
+		AE3B246482DCD60BA846EA3CE983A1FB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019837766E39A5D9F771BDBFF7C690F5 /* IQUIView+IQKeyboardToolbar.swift */; };
+		AE61CB03CB19EEF213AE41DFD441AD36 /* Pods-SDKDemoSadad-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4CAD11C59E1E1D7290ABF509E31B3E /* Pods-SDKDemoSadad-dummy.m */; };
+		AF59DC0BA227FACC195A662B4872ED94 /* MotionTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44A637C3CCAE96D52FABAF09E2F207 /* MotionTransition.swift */; };
+		AF8EB41B43CE1DA49B2D9E53F3E0F4F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FD2C90129643700357BC928BCB94EA /* Foundation.framework */; };
+		B035E5FD932280EE3056C704D5C9220F /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A79E46FF991831C151EDE0EA3D98E /* FlatButton.swift */; };
+		B2A8AE6DD7322E52558E4A5AFADE973B /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F60C9BC0C20CEC435A21B4E3AA62A6 /* Layer.swift */; };
+		B3D7090CA24306F27276E7E012A7D1AA /* Material+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC192AC7C1F8F5FD6646BD8C131D638 /* Material+UIViewController.swift */; };
+		B4B28F60325ED27BBB84989A3B64AF0A /* ToolbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E47B79ED0108CEDC84D5A593783CD2 /* ToolbarController.swift */; };
+		B98378C55379E1B92897F11A22E38443 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 992EEC6318001711E80642B44C51927A /* IQKeyboardManagerSwift-dummy.m */; };
+		BB1B13EE8CA703F5BE82593AE0E09C6F /* MotionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C3FA13162EFC71A4EB4752A18D790E /* MotionAnimation.swift */; };
+		BD8E3C30EB0B175C2969F0C3C69071C7 /* CascadePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9730C0576A08244E4230340A72175 /* CascadePreprocessor.swift */; };
+		BEF6E3042CF30191592A8FA9D07AF54E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DD126AC45BF31F7BD9229E10DD34830 /* Roboto-Regular.ttf */; };
+		BF506900AD5593270BEE65649F0E45B0 /* Material+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54762D0E452FEA12A952B9AD270527E /* Material+UIImage.swift */; };
+		C04C5F1F1D6B337F87E157B55A747E41 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A083BAB96D6AD01EB94D6D598A7818 /* IQKeyboardManagerConstants.swift */; };
+		C0EB3776478AB80676E488BC9C9CDA3C /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728027F1673C980D6FE2D69BDBE585C5 /* IQUIScrollView+Additions.swift */; };
+		C1B072D6C2A0678F235005051716467B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE283FC6EF3A95A389B0A78CD889B240 /* UIKit.framework */; };
+		C35DCE97EB77150C41E735DB57BD6616 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855634B7DC736950E9ECE6239C49259 /* IQTitleBarButtonItem.swift */; };
+		C46949F98B606E98A4A7946E6EF61098 /* HeightPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15E372EC3F45E7C5F2BA7BA34D99B /* HeightPreset.swift */; };
+		C7C09868BA9E3472A529161D53B99D0D /* Material+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285C3F7694C1125D7C0E28E86ED9668 /* Material+UIColor.swift */; };
+		C7E84856563026055834D2DC314B7658 /* MotionCorePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF16C244562AA1ED087DB678FD0F95D /* MotionCorePreprocessor.swift */; };
+		C8086B75571B5C391A0409E284ECE809 /* MotionPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9586812A78881B718554A58B10C7357 /* MotionPreprocessor.swift */; };
+		CA8E70EB41D083F089F4D1D9D0260A38 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371535CB0C43DBF02A4A79C544D0B2C /* Icon.swift */; };
+		CAC2FE5550EEED2CE3C96FECEAE6DD85 /* MotionTransition+CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B72621CF1FACE3F389F6655E325713 /* MotionTransition+CustomTransition.swift */; };
+		CD88D630A381A60BC9584EC929E2297A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFEE971CE76B637FCC482BF9BFC90E01 /* Roboto-Bold.ttf */; };
+		D3428E04A517CFE0C6DFD08D38D48BD3 /* MotionCoreAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B137C2CB355CD956EF47F4B735BA0 /* MotionCoreAnimator.swift */; };
+		D356A33190518A598070B86C39F04E67 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BBD3BB6AC68F5796C202F843E29858 /* Layout.swift */; };
+		D446E060AA7002FA99A61F572F3D28F2 /* ChipBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC7F3DD47E41DA0C9429B17C37D62B /* ChipBarController.swift */; };
+		D5056636750A4A45F2CFA87DB173593A /* MotionAnimatorViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68AC21641F53F406ABFD78435EE716 /* MotionAnimatorViewContext.swift */; };
+		D5C00FEC995884444C6A3291D735ABF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA7268D5DBFC6BFD1DF063558FE10B /* TableViewCell.swift */; };
+		D5F8C6F01FA455DFB73309E7557D652F /* RaisedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A226DE03E22EA8DB39203FEDB2A6E6 /* RaisedButton.swift */; };
+		D6D149997AE48ABBF7E6273B87DD0375 /* DataSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBAC80ED0665FEB6871071483128FA7 /* DataSourceItem.swift */; };
+		D6E62DCA5DB3F12A1A676111D1DE7E2A /* MotionViewTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB16C3E020CDA29AF438905B3447A8 /* MotionViewTransitionAnimator.swift */; };
+		D8043A9B8FE287405D788EC7D6E74E85 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC718327BB3120A49BE41BB6FF2017 /* SearchBar.swift */; };
+		DDB036D3AEB892DA00AAD47BF7434553 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9DDF3EC0E5466C58911493263D58B9 /* Dialog.swift */; };
+		DDE417BA9D13D2BB98316DF0512A1944 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB07447D3A1B8C99EB8A18F6298898 /* IQBarButtonItem.swift */; };
+		DDFAEA153E82D1958590584F93E2775D /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D410CED1DF1F590AE343F81B16F854 /* IconButton.swift */; };
+		DEF3B42847401E529D4F7E316FD6C394 /* PresenterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D61C061ABE32B862516FA396CB357 /* PresenterCard.swift */; };
+		E0341FA2B331C812D65D8DF9E1B096EA /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E2113033FEE590A532FFD840A95B6 /* LayoutAnchor.swift */; };
+		E0B4B7E87CF5589C20B4D1AED36628F2 /* MotionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E29D8E1BE19E7ADBD4861628F77DEA6 /* MotionContext.swift */; };
+		E2F241AE194191F06998ECFD8517ACB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE283FC6EF3A95A389B0A78CD889B240 /* UIKit.framework */; };
+		E38E9F4BB4BE33EF11DDE163D9C03F21 /* SourcePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B080B13032834EBB8A7432EACCAB0 /* SourcePreprocessor.swift */; };
+		E46B2E8A6D512500AB9F59FC7EDAD7E8 /* KBNumberPad.xib in Sources */ = {isa = PBXBuildFile; fileRef = A6097A9E35653B384DE288DD6F93D6D3 /* KBNumberPad.xib */; };
+		E46BE8B223E04B89F1132BC0CB1FB0A0 /* MotionTransition+UINavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF5165EFB1F1CA5E662B06B5160F49 /* MotionTransition+UINavigationControllerDelegate.swift */; };
+		E595C0CBD2595D9C700D00A739B80912 /* Motion+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C95F211AB621729713F984F74947A6 /* Motion+UIViewController.swift */; };
+		E630DD2CA50D8F72BE82E8F9C5C999E8 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B6D18FB2885004DB2C7256A95E20D /* NavigationItem.swift */; };
+		E7F79C2E8C0003B6199E42DABA0973D1 /* MotionViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAAB7586A2854C6F7B0DAD4C2023EE0 /* MotionViewTransition.swift */; };
+		E82FC7377C4E94A2F451B07E1AEC4DE6 /* MotionTargetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82CD53D7EE39206C3CDE56701E899F /* MotionTargetState.swift */; };
+		EAF77220E6FCCDB428FEE99829F1BA1E /* MatchPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F1E5388213438E54199818DB216EF /* MatchPreprocessor.swift */; };
+		ED48D9C97BC4BC23290BFE88AE1E6711 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731F9998549ED109B08BBE4067D2E33 /* Application.swift */; };
+		EEF06C225FC87868FB2DC5F87DB8C835 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26004D09E950B70A3A3D655A7716C630 /* DialogView.swift */; };
+		F13C4A29C7E399D6B0562C64AEB176A9 /* KBNumberPad-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D3A9A50B7C5089E9A592244DC32190 /* KBNumberPad-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F275F6EFFD370C7D19EED039EF984D3F /* Motion+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349694280A2A6AD5468DA7BB46E4F92 /* Motion+CALayer.swift */; };
+		F39809C78BC6E7F08909189A1E25E410 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430B5492710E9972543D449E405CDC8 /* Switch.swift */; };
+		F3F57C8C0524348C074DEF9CFB493BDC /* com.cosmicmind.material.fonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 906DCF7AE09E64FEC6089566F3CDD431 /* com.cosmicmind.material.fonts.bundle */; };
+		F5F8985CB9A83B01DF6E636879CD7ED9 /* TabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EA539827DD4A2CBB55F5948C8C14C /* TabsController.swift */; };
+		F61784C021864295A021F1E15654D758 /* MotionCoordinateSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F91CEA4A630E755C4BEE8CA9A764C /* MotionCoordinateSpace.swift */; };
+		F98426ED38EF86114B1AD96E54AA4F95 /* ErrorTextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D1835CC1B82579F6184D9CF79C3 /* ErrorTextFieldValidator.swift */; };
+		FA2A0859ACD86AE808C402C651E4FB49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FD2C90129643700357BC928BCB94EA /* Foundation.framework */; };
+		FB62F8A7F257F6185BB6668FD2E16E22 /* SnackbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C439B44BB033FF748160300315233 /* SnackbarController.swift */; };
+		FB7942CA6DF91C45E1EA94D34E2A91BB /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2C2B36502CCF7FA6FF57D37C20DB0 /* NavigationBar.swift */; };
+		FBABC7CAAC574313F27AFC2A7F5D7A18 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EACD936805303159B85381170DA0E4 /* Device.swift */; };
+		FC2F9FEA0759CB2FED27F18B5708D5B5 /* MotionTransition+Interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383785CDABE07D6BF728A575E8F1E57 /* MotionTransition+Interactive.swift */; };
+		FDED86814565E51960205D660D15680E /* Motion+Obj-C.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B1A3AA8550609D5B3CA8E4BA0E4D0 /* Motion+Obj-C.swift */; };
+		FE2988C3893813BCE580029EB821F853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB05A03FDB4925F8EECBA39E4190BC1 /* Assets.xcassets */; };
+		FFCE301A379113C92C23F534E1626F51 /* DialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5F2080265913930B4B8341FAC1723 /* DialogController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09403B50AF611C44AAE8520B70AD30C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9312109646DF39EBE725AD8F96A8C18B;
+			remoteInfo = Motion;
+		};
+		2372C06DAD9D495CF2ED73BD1C15B977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34CF0DED83AEC3BDC693B0C2B30D6BB5;
+			remoteInfo = Material;
+		};
+		34BB7EFECA30C573DD5EA6D0501EAAEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA66ABAC25D7CDF884876E490A5C3539;
+			remoteInfo = "Material-com.cosmicmind.material.fonts";
+		};
+		4F575A35368F15D140251D1551FEF808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3508A7E636C1CD110090CCBFD1CD6DCE;
+			remoteInfo = KBNumberPad;
+		};
+		CD5935D48041BD6AF8A2435C81CB12A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9312109646DF39EBE725AD8F96A8C18B;
+			remoteInfo = Motion;
+		};
+		E88D8EE7ADA25764242E433579F59848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		F51668A1738E9DE55780F25EDCF1AAC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA720B0F2D31209EF25EA147A1CAEAA;
+			remoteInfo = "Material-com.cosmicmind.material.icons";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FF95898E41DE210CACBFBC854FAE31 /* TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextView.swift; path = Sources/iOS/Text/TextView.swift; sourceTree = "<group>"; };
+		019837766E39A5D9F771BDBFF7C690F5 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		024F1682849A8BF6769DFC50FB22D541 /* ErrorTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorTextField.swift; path = Sources/iOS/Text/ErrorTextField.swift; sourceTree = "<group>"; };
+		027EA9459A02A7874265B67D8C43A426 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		02C3FA13162EFC71A4EB4752A18D790E /* MotionAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimation.swift; path = Sources/MotionAnimation.swift; sourceTree = "<group>"; };
+		04B7ECC56A95B2063E1E44FCF81767E4 /* Material+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+CALayer.swift"; path = "Sources/iOS/Extension/Material+CALayer.swift"; sourceTree = "<group>"; };
+		0637DED99DCEE8B7DFCA1D33206810CB /* MotionModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionModifier.swift; path = Sources/MotionModifier.swift; sourceTree = "<group>"; };
+		08F6231AAD6E396547F96D92FAE73F23 /* TransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionController.swift; path = Sources/iOS/Transition/TransitionController.swift; sourceTree = "<group>"; };
+		0B9805121A0A2C813BCB9F091C021DD5 /* MotionAnimationState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimationState.swift; path = Sources/MotionAnimationState.swift; sourceTree = "<group>"; };
+		0C67C1656E7E76A870B092D6A4E3EB47 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/iOS/Layout/LayoutConstraint.swift; sourceTree = "<group>"; };
+		0D6F99D908BCFFEE4B72DD910ECCE47C /* Material-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Material-Info.plist"; sourceTree = "<group>"; };
+		0E29D8E1BE19E7ADBD4861628F77DEA6 /* MotionContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionContext.swift; path = Sources/MotionContext.swift; sourceTree = "<group>"; };
+		105D9516C6D312365AE8CFBA88E58C2A /* Material-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-umbrella.h"; sourceTree = "<group>"; };
+		1076422F454EE5B355B73AF19EC560E5 /* Grid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = Sources/iOS/Grid/Grid.swift; sourceTree = "<group>"; };
+		107F1E5388213438E54199818DB216EF /* MatchPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchPreprocessor.swift; path = Sources/Preprocessors/MatchPreprocessor.swift; sourceTree = "<group>"; };
+		10D0E71E6969AB27F8B3FB71A5F2931B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		11450EE72687C08C5FC3AD8A87C53804 /* MotionTransition+Start.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Start.swift"; path = "Sources/Transition/MotionTransition+Start.swift"; sourceTree = "<group>"; };
+		11ADD346C95D2176E6DA5E7AD84F31DE /* Editor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Editor.swift; path = Sources/iOS/Text/Editor.swift; sourceTree = "<group>"; };
+		11E47B79ED0108CEDC84D5A593783CD2 /* ToolbarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolbarController.swift; path = Sources/iOS/Toolbar/ToolbarController.swift; sourceTree = "<group>"; };
+		1285C3F7694C1125D7C0E28E86ED9668 /* Material+UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIColor.swift"; path = "Sources/iOS/Extension/Material+UIColor.swift"; sourceTree = "<group>"; };
+		177AB8B024755ED2EE7B5260844A95E6 /* MotionSnapshotType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionSnapshotType.swift; path = Sources/MotionSnapshotType.swift; sourceTree = "<group>"; };
+		1855634B7DC736950E9ECE6239C49259 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		19C6F0073EDFDAECD53CE06F9B250CF5 /* Motion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Motion.modulemap; sourceTree = "<group>"; };
+		1B13AF5A75BECD48551A8A28A4FDD2CA /* ResourceBundle-com.cosmicmind.material.icons-Material-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.cosmicmind.material.icons-Material-Info.plist"; sourceTree = "<group>"; };
+		1BE822B963D0E1E624CA247C87F86BB0 /* MotionTransitionObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionTransitionObserver.swift; path = Sources/MotionTransitionObserver.swift; sourceTree = "<group>"; };
+		1DD9894BB5ABDD6693DC4E5A8DFCFB67 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		1E8768F1DBC2C4710E1910B3808F3688 /* Material-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Material-dummy.m"; sourceTree = "<group>"; };
+		1F87E1C9D7D140EC8D5E37F0715BE910 /* Motion+Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+Array.swift"; path = "Sources/Extensions/Motion+Array.swift"; sourceTree = "<group>"; };
+		1FBAC80ED0665FEB6871071483128FA7 /* DataSourceItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSourceItem.swift; path = Sources/iOS/Data/DataSourceItem.swift; sourceTree = "<group>"; };
+		1FC229EA93C6E264D221AF88C8B9DEE0 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/Assets.xcassets; sourceTree = "<group>"; };
+		2349694280A2A6AD5468DA7BB46E4F92 /* Motion+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+CALayer.swift"; path = "Sources/Extensions/Motion+CALayer.swift"; sourceTree = "<group>"; };
+		25A083BAB96D6AD01EB94D6D598A7818 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		25D5CD7A52874D6DEF0ED076FB3402C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		26004D09E950B70A3A3D655A7716C630 /* DialogView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogView.swift; path = Sources/iOS/Dialogs/DialogView.swift; sourceTree = "<group>"; };
+		26754440B7FC0E2CBB4AFC6D2A421980 /* Card.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Sources/iOS/Card/Card.swift; sourceTree = "<group>"; };
+		284B1A3AA8550609D5B3CA8E4BA0E4D0 /* Motion+Obj-C.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+Obj-C.swift"; path = "Sources/Extensions/Motion+Obj-C.swift"; sourceTree = "<group>"; };
+		29566791ED7A217F99F0C2A64E1EA623 /* MotionTransition+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+UITabBarControllerDelegate.swift"; path = "Sources/Transition/MotionTransition+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
+		2B5C0D1835CC1B82579F6184D9CF79C3 /* ErrorTextFieldValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorTextFieldValidator.swift; path = Sources/iOS/Text/ErrorTextFieldValidator.swift; sourceTree = "<group>"; };
+		2BED5050209FFBD66F77EA7AE57DC65F /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Sources/iOS/Button/Button.swift; sourceTree = "<group>"; };
+		2C97998C3C318CD471DDB387E65D4BCE /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Sources/iOS/Type/EdgeInsets.swift; sourceTree = "<group>"; };
+		2CD0530527551A4DBF7FC040F95B55DA /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		36E3F9DE2E45839F6C0FE669FB78949C /* Material+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIView.swift"; path = "Sources/iOS/Extension/Material+UIView.swift"; sourceTree = "<group>"; };
+		39F7AFA1E9CA2E7DF01CD54B9B7DBF6D /* LayoutAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutAttribute.swift; path = Sources/iOS/Layout/LayoutAttribute.swift; sourceTree = "<group>"; };
+		3E3972506C03D9692E65F14878B4BFA1 /* Screen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Screen.swift; path = Sources/iOS/Screen/Screen.swift; sourceTree = "<group>"; };
+		3E3B78D57251C6F89562EA11BB358138 /* MotionCAAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCAAnimation.swift; path = Sources/MotionCAAnimation.swift; sourceTree = "<group>"; };
+		3F5A5DAC0BD7B9E9F3C8CA9671881555 /* TextStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextStorage.swift; path = Sources/iOS/Text/TextStorage.swift; sourceTree = "<group>"; };
+		3F5DD9490A907358F84CC07F8316FD90 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		3F9DDF3EC0E5466C58911493263D58B9 /* Dialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dialog.swift; path = Sources/iOS/Dialogs/Dialog.swift; sourceTree = "<group>"; };
+		443FA6EAD8AD94038AA34DE1C97850C9 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Material.framework; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EACD936805303159B85381170DA0E4 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/iOS/Device/Device.swift; sourceTree = "<group>"; };
+		454ECAC6C1E7D63713E08930BBD9FA17 /* Border.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Border.swift; path = Sources/iOS/Type/Border.swift; sourceTree = "<group>"; };
+		46854A50E656DCDCF2AF6C35CB1F685E /* FABButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABButton.swift; path = Sources/iOS/Button/FABButton.swift; sourceTree = "<group>"; };
+		49D1DCAC4F192E4D303FF3BD9CDA3F2F /* Motion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Motion-prefix.pch"; sourceTree = "<group>"; };
+		4A746E6151917FFBB716FCDCD318780D /* InterimSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterimSpace.swift; path = Sources/iOS/Type/InterimSpace.swift; sourceTree = "<group>"; };
+		4CA25800C5C362907C79265B3A4B98E3 /* KBNumberPad.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KBNumberPad.xcconfig; sourceTree = "<group>"; };
+		4D1EE64F3A5768916735A76F50388F93 /* ChipBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChipBar.swift; path = Sources/iOS/Chip/ChipBar.swift; sourceTree = "<group>"; };
+		4D3B137C2CB355CD956EF47F4B735BA0 /* MotionCoreAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCoreAnimator.swift; path = Sources/Animator/MotionCoreAnimator.swift; sourceTree = "<group>"; };
+		4D9B96F50FA931B7FBA6F00E5101ACF2 /* SearchBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBarController.swift; path = Sources/iOS/SearchBar/SearchBarController.swift; sourceTree = "<group>"; };
+		4DD126AC45BF31F7BD9229E10DD34830 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4E0DBAA37200B0E21A10C41DE4766357 /* Pods-SDKDemoSadad-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDKDemoSadad-acknowledgements.plist"; sourceTree = "<group>"; };
+		4E910ECE579CB3526B3A7A9F723E8F5B /* BaseButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonGroup.swift; path = Sources/iOS/ButtonGroup/BaseButtonGroup.swift; sourceTree = "<group>"; };
+		50D410CED1DF1F590AE343F81B16F854 /* IconButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconButton.swift; path = Sources/iOS/Button/IconButton.swift; sourceTree = "<group>"; };
+		511CB11E6FDEE4F2299EE02E376F13AE /* Pods-SDKDemoSadad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDKDemoSadad.debug.xcconfig"; sourceTree = "<group>"; };
+		52EC844CC911B340559B142C1BD57843 /* Depth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Depth.swift; path = Sources/iOS/Type/Depth.swift; sourceTree = "<group>"; };
+		5383785CDABE07D6BF728A575E8F1E57 /* MotionTransition+Interactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Interactive.swift"; path = "Sources/Transition/MotionTransition+Interactive.swift"; sourceTree = "<group>"; };
+		56D3A9A50B7C5089E9A592244DC32190 /* KBNumberPad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KBNumberPad-umbrella.h"; sourceTree = "<group>"; };
+		57FB83F5A73DC27AB8B89B746CF7B0B3 /* Material+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UILabel.swift"; path = "Sources/iOS/Extension/Material+UILabel.swift"; sourceTree = "<group>"; };
+		58326FDD93294297C0F49FC83D713BF4 /* RadioButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButtonGroup.swift; path = Sources/iOS/ButtonGroup/RadioButtonGroup.swift; sourceTree = "<group>"; };
+		596C152D9010B3B62380323A7120AAE2 /* MotionCoreAnimationViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCoreAnimationViewContext.swift; path = Sources/Animator/MotionCoreAnimationViewContext.swift; sourceTree = "<group>"; };
+		5AD5F2080265913930B4B8341FAC1723 /* DialogController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogController.swift; path = Sources/iOS/Dialogs/DialogController.swift; sourceTree = "<group>"; };
+		5CB05A03FDB4925F8EECBA39E4190BC1 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = KBNumberPad/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		5F2B080B13032834EBB8A7432EACCAB0 /* SourcePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourcePreprocessor.swift; path = Sources/Preprocessors/SourcePreprocessor.swift; sourceTree = "<group>"; };
+		5F68AC21641F53F406ABFD78435EE716 /* MotionAnimatorViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimatorViewContext.swift; path = Sources/Animator/MotionAnimatorViewContext.swift; sourceTree = "<group>"; };
+		6057F7B838AD4767F5444592675DCBDD /* NavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Sources/iOS/Navigation/NavigationController.swift; sourceTree = "<group>"; };
+		635B6034487578FD17B2E11300787D3C /* MotionPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionPlugin.swift; path = Sources/MotionPlugin.swift; sourceTree = "<group>"; };
+		64208AC4F7DC25989FE80A388C34AC96 /* KBNumberPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KBNumberPad.framework; path = KBNumberPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6492BFBE8D28C9A9161423735DAC8F42 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		64C9730C0576A08244E4230340A72175 /* CascadePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CascadePreprocessor.swift; path = Sources/Preprocessors/CascadePreprocessor.swift; sourceTree = "<group>"; };
+		65FA8F41D77CE48F3F5040AFEEE09E51 /* MotionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimator.swift; path = Sources/Animator/MotionAnimator.swift; sourceTree = "<group>"; };
+		667C3DBD3A6ABDD7300DF6720B764BD5 /* TableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Sources/iOS/Table/TableViewController.swift; sourceTree = "<group>"; };
+		6761A766AE15B76D1FC87000321E946B /* TabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = Sources/iOS/Tab/TabBar.swift; sourceTree = "<group>"; };
+		68064A1B615860A1DBB3782C955E35A8 /* CornerRadius.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerRadius.swift; path = Sources/iOS/Type/CornerRadius.swift; sourceTree = "<group>"; };
+		69AA691C8DC98676EA3FE6E5232AF2AB /* MotionTransition+Complete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Complete.swift"; path = "Sources/Transition/MotionTransition+Complete.swift"; sourceTree = "<group>"; };
+		6A6B0DCD2C62A7429E0101807F5C2DAC /* MotionViewPropertyViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewPropertyViewContext.swift; path = Sources/Animator/MotionViewPropertyViewContext.swift; sourceTree = "<group>"; };
+		6A89A08A655DC095D576597E22D5151E /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = Sources/iOS/Text/TextField.swift; sourceTree = "<group>"; };
+		6F5E28D93FDEAD2E60A0349EAED497BA /* PulseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulseView.swift; path = Sources/iOS/View/PulseView.swift; sourceTree = "<group>"; };
+		70927CA8E4ECA6EA3A0F406C88D152D1 /* Pods-SDKDemoSadad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDKDemoSadad.release.xcconfig"; sourceTree = "<group>"; };
+		72201517ED8B929BDB7806601F8D0701 /* KBNumberPad.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KBNumberPad.modulemap; sourceTree = "<group>"; };
+		728027F1673C980D6FE2D69BDBE585C5 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		72C95F211AB621729713F984F74947A6 /* Motion+UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+UIViewController.swift"; path = "Sources/Extensions/Motion+UIViewController.swift"; sourceTree = "<group>"; };
+		72D76EF394800F29AD74434E6DF26E45 /* ConditionalPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConditionalPreprocessor.swift; path = Sources/Preprocessors/ConditionalPreprocessor.swift; sourceTree = "<group>"; };
+		7473954E003464B8AC97442C5F63E949 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Sources/iOS/Color/Color.swift; sourceTree = "<group>"; };
+		76E4FF3172E5C7821AC8E0CF7B829718 /* KBNumberPad-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KBNumberPad-prefix.pch"; sourceTree = "<group>"; };
+		78BBD3BB6AC68F5796C202F843E29858 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Sources/iOS/Layout/Layout.swift; sourceTree = "<group>"; };
+		7AF15346336CB1514673137A5AD334A0 /* FABMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABMenuController.swift; path = Sources/iOS/FABMenu/FABMenuController.swift; sourceTree = "<group>"; };
+		7B0D653618BB67EA6607533EB236F651 /* Material-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-prefix.pch"; sourceTree = "<group>"; };
+		7B28AFC9C01B464099A86DE68D0E2071 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7DE49D1327B63C07C5D4A0F3F83AD1B3 /* KBNumberPad-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KBNumberPad-dummy.m"; sourceTree = "<group>"; };
+		8044F8331BEF8160F91A197E1F4EF7C0 /* BottomNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomNavigationController.swift; path = Sources/iOS/BottomTabBar/BottomNavigationController.swift; sourceTree = "<group>"; };
+		829F91CEA4A630E755C4BEE8CA9A764C /* MotionCoordinateSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCoordinateSpace.swift; path = Sources/MotionCoordinateSpace.swift; sourceTree = "<group>"; };
+		85D8ABFAA0E50B595429DC43222BCF68 /* MotionTransition+Animate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Animate.swift"; path = "Sources/Transition/MotionTransition+Animate.swift"; sourceTree = "<group>"; };
+		85EC718327BB3120A49BE41BB6FF2017 /* SearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = Sources/iOS/SearchBar/SearchBar.swift; sourceTree = "<group>"; };
+		85FBF6366A529765E528B4DC543C2A93 /* KBNumberPad-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KBNumberPad-Info.plist"; sourceTree = "<group>"; };
+		86B36088BFCA8F14AA1EEAFFCF516E1B /* Motion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Motion-umbrella.h"; sourceTree = "<group>"; };
+		87A52D6DD0DBD14F1429B3C2A9983F68 /* Pods-SDKDemoSadad-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDKDemoSadad-Info.plist"; sourceTree = "<group>"; };
+		87B99F3F1AF252354678C4B99C4DA770 /* Material+UIWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIWindow.swift"; path = "Sources/iOS/Extension/Material+UIWindow.swift"; sourceTree = "<group>"; };
+		88C15E372EC3F45E7C5F2BA7BA34D99B /* HeightPreset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightPreset.swift; path = Sources/iOS/Height/HeightPreset.swift; sourceTree = "<group>"; };
+		88DF20DC9D4267FEED6253FEF8902394 /* Motion+CG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+CG.swift"; path = "Sources/Extensions/Motion+CG.swift"; sourceTree = "<group>"; };
+		8918AF79EC031C5E619F6230DDCE5FC1 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		8A0EC98686F650B3708F219BE2ECE4E4 /* Motion-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Motion-Info.plist"; sourceTree = "<group>"; };
+		8D36D7FC64BB50852D666D968C0335CF /* Motion+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+UIKit.swift"; path = "Sources/Extensions/Motion+UIKit.swift"; sourceTree = "<group>"; };
+		8D44A637C3CCAE96D52FABAF09E2F207 /* MotionTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionTransition.swift; path = Sources/Transition/MotionTransition.swift; sourceTree = "<group>"; };
+		903981977DB199C119837A373352A258 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		906DCF7AE09E64FEC6089566F3CDD431 /* com.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.fonts.bundle; path = "Material-com.cosmicmind.material.fonts.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FD2C90129643700357BC928BCB94EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		910409D1254DE3FDB5C62CD20E2047C7 /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Sources/iOS/Type/Shape.swift; sourceTree = "<group>"; };
+		910C1B59800573673FF05274A1F7C824 /* FABMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABMenu.swift; path = Sources/iOS/FABMenu/FABMenu.swift; sourceTree = "<group>"; };
+		92A0C799732DAF07EAAECFF46E7C1D48 /* Material+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+String.swift"; path = "Sources/iOS/Extension/Material+String.swift"; sourceTree = "<group>"; };
+		953ADB6F8DE85BF5192907C01FDA4A19 /* RadioButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButton.swift; path = Sources/iOS/Button/RadioButton.swift; sourceTree = "<group>"; };
+		954F7BAB1CC5860E0662BB055D006A66 /* Pods-SDKDemoSadad-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDKDemoSadad-frameworks.sh"; sourceTree = "<group>"; };
+		97EB599E3BFA1DA114688CFB03773D5F /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		98A226DE03E22EA8DB39203FEDB2A6E6 /* RaisedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisedButton.swift; path = Sources/iOS/Button/RaisedButton.swift; sourceTree = "<group>"; };
+		992EEC6318001711E80642B44C51927A /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		9A72D0DD84D1F8F46F23CD20E0119960 /* NavigationDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDrawerController.swift; path = Sources/iOS/NavigationDrawer/NavigationDrawerController.swift; sourceTree = "<group>"; };
+		9B17123DB4EDA9E9E95918BF14AE5406 /* MotionViewOrderStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewOrderStrategy.swift; path = Sources/MotionViewOrderStrategy.swift; sourceTree = "<group>"; };
+		9D0108156379896E6167CA503F760BE2 /* RobotoFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RobotoFont.swift; path = Sources/iOS/Font/RobotoFont.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D975AB78A7797205EBB5D2AFD99A336 /* Material+NSMutableAttributedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+NSMutableAttributedString.swift"; path = "Sources/iOS/Extension/Material+NSMutableAttributedString.swift"; sourceTree = "<group>"; };
+		9E2BDA6868495A7FF035E0A51E085BDC /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = Sources/iOS/Font/Font.swift; sourceTree = "<group>"; };
+		9F7D61C061ABE32B862516FA396CB357 /* PresenterCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterCard.swift; path = Sources/iOS/Card/PresenterCard.swift; sourceTree = "<group>"; };
+		A0286D975B55B2325BA47E4472674F43 /* BaseIconLayerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseIconLayerButton.swift; path = Sources/iOS/Button/BaseIconLayerButton.swift; sourceTree = "<group>"; };
+		A1A71224EBBFFAA534FADC6BB814C55B /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/iOS/View/View.swift; sourceTree = "<group>"; };
+		A22C439B44BB033FF748160300315233 /* SnackbarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnackbarController.swift; path = Sources/iOS/Snackbar/SnackbarController.swift; sourceTree = "<group>"; };
+		A371535CB0C43DBF02A4A79C544D0B2C /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Sources/iOS/Icon/Icon.swift; sourceTree = "<group>"; };
+		A594B1A439A133319901F9C7BE015732 /* Material+Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+Array.swift"; path = "Sources/iOS/Extension/Material+Array.swift"; sourceTree = "<group>"; };
+		A6097A9E35653B384DE288DD6F93D6D3 /* KBNumberPad.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KBNumberPad.xib; path = KBNumberPad/Classes/KBNumberPad.xib; sourceTree = "<group>"; };
+		A7C95CBF03C0A07F6C78C48312C185E1 /* MotionProgressRunner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionProgressRunner.swift; path = Sources/Transition/MotionProgressRunner.swift; sourceTree = "<group>"; };
+		A84CDBBB19EEBEA3307F1F36F3BAE12D /* Motion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Motion.xcconfig; sourceTree = "<group>"; };
+		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB9E55C0A96E7C75F21DB57229824EB /* Pods-SDKDemoSadad.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SDKDemoSadad.modulemap"; sourceTree = "<group>"; };
+		ACC4B8135EB52A81D0C9C90F42FF10D1 /* CardCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardCollectionViewController.swift; path = Sources/iOS/Collection/CardCollectionView/CardCollectionViewController.swift; sourceTree = "<group>"; };
+		AEC192AC7C1F8F5FD6646BD8C131D638 /* Material+UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIViewController.swift"; path = "Sources/iOS/Extension/Material+UIViewController.swift"; sourceTree = "<group>"; };
+		AED8A5C08507A90156F9CDD61281376D /* ResourceBundle-com.cosmicmind.material.fonts-Material-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.cosmicmind.material.fonts-Material-Info.plist"; sourceTree = "<group>"; };
+		AF0305AA720A60560284195E57BB52E1 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		AFAAB7586A2854C6F7B0DAD4C2023EE0 /* MotionViewTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewTransition.swift; path = Sources/MotionViewTransition.swift; sourceTree = "<group>"; };
+		B140A94627F5660C7BB57E4E6B9671C4 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		B25FDEF588E27BA07F96C5C40A0B7B62 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		B3B72621CF1FACE3F389F6655E325713 /* MotionTransition+CustomTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+CustomTransition.swift"; path = "Sources/Transition/MotionTransition+CustomTransition.swift"; sourceTree = "<group>"; };
+		B430B5492710E9972543D449E405CDC8 /* Switch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = Sources/iOS/Switch/Switch.swift; sourceTree = "<group>"; };
+		B5DC7F3DD47E41DA0C9429B17C37D62B /* ChipBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChipBarController.swift; path = Sources/iOS/Chip/ChipBarController.swift; sourceTree = "<group>"; };
+		B816BF14D4A6D19CF237FC90120A09FF /* Material.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Material.xcconfig; sourceTree = "<group>"; };
+		B8F60C9BC0C20CEC435A21B4E3AA62A6 /* Layer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layer.swift; path = Sources/iOS/Layer/Layer.swift; sourceTree = "<group>"; };
+		BB42E9F9F27A558917CE4532F5FA7544 /* Material+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIButton.swift"; path = "Sources/iOS/Extension/Material+UIButton.swift"; sourceTree = "<group>"; };
+		BBEB16C3E020CDA29AF438905B3447A8 /* MotionViewTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewTransitionAnimator.swift; path = Sources/Animator/MotionViewTransitionAnimator.swift; sourceTree = "<group>"; };
+		BCF16C244562AA1ED087DB678FD0F95D /* MotionCorePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCorePreprocessor.swift; path = Sources/Preprocessors/MotionCorePreprocessor.swift; sourceTree = "<group>"; };
+		BE9FE1AD9A029E99FB9D405E5FAA259C /* Offset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Offset.swift; path = Sources/iOS/Type/Offset.swift; sourceTree = "<group>"; };
+		BFB3B7674F8948618E019F44115F80E9 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		BFEE971CE76B637FCC482BF9BFC90E01 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		C06C026D92BC976B4474920E02C1DA73 /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Sources/iOS/Animation/SpringAnimation.swift; sourceTree = "<group>"; };
+		C32C881F25FCF97086B0C9C803E45B09 /* Bar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bar.swift; path = Sources/iOS/Bar/Bar.swift; sourceTree = "<group>"; };
+		C43D71A0CAE75359E807DAA24715E6B6 /* CheckButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckButton.swift; path = Sources/iOS/Button/CheckButton.swift; sourceTree = "<group>"; };
+		C50DD4BBC8CD852E0AB975D8824FC119 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewLayout.swift; path = Sources/iOS/Collection/CollectionViewLayout.swift; sourceTree = "<group>"; };
+		C69ED1967187144CA7C88ABD2D358A4E /* IgnoreSubviewModifiersPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IgnoreSubviewModifiersPreprocessor.swift; path = Sources/Preprocessors/IgnoreSubviewModifiersPreprocessor.swift; sourceTree = "<group>"; };
+		C731F9998549ED109B08BBE4067D2E33 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Sources/Application.swift; sourceTree = "<group>"; };
+		C8AA06503583D0E73C902E3F70A50EDF /* Motion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Motion-dummy.m"; sourceTree = "<group>"; };
+		CBBA6BACBAFC1C8A8C59DFB8FDAA637B /* Pods-SDKDemoSadad-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDKDemoSadad-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CD1A79E46FF991831C151EDE0EA3D98E /* FlatButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatButton.swift; path = Sources/iOS/Button/FlatButton.swift; sourceTree = "<group>"; };
+		CE33F6422C8FBAD58C687C6F7695615F /* CollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = Sources/iOS/Collection/CollectionViewCell.swift; sourceTree = "<group>"; };
+		CEBD3F104526A17AC030D47BF50E1FB4 /* PulseAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulseAnimation.swift; path = Sources/iOS/Animation/PulseAnimation.swift; sourceTree = "<group>"; };
+		CED1415CCB49927376CDFDA25D8B634C /* Material.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Material.modulemap; sourceTree = "<group>"; };
+		D099BB3539D7F5F461D3F5AE72A598AE /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardCollectionViewCell.swift; path = Sources/iOS/Collection/CardCollectionView/CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		D194B13ACDAB41CD4291D3E2F2C47A3F /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		D1A282B3071CB3F669A02293275CCF88 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = Sources/iOS/Theme/Theme.swift; sourceTree = "<group>"; };
+		D3628978ABE2EC95978D06A9EF3DC5D2 /* Toolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toolbar.swift; path = Sources/iOS/Toolbar/Toolbar.swift; sourceTree = "<group>"; };
+		D443D1BD74E0836722793549D6442891 /* Material+UIFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIFont.swift"; path = "Sources/iOS/Extension/Material+UIFont.swift"; sourceTree = "<group>"; };
+		D4F6A2860CB523B85235F862573290FC /* com.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.icons.bundle; path = "Material-com.cosmicmind.material.icons.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54762D0E452FEA12A952B9AD270527E /* Material+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIImage.swift"; path = "Sources/iOS/Extension/Material+UIImage.swift"; sourceTree = "<group>"; };
+		D5D989A59585358B323B0A4A26942E77 /* CollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Sources/iOS/Collection/CollectionViewController.swift; sourceTree = "<group>"; };
+		D605C74CE053C4097BD6EC7893714A14 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		D683D5268DD8B0F6BDCA59F364118303 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sources/iOS/View/ViewController.swift; sourceTree = "<group>"; };
+		DABA7268D5DBFC6BFD1DF063558FE10B /* TableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Sources/iOS/Table/TableViewCell.swift; sourceTree = "<group>"; };
+		DB3D2A525078844E7F8A450159A105D7 /* TransitionPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionPreprocessor.swift; path = Sources/Preprocessors/TransitionPreprocessor.swift; sourceTree = "<group>"; };
+		DB5796D672ABCF38E71408F60430BA9A /* CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionView.swift; path = Sources/iOS/Collection/CollectionView.swift; sourceTree = "<group>"; };
+		DBF004793F9A8230CC89CCC63B71277C /* KBNumberPad.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KBNumberPad.swift; path = KBNumberPad/Classes/KBNumberPad.swift; sourceTree = "<group>"; };
+		DD2B4B301887372EF87896A206F3EC13 /* Snackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snackbar.swift; path = Sources/iOS/Snackbar/Snackbar.swift; sourceTree = "<group>"; };
+		DD7927769D81FE57FEBC921914605FED /* ImageCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCard.swift; path = Sources/iOS/Card/ImageCard.swift; sourceTree = "<group>"; };
+		DE154D7E90AB30628D6FC0412EFC4754 /* Pods_SDKDemoSadad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SDKDemoSadad.framework; path = "Pods-SDKDemoSadad.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE283FC6EF3A95A389B0A78CD889B240 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E2F2C2B36502CCF7FA6FF57D37C20DB0 /* NavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationBar.swift; path = Sources/iOS/Navigation/NavigationBar.swift; sourceTree = "<group>"; };
+		E30EA539827DD4A2CBB55F5948C8C14C /* TabsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabsController.swift; path = Sources/iOS/Tab/TabsController.swift; sourceTree = "<group>"; };
+		E3C1830DE586F9E671177065CB24A109 /* DisplayStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisplayStyle.swift; path = Sources/iOS/Transition/DisplayStyle.swift; sourceTree = "<group>"; };
+		E4C6DCCB90D2E4CBC9A718C34C79E86E /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Sources/iOS/Application/Application.swift; sourceTree = "<group>"; };
+		E691AEB7760FD84106A274377858F532 /* Pods-SDKDemoSadad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDKDemoSadad-umbrella.h"; sourceTree = "<group>"; };
+		E6D53B5CA829F5C4B7389ACBF93E73D3 /* DynamicFontType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicFontType.swift; path = Sources/iOS/Font/DynamicFontType.swift; sourceTree = "<group>"; };
+		E91BB9CC67D1FE4F48394A61517AE42D /* Motion+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+UIView.swift"; path = "Sources/Extensions/Motion+UIView.swift"; sourceTree = "<group>"; };
+		E9E83947349F7E8028823F3766451329 /* Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Motion.framework; path = Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2D96C8F16E59404C685155288E4013 /* StatusBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBarController.swift; path = Sources/iOS/StatusBar/StatusBarController.swift; sourceTree = "<group>"; };
+		EB416F8B698D69B3EA39EB79BE0D9A80 /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		EB7E2383D2A11FE755DD4EF5AF55E217 /* CollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = Sources/iOS/Collection/CollectionReusableView.swift; sourceTree = "<group>"; };
+		EB8E2113033FEE590A532FFD840A95B6 /* LayoutAnchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = Sources/iOS/Layout/LayoutAnchor.swift; sourceTree = "<group>"; };
+		EC82CD53D7EE39206C3CDE56701E899F /* MotionTargetState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionTargetState.swift; path = Sources/MotionTargetState.swift; sourceTree = "<group>"; };
+		ED2B6D18FB2885004DB2C7256A95E20D /* NavigationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationItem.swift; path = Sources/iOS/Navigation/NavigationItem.swift; sourceTree = "<group>"; };
+		ED4EBDBE8C10AA03CE117C3E74897E74 /* MotionTransition+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+UIViewControllerTransitioningDelegate.swift"; path = "Sources/Transition/MotionTransition+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
+		F0414C2E841BEED90C9A1111723AF6FC /* Motion+CAMediaTimingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+CAMediaTimingFunction.swift"; path = "Sources/Extensions/Motion+CAMediaTimingFunction.swift"; sourceTree = "<group>"; };
+		F102A2D4C0E436C01C3F061B550CF5A1 /* Material+MotionAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+MotionAnimation.swift"; path = "Sources/iOS/Extension/Material+MotionAnimation.swift"; sourceTree = "<group>"; };
+		F633A9E75CB5FE5A2B5588A3152ABBBF /* CheckButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckButtonGroup.swift; path = Sources/iOS/ButtonGroup/CheckButtonGroup.swift; sourceTree = "<group>"; };
+		F6CB07447D3A1B8C99EB8A18F6298898 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		F6DF5165EFB1F1CA5E662B06B5160F49 /* MotionTransition+UINavigationControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+UINavigationControllerDelegate.swift"; path = "Sources/Transition/MotionTransition+UINavigationControllerDelegate.swift"; sourceTree = "<group>"; };
+		F6E04B76FD76F07DB902D017F99F0DFC /* Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F73CA51CF6B05C67185E6466E03DAC8F /* TableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableView.swift; path = Sources/iOS/Table/TableView.swift; sourceTree = "<group>"; };
+		F9586812A78881B718554A58B10C7357 /* MotionPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionPreprocessor.swift; path = Sources/Preprocessors/MotionPreprocessor.swift; sourceTree = "<group>"; };
+		FA877B194002235A82AC5A3335ED8CAC /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Medium.ttf"; path = "Sources/Font/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		FB93E969A5DBC6A6E43FF0D452967F2A /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
+		FC63B5D88D6007EFF2E94A55FBB53664 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		FE4CAD11C59E1E1D7290ABF509E31B3E /* Pods-SDKDemoSadad-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDKDemoSadad-dummy.m"; sourceTree = "<group>"; };
+		FF218054E8B192F29976C3F5B7E47DF4 /* Divider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Divider.swift; path = Sources/iOS/Divider/Divider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10080C75E62231B67AE6075EDFFE0A12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2A0859ACD86AE808C402C651E4FB49 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2630B0468CB80FE2D97EDA12D4D1FA33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2292E431F316076553538B7FBB63C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0564E54A6F03094F6F39F7D2325CE0D5 /* CoreGraphics.framework in Frameworks */,
+				2964A4832ED09F9CB441D25FB2F7B76C /* Foundation.framework in Frameworks */,
+				8F92DE493E66A26C230C75F95BEB6C77 /* QuartzCore.framework in Frameworks */,
+				E2F241AE194191F06998ECFD8517ACB9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3735A5C101AA52E26CCBE30ED764F265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3172B313FC9228FA29133CB4661C1FB9 /* Foundation.framework in Frameworks */,
+				C1B072D6C2A0678F235005051716467B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B16425C463E0D8AA37B9772AFF17D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8EB41B43CE1DA49B2D9E53F3E0F4F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541ED3B6A98FA687DBEC91E713097714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908FC12CBB4A3AF46A6EB1B7E4C865A9 /* Foundation.framework in Frameworks */,
+				8BB2D2D77E1E554C167F5CA4B12D9EEA /* Motion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9186427BF2846F4C0D843CEA71BACA5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A8F08F3063C501E653D3443426BAA5 /* Pods-SDKDemoSadad */ = {
+			isa = PBXGroup;
+			children = (
+				ACB9E55C0A96E7C75F21DB57229824EB /* Pods-SDKDemoSadad.modulemap */,
+				CBBA6BACBAFC1C8A8C59DFB8FDAA637B /* Pods-SDKDemoSadad-acknowledgements.markdown */,
+				4E0DBAA37200B0E21A10C41DE4766357 /* Pods-SDKDemoSadad-acknowledgements.plist */,
+				FE4CAD11C59E1E1D7290ABF509E31B3E /* Pods-SDKDemoSadad-dummy.m */,
+				954F7BAB1CC5860E0662BB055D006A66 /* Pods-SDKDemoSadad-frameworks.sh */,
+				87A52D6DD0DBD14F1429B3C2A9983F68 /* Pods-SDKDemoSadad-Info.plist */,
+				E691AEB7760FD84106A274377858F532 /* Pods-SDKDemoSadad-umbrella.h */,
+				511CB11E6FDEE4F2299EE02E376F13AE /* Pods-SDKDemoSadad.debug.xcconfig */,
+				70927CA8E4ECA6EA3A0F406C88D152D1 /* Pods-SDKDemoSadad.release.xcconfig */,
+			);
+			name = "Pods-SDKDemoSadad";
+			path = "Target Support Files/Pods-SDKDemoSadad";
+			sourceTree = "<group>";
+		};
+		1A099E32673726516B8FE130C39342C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5CB05A03FDB4925F8EECBA39E4190BC1 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2B71404E8EEA1CD4B27A35EA0D6248CD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12A8F08F3063C501E653D3443426BAA5 /* Pods-SDKDemoSadad */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3D239D43D2EBAB05C4A6D32D2D872F30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				906DCF7AE09E64FEC6089566F3CDD431 /* com.cosmicmind.material.fonts.bundle */,
+				D4F6A2860CB523B85235F862573290FC /* com.cosmicmind.material.icons.bundle */,
+				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */,
+				64208AC4F7DC25989FE80A388C34AC96 /* KBNumberPad.framework */,
+				443FA6EAD8AD94038AA34DE1C97850C9 /* Material.framework */,
+				E9E83947349F7E8028823F3766451329 /* Motion.framework */,
+				DE154D7E90AB30628D6FC0412EFC4754 /* Pods_SDKDemoSadad.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		422458F3480EBA7C084A94BB86E201AF /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F6CB07447D3A1B8C99EB8A18F6298898 /* IQBarButtonItem.swift */,
+				EB416F8B698D69B3EA39EB79BE0D9A80 /* IQInvocation.swift */,
+				AF0305AA720A60560284195E57BB52E1 /* IQKeyboardManager.swift */,
+				25A083BAB96D6AD01EB94D6D598A7818 /* IQKeyboardManagerConstants.swift */,
+				1DD9894BB5ABDD6693DC4E5A8DFCFB67 /* IQKeyboardManagerConstantsInternal.swift */,
+				8918AF79EC031C5E619F6230DDCE5FC1 /* IQKeyboardReturnKeyHandler.swift */,
+				B140A94627F5660C7BB57E4E6B9671C4 /* IQNSArray+Sort.swift */,
+				027EA9459A02A7874265B67D8C43A426 /* IQPreviousNextView.swift */,
+				2CD0530527551A4DBF7FC040F95B55DA /* IQTextView.swift */,
+				1855634B7DC736950E9ECE6239C49259 /* IQTitleBarButtonItem.swift */,
+				97EB599E3BFA1DA114688CFB03773D5F /* IQToolbar.swift */,
+				728027F1673C980D6FE2D69BDBE585C5 /* IQUIScrollView+Additions.swift */,
+				D194B13ACDAB41CD4291D3E2F2C47A3F /* IQUITextFieldView+Additions.swift */,
+				B25FDEF588E27BA07F96C5C40A0B7B62 /* IQUIView+Hierarchy.swift */,
+				019837766E39A5D9F771BDBFF7C690F5 /* IQUIView+IQKeyboardToolbar.swift */,
+				BFB3B7674F8948618E019F44115F80E9 /* IQUIViewController+Additions.swift */,
+				673A7757D867BB408CF383AB8B8AC2D9 /* Support Files */,
+			);
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		572481434E801EA91FDB7C85F3C9DB06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FC229EA93C6E264D221AF88C8B9DEE0 /* Assets.xcassets */,
+				BFEE971CE76B637FCC482BF9BFC90E01 /* Roboto-Bold.ttf */,
+				D605C74CE053C4097BD6EC7893714A14 /* Roboto-Light.ttf */,
+				FA877B194002235A82AC5A3335ED8CAC /* Roboto-Medium.ttf */,
+				4DD126AC45BF31F7BD9229E10DD34830 /* Roboto-Regular.ttf */,
+				10D0E71E6969AB27F8B3FB71A5F2931B /* Roboto-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		673A7757D867BB408CF383AB8B8AC2D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC63B5D88D6007EFF2E94A55FBB53664 /* IQKeyboardManagerSwift.modulemap */,
+				6492BFBE8D28C9A9161423735DAC8F42 /* IQKeyboardManagerSwift.xcconfig */,
+				992EEC6318001711E80642B44C51927A /* IQKeyboardManagerSwift-dummy.m */,
+				FB93E969A5DBC6A6E43FF0D452967F2A /* IQKeyboardManagerSwift-Info.plist */,
+				903981977DB199C119837A373352A258 /* IQKeyboardManagerSwift-prefix.pch */,
+				3F5DD9490A907358F84CC07F8316FD90 /* IQKeyboardManagerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		7162A4EB4AD6236773D72AD36F81CDBD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19C6F0073EDFDAECD53CE06F9B250CF5 /* Motion.modulemap */,
+				A84CDBBB19EEBEA3307F1F36F3BAE12D /* Motion.xcconfig */,
+				C8AA06503583D0E73C902E3F70A50EDF /* Motion-dummy.m */,
+				8A0EC98686F650B3708F219BE2ECE4E4 /* Motion-Info.plist */,
+				49D1DCAC4F192E4D303FF3BD9CDA3F2F /* Motion-prefix.pch */,
+				86B36088BFCA8F14AA1EEAFFCF516E1B /* Motion-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Motion";
+			sourceTree = "<group>";
+		};
+		84744D287DCB0C3191E6E6D46C0634C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CED1415CCB49927376CDFDA25D8B634C /* Material.modulemap */,
+				B816BF14D4A6D19CF237FC90120A09FF /* Material.xcconfig */,
+				1E8768F1DBC2C4710E1910B3808F3688 /* Material-dummy.m */,
+				0D6F99D908BCFFEE4B72DD910ECCE47C /* Material-Info.plist */,
+				7B0D653618BB67EA6607533EB236F651 /* Material-prefix.pch */,
+				105D9516C6D312365AE8CFBA88E58C2A /* Material-umbrella.h */,
+				AED8A5C08507A90156F9CDD61281376D /* ResourceBundle-com.cosmicmind.material.fonts-Material-Info.plist */,
+				1B13AF5A75BECD48551A8A28A4FDD2CA /* ResourceBundle-com.cosmicmind.material.icons-Material-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Material";
+			sourceTree = "<group>";
+		};
+		8A15689E2CE9378228D9C354AD3AF396 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C731F9998549ED109B08BBE4067D2E33 /* Application.swift */,
+				64C9730C0576A08244E4230340A72175 /* CascadePreprocessor.swift */,
+				72D76EF394800F29AD74434E6DF26E45 /* ConditionalPreprocessor.swift */,
+				C69ED1967187144CA7C88ABD2D358A4E /* IgnoreSubviewModifiersPreprocessor.swift */,
+				107F1E5388213438E54199818DB216EF /* MatchPreprocessor.swift */,
+				1F87E1C9D7D140EC8D5E37F0715BE910 /* Motion+Array.swift */,
+				2349694280A2A6AD5468DA7BB46E4F92 /* Motion+CALayer.swift */,
+				F0414C2E841BEED90C9A1111723AF6FC /* Motion+CAMediaTimingFunction.swift */,
+				88DF20DC9D4267FEED6253FEF8902394 /* Motion+CG.swift */,
+				284B1A3AA8550609D5B3CA8E4BA0E4D0 /* Motion+Obj-C.swift */,
+				8D36D7FC64BB50852D666D968C0335CF /* Motion+UIKit.swift */,
+				E91BB9CC67D1FE4F48394A61517AE42D /* Motion+UIView.swift */,
+				72C95F211AB621729713F984F74947A6 /* Motion+UIViewController.swift */,
+				02C3FA13162EFC71A4EB4752A18D790E /* MotionAnimation.swift */,
+				0B9805121A0A2C813BCB9F091C021DD5 /* MotionAnimationState.swift */,
+				65FA8F41D77CE48F3F5040AFEEE09E51 /* MotionAnimator.swift */,
+				5F68AC21641F53F406ABFD78435EE716 /* MotionAnimatorViewContext.swift */,
+				3E3B78D57251C6F89562EA11BB358138 /* MotionCAAnimation.swift */,
+				0E29D8E1BE19E7ADBD4861628F77DEA6 /* MotionContext.swift */,
+				829F91CEA4A630E755C4BEE8CA9A764C /* MotionCoordinateSpace.swift */,
+				596C152D9010B3B62380323A7120AAE2 /* MotionCoreAnimationViewContext.swift */,
+				4D3B137C2CB355CD956EF47F4B735BA0 /* MotionCoreAnimator.swift */,
+				BCF16C244562AA1ED087DB678FD0F95D /* MotionCorePreprocessor.swift */,
+				0637DED99DCEE8B7DFCA1D33206810CB /* MotionModifier.swift */,
+				635B6034487578FD17B2E11300787D3C /* MotionPlugin.swift */,
+				F9586812A78881B718554A58B10C7357 /* MotionPreprocessor.swift */,
+				A7C95CBF03C0A07F6C78C48312C185E1 /* MotionProgressRunner.swift */,
+				177AB8B024755ED2EE7B5260844A95E6 /* MotionSnapshotType.swift */,
+				EC82CD53D7EE39206C3CDE56701E899F /* MotionTargetState.swift */,
+				8D44A637C3CCAE96D52FABAF09E2F207 /* MotionTransition.swift */,
+				85D8ABFAA0E50B595429DC43222BCF68 /* MotionTransition+Animate.swift */,
+				69AA691C8DC98676EA3FE6E5232AF2AB /* MotionTransition+Complete.swift */,
+				B3B72621CF1FACE3F389F6655E325713 /* MotionTransition+CustomTransition.swift */,
+				5383785CDABE07D6BF728A575E8F1E57 /* MotionTransition+Interactive.swift */,
+				11450EE72687C08C5FC3AD8A87C53804 /* MotionTransition+Start.swift */,
+				F6DF5165EFB1F1CA5E662B06B5160F49 /* MotionTransition+UINavigationControllerDelegate.swift */,
+				29566791ED7A217F99F0C2A64E1EA623 /* MotionTransition+UITabBarControllerDelegate.swift */,
+				ED4EBDBE8C10AA03CE117C3E74897E74 /* MotionTransition+UIViewControllerTransitioningDelegate.swift */,
+				1BE822B963D0E1E624CA247C87F86BB0 /* MotionTransitionObserver.swift */,
+				9B17123DB4EDA9E9E95918BF14AE5406 /* MotionViewOrderStrategy.swift */,
+				6A6B0DCD2C62A7429E0101807F5C2DAC /* MotionViewPropertyViewContext.swift */,
+				AFAAB7586A2854C6F7B0DAD4C2023EE0 /* MotionViewTransition.swift */,
+				BBEB16C3E020CDA29AF438905B3447A8 /* MotionViewTransitionAnimator.swift */,
+				5F2B080B13032834EBB8A7432EACCAB0 /* SourcePreprocessor.swift */,
+				DB3D2A525078844E7F8A450159A105D7 /* TransitionPreprocessor.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9CC2C298FCBB385E5E89ACA0EEFBF706 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				B81C4AB24823E2D0C2E0C59806A0ADE0 /* Core */,
+				84744D287DCB0C3191E6E6D46C0634C9 /* Support Files */,
+			);
+			name = Material;
+			path = Material;
+			sourceTree = "<group>";
+		};
+		ABC0A664BE29E3C5F5F1792BCE608F9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6E04B76FD76F07DB902D017F99F0DFC /* Motion.framework */,
+				B96B10743288CFB8B2EF41D5A9509C46 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF11A9F651E49F78024E0704742EAC66 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72201517ED8B929BDB7806601F8D0701 /* KBNumberPad.modulemap */,
+				4CA25800C5C362907C79265B3A4B98E3 /* KBNumberPad.xcconfig */,
+				7DE49D1327B63C07C5D4A0F3F83AD1B3 /* KBNumberPad-dummy.m */,
+				85FBF6366A529765E528B4DC543C2A93 /* KBNumberPad-Info.plist */,
+				76E4FF3172E5C7821AC8E0CF7B829718 /* KBNumberPad-prefix.pch */,
+				56D3A9A50B7C5089E9A592244DC32190 /* KBNumberPad-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KBNumberPad";
+			sourceTree = "<group>";
+		};
+		B81C4AB24823E2D0C2E0C59806A0ADE0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E4C6DCCB90D2E4CBC9A718C34C79E86E /* Application.swift */,
+				C32C881F25FCF97086B0C9C803E45B09 /* Bar.swift */,
+				4E910ECE579CB3526B3A7A9F723E8F5B /* BaseButtonGroup.swift */,
+				A0286D975B55B2325BA47E4472674F43 /* BaseIconLayerButton.swift */,
+				454ECAC6C1E7D63713E08930BBD9FA17 /* Border.swift */,
+				8044F8331BEF8160F91A197E1F4EF7C0 /* BottomNavigationController.swift */,
+				2BED5050209FFBD66F77EA7AE57DC65F /* Button.swift */,
+				26754440B7FC0E2CBB4AFC6D2A421980 /* Card.swift */,
+				D099BB3539D7F5F461D3F5AE72A598AE /* CardCollectionViewCell.swift */,
+				ACC4B8135EB52A81D0C9C90F42FF10D1 /* CardCollectionViewController.swift */,
+				C43D71A0CAE75359E807DAA24715E6B6 /* CheckButton.swift */,
+				F633A9E75CB5FE5A2B5588A3152ABBBF /* CheckButtonGroup.swift */,
+				4D1EE64F3A5768916735A76F50388F93 /* ChipBar.swift */,
+				B5DC7F3DD47E41DA0C9429B17C37D62B /* ChipBarController.swift */,
+				EB7E2383D2A11FE755DD4EF5AF55E217 /* CollectionReusableView.swift */,
+				DB5796D672ABCF38E71408F60430BA9A /* CollectionView.swift */,
+				CE33F6422C8FBAD58C687C6F7695615F /* CollectionViewCell.swift */,
+				D5D989A59585358B323B0A4A26942E77 /* CollectionViewController.swift */,
+				C50DD4BBC8CD852E0AB975D8824FC119 /* CollectionViewLayout.swift */,
+				7473954E003464B8AC97442C5F63E949 /* Color.swift */,
+				68064A1B615860A1DBB3782C955E35A8 /* CornerRadius.swift */,
+				1FBAC80ED0665FEB6871071483128FA7 /* DataSourceItem.swift */,
+				52EC844CC911B340559B142C1BD57843 /* Depth.swift */,
+				44EACD936805303159B85381170DA0E4 /* Device.swift */,
+				3F9DDF3EC0E5466C58911493263D58B9 /* Dialog.swift */,
+				5AD5F2080265913930B4B8341FAC1723 /* DialogController.swift */,
+				26004D09E950B70A3A3D655A7716C630 /* DialogView.swift */,
+				E3C1830DE586F9E671177065CB24A109 /* DisplayStyle.swift */,
+				FF218054E8B192F29976C3F5B7E47DF4 /* Divider.swift */,
+				E6D53B5CA829F5C4B7389ACBF93E73D3 /* DynamicFontType.swift */,
+				2C97998C3C318CD471DDB387E65D4BCE /* EdgeInsets.swift */,
+				11ADD346C95D2176E6DA5E7AD84F31DE /* Editor.swift */,
+				024F1682849A8BF6769DFC50FB22D541 /* ErrorTextField.swift */,
+				2B5C0D1835CC1B82579F6184D9CF79C3 /* ErrorTextFieldValidator.swift */,
+				46854A50E656DCDCF2AF6C35CB1F685E /* FABButton.swift */,
+				910C1B59800573673FF05274A1F7C824 /* FABMenu.swift */,
+				7AF15346336CB1514673137A5AD334A0 /* FABMenuController.swift */,
+				CD1A79E46FF991831C151EDE0EA3D98E /* FlatButton.swift */,
+				9E2BDA6868495A7FF035E0A51E085BDC /* Font.swift */,
+				1076422F454EE5B355B73AF19EC560E5 /* Grid.swift */,
+				88C15E372EC3F45E7C5F2BA7BA34D99B /* HeightPreset.swift */,
+				A371535CB0C43DBF02A4A79C544D0B2C /* Icon.swift */,
+				50D410CED1DF1F590AE343F81B16F854 /* IconButton.swift */,
+				DD7927769D81FE57FEBC921914605FED /* ImageCard.swift */,
+				4A746E6151917FFBB716FCDCD318780D /* InterimSpace.swift */,
+				B8F60C9BC0C20CEC435A21B4E3AA62A6 /* Layer.swift */,
+				78BBD3BB6AC68F5796C202F843E29858 /* Layout.swift */,
+				EB8E2113033FEE590A532FFD840A95B6 /* LayoutAnchor.swift */,
+				39F7AFA1E9CA2E7DF01CD54B9B7DBF6D /* LayoutAttribute.swift */,
+				0C67C1656E7E76A870B092D6A4E3EB47 /* LayoutConstraint.swift */,
+				A594B1A439A133319901F9C7BE015732 /* Material+Array.swift */,
+				04B7ECC56A95B2063E1E44FCF81767E4 /* Material+CALayer.swift */,
+				F102A2D4C0E436C01C3F061B550CF5A1 /* Material+MotionAnimation.swift */,
+				9D975AB78A7797205EBB5D2AFD99A336 /* Material+NSMutableAttributedString.swift */,
+				92A0C799732DAF07EAAECFF46E7C1D48 /* Material+String.swift */,
+				BB42E9F9F27A558917CE4532F5FA7544 /* Material+UIButton.swift */,
+				1285C3F7694C1125D7C0E28E86ED9668 /* Material+UIColor.swift */,
+				D443D1BD74E0836722793549D6442891 /* Material+UIFont.swift */,
+				D54762D0E452FEA12A952B9AD270527E /* Material+UIImage.swift */,
+				57FB83F5A73DC27AB8B89B746CF7B0B3 /* Material+UILabel.swift */,
+				36E3F9DE2E45839F6C0FE669FB78949C /* Material+UIView.swift */,
+				AEC192AC7C1F8F5FD6646BD8C131D638 /* Material+UIViewController.swift */,
+				87B99F3F1AF252354678C4B99C4DA770 /* Material+UIWindow.swift */,
+				E2F2C2B36502CCF7FA6FF57D37C20DB0 /* NavigationBar.swift */,
+				6057F7B838AD4767F5444592675DCBDD /* NavigationController.swift */,
+				9A72D0DD84D1F8F46F23CD20E0119960 /* NavigationDrawerController.swift */,
+				ED2B6D18FB2885004DB2C7256A95E20D /* NavigationItem.swift */,
+				BE9FE1AD9A029E99FB9D405E5FAA259C /* Offset.swift */,
+				9F7D61C061ABE32B862516FA396CB357 /* PresenterCard.swift */,
+				CEBD3F104526A17AC030D47BF50E1FB4 /* PulseAnimation.swift */,
+				6F5E28D93FDEAD2E60A0349EAED497BA /* PulseView.swift */,
+				953ADB6F8DE85BF5192907C01FDA4A19 /* RadioButton.swift */,
+				58326FDD93294297C0F49FC83D713BF4 /* RadioButtonGroup.swift */,
+				98A226DE03E22EA8DB39203FEDB2A6E6 /* RaisedButton.swift */,
+				9D0108156379896E6167CA503F760BE2 /* RobotoFont.swift */,
+				3E3972506C03D9692E65F14878B4BFA1 /* Screen.swift */,
+				85EC718327BB3120A49BE41BB6FF2017 /* SearchBar.swift */,
+				4D9B96F50FA931B7FBA6F00E5101ACF2 /* SearchBarController.swift */,
+				910409D1254DE3FDB5C62CD20E2047C7 /* Shape.swift */,
+				DD2B4B301887372EF87896A206F3EC13 /* Snackbar.swift */,
+				A22C439B44BB033FF748160300315233 /* SnackbarController.swift */,
+				C06C026D92BC976B4474920E02C1DA73 /* SpringAnimation.swift */,
+				EB2D96C8F16E59404C685155288E4013 /* StatusBarController.swift */,
+				B430B5492710E9972543D449E405CDC8 /* Switch.swift */,
+				6761A766AE15B76D1FC87000321E946B /* TabBar.swift */,
+				F73CA51CF6B05C67185E6466E03DAC8F /* TableView.swift */,
+				DABA7268D5DBFC6BFD1DF063558FE10B /* TableViewCell.swift */,
+				667C3DBD3A6ABDD7300DF6720B764BD5 /* TableViewController.swift */,
+				E30EA539827DD4A2CBB55F5948C8C14C /* TabsController.swift */,
+				6A89A08A655DC095D576597E22D5151E /* TextField.swift */,
+				3F5A5DAC0BD7B9E9F3C8CA9671881555 /* TextStorage.swift */,
+				00FF95898E41DE210CACBFBC854FAE31 /* TextView.swift */,
+				D1A282B3071CB3F669A02293275CCF88 /* Theme.swift */,
+				D3628978ABE2EC95978D06A9EF3DC5D2 /* Toolbar.swift */,
+				11E47B79ED0108CEDC84D5A593783CD2 /* ToolbarController.swift */,
+				08F6231AAD6E396547F96D92FAE73F23 /* TransitionController.swift */,
+				A1A71224EBBFFAA534FADC6BB814C55B /* View.swift */,
+				D683D5268DD8B0F6BDCA59F364118303 /* ViewController.swift */,
+				572481434E801EA91FDB7C85F3C9DB06 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B96B10743288CFB8B2EF41D5A9509C46 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7B28AFC9C01B464099A86DE68D0E2071 /* CoreGraphics.framework */,
+				90FD2C90129643700357BC928BCB94EA /* Foundation.framework */,
+				25D5CD7A52874D6DEF0ED076FB3402C4 /* QuartzCore.framework */,
+				DE283FC6EF3A95A389B0A78CD889B240 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				ABC0A664BE29E3C5F5F1792BCE608F9F /* Frameworks */,
+				DA2C2BD02DF2B85DED7ED0EBB16A6C3F /* Pods */,
+				3D239D43D2EBAB05C4A6D32D2D872F30 /* Products */,
+				2B71404E8EEA1CD4B27A35EA0D6248CD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DA2C2BD02DF2B85DED7ED0EBB16A6C3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				422458F3480EBA7C084A94BB86E201AF /* IQKeyboardManagerSwift */,
+				DC91A83C67C5452167763082714AA1F7 /* KBNumberPad */,
+				9CC2C298FCBB385E5E89ACA0EEFBF706 /* Material */,
+				F1BD60F293A035B8BCD4C3B265BDBB9E /* Motion */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC91A83C67C5452167763082714AA1F7 /* KBNumberPad */ = {
+			isa = PBXGroup;
+			children = (
+				DBF004793F9A8230CC89CCC63B71277C /* KBNumberPad.swift */,
+				A6097A9E35653B384DE288DD6F93D6D3 /* KBNumberPad.xib */,
+				1A099E32673726516B8FE130C39342C6 /* Resources */,
+				AF11A9F651E49F78024E0704742EAC66 /* Support Files */,
+			);
+			name = KBNumberPad;
+			path = KBNumberPad;
+			sourceTree = "<group>";
+		};
+		F1BD60F293A035B8BCD4C3B265BDBB9E /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				8A15689E2CE9378228D9C354AD3AF396 /* Core */,
+				7162A4EB4AD6236773D72AD36F81CDBD /* Support Files */,
+			);
+			name = Motion;
+			path = Motion;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1387025AD71B9BEF4C952AB3B6D35C8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E11FD69D033FCE6B389CD8B07AAAC8 /* Pods-SDKDemoSadad-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E12739096200AA02C877540BC645ACF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				263FF783C4AAE71E369B61AA7EC76CFB /* Motion-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4970F5D515E3E3900BAADD9BBE48A0FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B0DE0C0C1C34E40C87BFD57A854763 /* Material-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88CAAB05E79965FEC6E8BF71B16C8937 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F13C4A29C7E399D6B0562C64AEB176A9 /* KBNumberPad-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A6429FF0F9608A16E4D96813E85F23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A85277D0462C43B80A05E8822794BB /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34CF0DED83AEC3BDC693B0C2B30D6BB5 /* Material */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2267FCDEF41953B87B34578E80A79390 /* Build configuration list for PBXNativeTarget "Material" */;
+			buildPhases = (
+				4970F5D515E3E3900BAADD9BBE48A0FC /* Headers */,
+				2A6696877772E670D23DBD99ECF2BD5C /* Sources */,
+				541ED3B6A98FA687DBEC91E713097714 /* Frameworks */,
+				0210983B8E9F0A5A8E101C7F7A3AC550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EA2AA196DB1BA482BA65E0BD42D109F /* PBXTargetDependency */,
+				4F5D6BA981471206044CFE77433A1973 /* PBXTargetDependency */,
+				FB0532A7B9562FF2617D788C6288260D /* PBXTargetDependency */,
+			);
+			name = Material;
+			productName = Material;
+			productReference = 443FA6EAD8AD94038AA34DE1C97850C9 /* Material.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3508A7E636C1CD110090CCBFD1CD6DCE /* KBNumberPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B20DF4D56C06080D91965888078FA5E /* Build configuration list for PBXNativeTarget "KBNumberPad" */;
+			buildPhases = (
+				88CAAB05E79965FEC6E8BF71B16C8937 /* Headers */,
+				4A584A41107BA71C3236B0287E251EEC /* Sources */,
+				3735A5C101AA52E26CCBE30ED764F265 /* Frameworks */,
+				991AAB33867905B7AE038BB711DBFFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KBNumberPad;
+			productName = KBNumberPad;
+			productReference = 64208AC4F7DC25989FE80A388C34AC96 /* KBNumberPad.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7AA720B0F2D31209EF25EA147A1CAEAA /* Material-com.cosmicmind.material.icons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4494307C771EEC860128D1E36197C6 /* Build configuration list for PBXNativeTarget "Material-com.cosmicmind.material.icons" */;
+			buildPhases = (
+				64229D56AE272578CB1A27AC2A26B7A6 /* Sources */,
+				9186427BF2846F4C0D843CEA71BACA5A /* Frameworks */,
+				3769C6369CDC7521C3BFA5708F4E63A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Material-com.cosmicmind.material.icons";
+			productName = "Material-com.cosmicmind.material.icons";
+			productReference = D4F6A2860CB523B85235F862573290FC /* com.cosmicmind.material.icons.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9312109646DF39EBE725AD8F96A8C18B /* Motion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C840BB481B76E34B13902BF17847F1E /* Build configuration list for PBXNativeTarget "Motion" */;
+			buildPhases = (
+				3E12739096200AA02C877540BC645ACF /* Headers */,
+				87FDA23131536E3CEFAD68F223DAB5A7 /* Sources */,
+				4B16425C463E0D8AA37B9772AFF17D21 /* Frameworks */,
+				7BCE75DA1A6F4DB8D2B3D2669FE868EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Motion;
+			productName = Motion;
+			productReference = E9E83947349F7E8028823F3766451329 /* Motion.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7155AE59A19533F60ECE3B4045B01F0 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				F4A6429FF0F9608A16E4D96813E85F23 /* Headers */,
+				6C02E9CBF87ED8A1C6D8ED4C951F75A4 /* Sources */,
+				2C2292E431F316076553538B7FBB63C3 /* Frameworks */,
+				FAA5DA81F8292820D65F403E941074FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA66ABAC25D7CDF884876E490A5C3539 /* Material-com.cosmicmind.material.fonts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368C3DD0176B92B220DED671C02C9D1D /* Build configuration list for PBXNativeTarget "Material-com.cosmicmind.material.fonts" */;
+			buildPhases = (
+				4CDF25D396E46EB71E321859B32B1C6E /* Sources */,
+				2630B0468CB80FE2D97EDA12D4D1FA33 /* Frameworks */,
+				7D9C12362A75202809DAD93D2CC8737A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Material-com.cosmicmind.material.fonts";
+			productName = "Material-com.cosmicmind.material.fonts";
+			productReference = 906DCF7AE09E64FEC6089566F3CDD431 /* com.cosmicmind.material.fonts.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E17DC16C1BA7D3D8ECF29C59747CD0D1 /* Pods-SDKDemoSadad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B8E2E04F4D2ED975774DAC8048AF38B /* Build configuration list for PBXNativeTarget "Pods-SDKDemoSadad" */;
+			buildPhases = (
+				1387025AD71B9BEF4C952AB3B6D35C8F /* Headers */,
+				801C958A6B29E4626D4C5E80756E20F0 /* Sources */,
+				10080C75E62231B67AE6075EDFFE0A12 /* Frameworks */,
+				1B8DC438DD02D0AADE2B5924535E5F16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E531698FFDFC271F531F3AE16315C88 /* PBXTargetDependency */,
+				F64EADD4545F2E8E91AE56E8B95F716C /* PBXTargetDependency */,
+				C17D971E4C2FEA03E30831D39C308F26 /* PBXTargetDependency */,
+				CFC4B4BF913604D605CF1D8E24629357 /* PBXTargetDependency */,
+			);
+			name = "Pods-SDKDemoSadad";
+			productName = "Pods-SDKDemoSadad";
+			productReference = DE154D7E90AB30628D6FC0412EFC4754 /* Pods_SDKDemoSadad.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3D239D43D2EBAB05C4A6D32D2D872F30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */,
+				3508A7E636C1CD110090CCBFD1CD6DCE /* KBNumberPad */,
+				34CF0DED83AEC3BDC693B0C2B30D6BB5 /* Material */,
+				DA66ABAC25D7CDF884876E490A5C3539 /* Material-com.cosmicmind.material.fonts */,
+				7AA720B0F2D31209EF25EA147A1CAEAA /* Material-com.cosmicmind.material.icons */,
+				9312109646DF39EBE725AD8F96A8C18B /* Motion */,
+				E17DC16C1BA7D3D8ECF29C59747CD0D1 /* Pods-SDKDemoSadad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0210983B8E9F0A5A8E101C7F7A3AC550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F57C8C0524348C074DEF9CFB493BDC /* com.cosmicmind.material.fonts.bundle in Resources */,
+				A6D78C565877FB5C16B7FCF41CAB726F /* com.cosmicmind.material.icons.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B8DC438DD02D0AADE2B5924535E5F16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3769C6369CDC7521C3BFA5708F4E63A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5644F103031A7F63855599F2D40EB720 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCE75DA1A6F4DB8D2B3D2669FE868EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D9C12362A75202809DAD93D2CC8737A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD88D630A381A60BC9584EC929E2297A /* Roboto-Bold.ttf in Resources */,
+				0E3BB9CB1D120A7B9367AE9D31559680 /* Roboto-Light.ttf in Resources */,
+				32FC91CE97C3634F2DC5A0C38D53ACFB /* Roboto-Medium.ttf in Resources */,
+				BEF6E3042CF30191592A8FA9D07AF54E /* Roboto-Regular.ttf in Resources */,
+				512A0C8BB29BDBEA5360B8261F708F1D /* Roboto-Thin.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991AAB33867905B7AE038BB711DBFFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2988C3893813BCE580029EB821F853 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA5DA81F8292820D65F403E941074FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A6696877772E670D23DBD99ECF2BD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA920C7F7A11FE483EB6D9C8FD988B0 /* Application.swift in Sources */,
+				5D9F50E76AB29C36824B1EB803BE5C1D /* Bar.swift in Sources */,
+				44E0211C739DAD1F8B68E963F94D686D /* BaseButtonGroup.swift in Sources */,
+				6356CDF85B0E3D24A453F53C5E0B6522 /* BaseIconLayerButton.swift in Sources */,
+				088CE1759F3601BFA19FE9FB746A9323 /* Border.swift in Sources */,
+				53F51196F939F58ACFAAA8FAECB45F69 /* BottomNavigationController.swift in Sources */,
+				87D5192022D6484A985358F7CC5AFC97 /* Button.swift in Sources */,
+				55273422BE2786407924ADB52166FD5D /* Card.swift in Sources */,
+				6DEBAE1E891433F30BCCB9FCE0204375 /* CardCollectionViewCell.swift in Sources */,
+				27D2F500B6EE12B63373A3F48D2D405A /* CardCollectionViewController.swift in Sources */,
+				4E9338C9B5DF3FF578B895BE5368E904 /* CheckButton.swift in Sources */,
+				556D973C0A9432948D24BA73F9038892 /* CheckButtonGroup.swift in Sources */,
+				608209D01CA72BC54D7B3676F2620336 /* ChipBar.swift in Sources */,
+				D446E060AA7002FA99A61F572F3D28F2 /* ChipBarController.swift in Sources */,
+				7761098033B0197D56C5632CFF559BF0 /* CollectionReusableView.swift in Sources */,
+				31D703D828F6AE734F2514E5F01B2EC8 /* CollectionView.swift in Sources */,
+				8F67375C6F03581EE7A759DD26B967A2 /* CollectionViewCell.swift in Sources */,
+				2C22C09C0F7892D26803F36454BA06A6 /* CollectionViewController.swift in Sources */,
+				ABAAB0415AF851835207F72A9D895BCE /* CollectionViewLayout.swift in Sources */,
+				8CE47890049CAC6B297E070B40DACDD7 /* Color.swift in Sources */,
+				5146BC68FF3AF1AC3F8E9F880519AA71 /* CornerRadius.swift in Sources */,
+				D6D149997AE48ABBF7E6273B87DD0375 /* DataSourceItem.swift in Sources */,
+				08EF738CC92813CBD4B07A295EA54EBB /* Depth.swift in Sources */,
+				FBABC7CAAC574313F27AFC2A7F5D7A18 /* Device.swift in Sources */,
+				DDB036D3AEB892DA00AAD47BF7434553 /* Dialog.swift in Sources */,
+				FFCE301A379113C92C23F534E1626F51 /* DialogController.swift in Sources */,
+				EEF06C225FC87868FB2DC5F87DB8C835 /* DialogView.swift in Sources */,
+				13F284D88058B067468E5B76E767CD33 /* DisplayStyle.swift in Sources */,
+				A940EF237D240E94284FBA957FD41438 /* Divider.swift in Sources */,
+				3F93B911E02C0435E8C04A2268C0B961 /* DynamicFontType.swift in Sources */,
+				71CCB382A30ECA493CB241760DB58A0C /* EdgeInsets.swift in Sources */,
+				9E143EB3D3A3339080DF179139C070DA /* Editor.swift in Sources */,
+				197F29F0B5737C299E0F9979B173022F /* ErrorTextField.swift in Sources */,
+				F98426ED38EF86114B1AD96E54AA4F95 /* ErrorTextFieldValidator.swift in Sources */,
+				7F5AFBF055F5152B4904F960EDC6E9BE /* FABButton.swift in Sources */,
+				6476E6D6975488050D1E559D08EEB9FF /* FABMenu.swift in Sources */,
+				93DAA28D4673C8A98BAF8CD1AB0F6D4F /* FABMenuController.swift in Sources */,
+				B035E5FD932280EE3056C704D5C9220F /* FlatButton.swift in Sources */,
+				82ED516EBC9B8F39AB654084EE00A201 /* Font.swift in Sources */,
+				A12BC659142DE299230FE798FAAFD7E4 /* Grid.swift in Sources */,
+				C46949F98B606E98A4A7946E6EF61098 /* HeightPreset.swift in Sources */,
+				CA8E70EB41D083F089F4D1D9D0260A38 /* Icon.swift in Sources */,
+				DDFAEA153E82D1958590584F93E2775D /* IconButton.swift in Sources */,
+				1D2FC70FAC25E84CDA51BBCB37B135CF /* ImageCard.swift in Sources */,
+				7FEF27603287CA097769DDA483C0C57C /* InterimSpace.swift in Sources */,
+				B2A8AE6DD7322E52558E4A5AFADE973B /* Layer.swift in Sources */,
+				D356A33190518A598070B86C39F04E67 /* Layout.swift in Sources */,
+				E0341FA2B331C812D65D8DF9E1B096EA /* LayoutAnchor.swift in Sources */,
+				2F8E65AEE0E6415AA63E22B1730243DC /* LayoutAttribute.swift in Sources */,
+				8CBC2728A60A1D7C1A5199D7DE9A5B3B /* LayoutConstraint.swift in Sources */,
+				500BAF451A7967DE2044EF7A4F5FE90F /* Material+Array.swift in Sources */,
+				28A8AFA00A797AAACE7ED9E0F08CD84A /* Material+CALayer.swift in Sources */,
+				03200324FD43BFCDE340DB93B7CDE7B1 /* Material+MotionAnimation.swift in Sources */,
+				0A7DA4AA07AFD52BBEC1D51C077DA639 /* Material+NSMutableAttributedString.swift in Sources */,
+				61739ABA670A4B38EC52F7B968A1B3E8 /* Material+String.swift in Sources */,
+				4543EA09ABCE9542CE1ECC2EBC47F238 /* Material+UIButton.swift in Sources */,
+				C7C09868BA9E3472A529161D53B99D0D /* Material+UIColor.swift in Sources */,
+				6ABCA03B75DDE5663ADB665B8DB51BE0 /* Material+UIFont.swift in Sources */,
+				BF506900AD5593270BEE65649F0E45B0 /* Material+UIImage.swift in Sources */,
+				7D595E4F34CC89A187D113B8CD36A002 /* Material+UILabel.swift in Sources */,
+				19F1DC4C3135BEF9AB711737227D6767 /* Material+UIView.swift in Sources */,
+				B3D7090CA24306F27276E7E012A7D1AA /* Material+UIViewController.swift in Sources */,
+				70F3F32A93C48B6EA801618210EF0A57 /* Material+UIWindow.swift in Sources */,
+				85CF5ACCB5EF997818FA9943F0AFCF9A /* Material-dummy.m in Sources */,
+				FB7942CA6DF91C45E1EA94D34E2A91BB /* NavigationBar.swift in Sources */,
+				ABA5A290A219FA6DD4801ED462CC880C /* NavigationController.swift in Sources */,
+				234FB0A5E6A53D8AAAC4BEF5909E0A3B /* NavigationDrawerController.swift in Sources */,
+				E630DD2CA50D8F72BE82E8F9C5C999E8 /* NavigationItem.swift in Sources */,
+				1F0FE1AD10DFEB8C59B9B0CC348FA13F /* Offset.swift in Sources */,
+				DEF3B42847401E529D4F7E316FD6C394 /* PresenterCard.swift in Sources */,
+				90A97E6D273ABD4ED704CB69E582428E /* PulseAnimation.swift in Sources */,
+				1730C7837FD3A7A5E1CCBE4AB3EFF8D2 /* PulseView.swift in Sources */,
+				7C060C4BF17E38B78398DD857DAD1C2D /* RadioButton.swift in Sources */,
+				A277AD383451A8CA4E9FD876C29C1D00 /* RadioButtonGroup.swift in Sources */,
+				D5F8C6F01FA455DFB73309E7557D652F /* RaisedButton.swift in Sources */,
+				18289E05576230979F9457E5DBC291CB /* RobotoFont.swift in Sources */,
+				2BB32D2396106B3E1F801F8E97D619A6 /* Screen.swift in Sources */,
+				D8043A9B8FE287405D788EC7D6E74E85 /* SearchBar.swift in Sources */,
+				7BB93FB7156EDFA81BB7C1163A1B76C9 /* SearchBarController.swift in Sources */,
+				201377E61338169A98F571ECE727D02F /* Shape.swift in Sources */,
+				534D3410E2F7AE028C266BABFB9722C1 /* Snackbar.swift in Sources */,
+				FB62F8A7F257F6185BB6668FD2E16E22 /* SnackbarController.swift in Sources */,
+				01049C85C77D422682C435ECB04A6C22 /* SpringAnimation.swift in Sources */,
+				9EC13A9BBC06C2C69393C0F476BE1B29 /* StatusBarController.swift in Sources */,
+				F39809C78BC6E7F08909189A1E25E410 /* Switch.swift in Sources */,
+				6EDDB5F5E550F19DD8DACF563DD546D7 /* TabBar.swift in Sources */,
+				113574E2A1B293F85A952DFD9BEE340E /* TableView.swift in Sources */,
+				D5C00FEC995884444C6A3291D735ABF8 /* TableViewCell.swift in Sources */,
+				9ABF25133E52C98365BA074CF589E658 /* TableViewController.swift in Sources */,
+				F5F8985CB9A83B01DF6E636879CD7ED9 /* TabsController.swift in Sources */,
+				4B771F4A5D061390489CDA585CA7C073 /* TextField.swift in Sources */,
+				43DC8094200CABA8964759707B499828 /* TextStorage.swift in Sources */,
+				536B822006EE70AAFFD5B5C37D3469DA /* TextView.swift in Sources */,
+				5FA2BA2844BBFD666B1614AB9FEEC175 /* Theme.swift in Sources */,
+				963D6E9BF53C87CBD1E5D4A9D54E48DF /* Toolbar.swift in Sources */,
+				B4B28F60325ED27BBB84989A3B64AF0A /* ToolbarController.swift in Sources */,
+				A9FD3C02381DBE440779BC28995301C7 /* TransitionController.swift in Sources */,
+				A8E8D8127E633FFA7E51B8C92DC6DB9C /* View.swift in Sources */,
+				A20673352C5D711197E2606C7FBAD573 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A584A41107BA71C3236B0287E251EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F39E8C85EBC856DBAB65AE418B8BCB /* KBNumberPad-dummy.m in Sources */,
+				8D519ACEAF008717B9A942BCDCC9CDA0 /* KBNumberPad.swift in Sources */,
+				E46B2E8A6D512500AB9F59FC7EDAD7E8 /* KBNumberPad.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CDF25D396E46EB71E321859B32B1C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64229D56AE272578CB1A27AC2A26B7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C02E9CBF87ED8A1C6D8ED4C951F75A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE417BA9D13D2BB98316DF0512A1944 /* IQBarButtonItem.swift in Sources */,
+				4F0CF2AD58CF0D08BC090E7AF0DD63D7 /* IQInvocation.swift in Sources */,
+				3F091C427A3E96117C902E8EA143729E /* IQKeyboardManager.swift in Sources */,
+				C04C5F1F1D6B337F87E157B55A747E41 /* IQKeyboardManagerConstants.swift in Sources */,
+				102F4487BC4ADC3C2B56A0470E0A9468 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				B98378C55379E1B92897F11A22E38443 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				4737103B10A1C40C5301D0512B9310E4 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				259D6FC80BCFE785471F743B1F533970 /* IQNSArray+Sort.swift in Sources */,
+				5044FEAEF09468B6964F9F37A1F1F45C /* IQPreviousNextView.swift in Sources */,
+				7FB3576FD619DD256294BAD7E5F83CBE /* IQTextView.swift in Sources */,
+				C35DCE97EB77150C41E735DB57BD6616 /* IQTitleBarButtonItem.swift in Sources */,
+				980E5594F8DBCE362764AEDC2F086E36 /* IQToolbar.swift in Sources */,
+				C0EB3776478AB80676E488BC9C9CDA3C /* IQUIScrollView+Additions.swift in Sources */,
+				4C069FA7FAA45154DA92CF5DF3BCDCA9 /* IQUITextFieldView+Additions.swift in Sources */,
+				8B439A47AA5FDEF67AD63BDDB808AC5A /* IQUIView+Hierarchy.swift in Sources */,
+				AE3B246482DCD60BA846EA3CE983A1FB /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				74341DA37F4B926FDF4CB2599CAC547A /* IQUIViewController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801C958A6B29E4626D4C5E80756E20F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE61CB03CB19EEF213AE41DFD441AD36 /* Pods-SDKDemoSadad-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FDA23131536E3CEFAD68F223DAB5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED48D9C97BC4BC23290BFE88AE1E6711 /* Application.swift in Sources */,
+				BD8E3C30EB0B175C2969F0C3C69071C7 /* CascadePreprocessor.swift in Sources */,
+				98B5A8455522C10F482DDBD367CFE128 /* ConditionalPreprocessor.swift in Sources */,
+				1C1F6C17F2CE9BE89A774EF0C4ED96D7 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */,
+				EAF77220E6FCCDB428FEE99829F1BA1E /* MatchPreprocessor.swift in Sources */,
+				29E8DAF1E5C681ABCDDE9F19BD145E72 /* Motion+Array.swift in Sources */,
+				F275F6EFFD370C7D19EED039EF984D3F /* Motion+CALayer.swift in Sources */,
+				A76CC761BC5E16D6A03107D25207822D /* Motion+CAMediaTimingFunction.swift in Sources */,
+				0006170B22110E1869EFAC5CA153811D /* Motion+CG.swift in Sources */,
+				FDED86814565E51960205D660D15680E /* Motion+Obj-C.swift in Sources */,
+				7DD2C85318475786587B3DBCFF9D441A /* Motion+UIKit.swift in Sources */,
+				46B114070A3496B40D0FB90997E8E2C2 /* Motion+UIView.swift in Sources */,
+				E595C0CBD2595D9C700D00A739B80912 /* Motion+UIViewController.swift in Sources */,
+				9D49743EEFEAA5E5D6EC0DB9F43A9D1D /* Motion-dummy.m in Sources */,
+				BB1B13EE8CA703F5BE82593AE0E09C6F /* MotionAnimation.swift in Sources */,
+				43E4399D3BBC2DF02FD5BB9A650727D0 /* MotionAnimationState.swift in Sources */,
+				73AC1769CC47D6AE9C44FF3AFBDC7C40 /* MotionAnimator.swift in Sources */,
+				D5056636750A4A45F2CFA87DB173593A /* MotionAnimatorViewContext.swift in Sources */,
+				3D640AF97D86B9896B8B66A15F4C2C91 /* MotionCAAnimation.swift in Sources */,
+				E0B4B7E87CF5589C20B4D1AED36628F2 /* MotionContext.swift in Sources */,
+				F61784C021864295A021F1E15654D758 /* MotionCoordinateSpace.swift in Sources */,
+				8C170944F8BC2844C7C9DC8E75442708 /* MotionCoreAnimationViewContext.swift in Sources */,
+				D3428E04A517CFE0C6DFD08D38D48BD3 /* MotionCoreAnimator.swift in Sources */,
+				C7E84856563026055834D2DC314B7658 /* MotionCorePreprocessor.swift in Sources */,
+				AD91E5DF8C838678746075D5330A4097 /* MotionModifier.swift in Sources */,
+				84371702E425911E42C81850CA52F4D1 /* MotionPlugin.swift in Sources */,
+				C8086B75571B5C391A0409E284ECE809 /* MotionPreprocessor.swift in Sources */,
+				9678D388DCBDEF7477678DF02E02D446 /* MotionProgressRunner.swift in Sources */,
+				130808F19DDBD12DEAE3DF87A2ECA080 /* MotionSnapshotType.swift in Sources */,
+				E82FC7377C4E94A2F451B07E1AEC4DE6 /* MotionTargetState.swift in Sources */,
+				5CD0484767E462BABAD6183B061BD688 /* MotionTransition+Animate.swift in Sources */,
+				2D07D930EA9EBCB08364058B38D09EEF /* MotionTransition+Complete.swift in Sources */,
+				CAC2FE5550EEED2CE3C96FECEAE6DD85 /* MotionTransition+CustomTransition.swift in Sources */,
+				FC2F9FEA0759CB2FED27F18B5708D5B5 /* MotionTransition+Interactive.swift in Sources */,
+				29105FE40BEEFA1C3798B65665691951 /* MotionTransition+Start.swift in Sources */,
+				E46BE8B223E04B89F1132BC0CB1FB0A0 /* MotionTransition+UINavigationControllerDelegate.swift in Sources */,
+				3194205545DBC4D9EC887D827FC121B6 /* MotionTransition+UITabBarControllerDelegate.swift in Sources */,
+				1B7A3EBD2D3C7FCAB30113BC25535356 /* MotionTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
+				AF59DC0BA227FACC195A662B4872ED94 /* MotionTransition.swift in Sources */,
+				71DA0FF7EA1EE1458FCA02C3F591E4EE /* MotionTransitionObserver.swift in Sources */,
+				4F14DF9602A4ED880CBE58CB5610DD8D /* MotionViewOrderStrategy.swift in Sources */,
+				7902F8AD75D94829D63EFACDEE48E20E /* MotionViewPropertyViewContext.swift in Sources */,
+				E7F79C2E8C0003B6199E42DABA0973D1 /* MotionViewTransition.swift in Sources */,
+				D6E62DCA5DB3F12A1A676111D1DE7E2A /* MotionViewTransitionAnimator.swift in Sources */,
+				E38E9F4BB4BE33EF11DDE163D9C03F21 /* SourcePreprocessor.swift in Sources */,
+				6BE59F0E97C4A8A4EDC1551B3137C0F5 /* TransitionPreprocessor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EA2AA196DB1BA482BA65E0BD42D109F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Material-com.cosmicmind.material.fonts";
+			target = DA66ABAC25D7CDF884876E490A5C3539 /* Material-com.cosmicmind.material.fonts */;
+			targetProxy = 34BB7EFECA30C573DD5EA6D0501EAAEC /* PBXContainerItemProxy */;
+		};
+		2E531698FFDFC271F531F3AE16315C88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = E88D8EE7ADA25764242E433579F59848 /* PBXContainerItemProxy */;
+		};
+		4F5D6BA981471206044CFE77433A1973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Material-com.cosmicmind.material.icons";
+			target = 7AA720B0F2D31209EF25EA147A1CAEAA /* Material-com.cosmicmind.material.icons */;
+			targetProxy = F51668A1738E9DE55780F25EDCF1AAC4 /* PBXContainerItemProxy */;
+		};
+		C17D971E4C2FEA03E30831D39C308F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Material;
+			target = 34CF0DED83AEC3BDC693B0C2B30D6BB5 /* Material */;
+			targetProxy = 2372C06DAD9D495CF2ED73BD1C15B977 /* PBXContainerItemProxy */;
+		};
+		CFC4B4BF913604D605CF1D8E24629357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Motion;
+			target = 9312109646DF39EBE725AD8F96A8C18B /* Motion */;
+			targetProxy = 09403B50AF611C44AAE8520B70AD30C8 /* PBXContainerItemProxy */;
+		};
+		F64EADD4545F2E8E91AE56E8B95F716C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KBNumberPad;
+			target = 3508A7E636C1CD110090CCBFD1CD6DCE /* KBNumberPad */;
+			targetProxy = 4F575A35368F15D140251D1551FEF808 /* PBXContainerItemProxy */;
+		};
+		FB0532A7B9562FF2617D788C6288260D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Motion;
+			target = 9312109646DF39EBE725AD8F96A8C18B /* Motion */;
+			targetProxy = CD5935D48041BD6AF8A2435C81CB12A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01E39BFD23A50E1091A6D81AF360BE82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70927CA8E4ECA6EA3A0F406C88D152D1 /* Pods-SDKDemoSadad.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		15011036DC276A3DEAE1BD2282592EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6492BFBE8D28C9A9161423735DAC8F42 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3215DECCDE1FAB38D8F36ADC64B5268D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A84CDBBB19EEBEA3307F1F36F3BAE12D /* Motion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Motion/Motion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Motion/Motion-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Motion/Motion.modulemap";
+				PRODUCT_MODULE_NAME = Motion;
+				PRODUCT_NAME = Motion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6CFE6A2D658F1658D45B829FB7772512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B816BF14D4A6D19CF237FC90120A09FF /* Material.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Material";
+				IBSC_MODULE = Material;
+				INFOPLIST_FILE = "Target Support Files/Material/ResourceBundle-com.cosmicmind.material.icons-Material-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = com.cosmicmind.material.icons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		74A552BE9EF1621710E7E55964D31539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 511CB11E6FDEE4F2299EE02E376F13AE /* Pods-SDKDemoSadad.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A347C1160045EE8CC6732E7839BB74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B816BF14D4A6D19CF237FC90120A09FF /* Material.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Material";
+				IBSC_MODULE = Material;
+				INFOPLIST_FILE = "Target Support Files/Material/ResourceBundle-com.cosmicmind.material.fonts-Material-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = com.cosmicmind.material.fonts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A0A080185E903F0D6BF0C541394BA394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6492BFBE8D28C9A9161423735DAC8F42 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8CF392F7F1F70D3A5E1FB160672150E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B816BF14D4A6D19CF237FC90120A09FF /* Material.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Material";
+				IBSC_MODULE = Material;
+				INFOPLIST_FILE = "Target Support Files/Material/ResourceBundle-com.cosmicmind.material.icons-Material-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = com.cosmicmind.material.icons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B6B6DEB31BE7A3E972063D9663D66F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA25800C5C362907C79265B3A4B98E3 /* KBNumberPad.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KBNumberPad/KBNumberPad-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KBNumberPad/KBNumberPad-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KBNumberPad/KBNumberPad.modulemap";
+				PRODUCT_MODULE_NAME = KBNumberPad;
+				PRODUCT_NAME = KBNumberPad;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC36B8AC1649752419AB8FE0D7263361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA25800C5C362907C79265B3A4B98E3 /* KBNumberPad.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KBNumberPad/KBNumberPad-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KBNumberPad/KBNumberPad-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KBNumberPad/KBNumberPad.modulemap";
+				PRODUCT_MODULE_NAME = KBNumberPad;
+				PRODUCT_NAME = KBNumberPad;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D42DE6CE4E9F02C68ABD9FBA24DB4EA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B816BF14D4A6D19CF237FC90120A09FF /* Material.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Material/Material-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Material/Material-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Material/Material.modulemap";
+				PRODUCT_MODULE_NAME = Material;
+				PRODUCT_NAME = Material;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D73D4E929DFBDF7E30D3F6D943CAF568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B816BF14D4A6D19CF237FC90120A09FF /* Material.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Material";
+				IBSC_MODULE = Material;
+				INFOPLIST_FILE = "Target Support Files/Material/ResourceBundle-com.cosmicmind.material.fonts-Material-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = com.cosmicmind.material.fonts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E7B99379F4DE1ACF506DF2338A15D8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B816BF14D4A6D19CF237FC90120A09FF /* Material.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Material/Material-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Material/Material-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Material/Material.modulemap";
+				PRODUCT_MODULE_NAME = Material;
+				PRODUCT_NAME = Material;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9C91911DB6719F9576BDCBFF8D678DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A84CDBBB19EEBEA3307F1F36F3BAE12D /* Motion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Motion/Motion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Motion/Motion-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Motion/Motion.modulemap";
+				PRODUCT_MODULE_NAME = Motion;
+				PRODUCT_NAME = Motion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2267FCDEF41953B87B34578E80A79390 /* Build configuration list for PBXNativeTarget "Material" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B99379F4DE1ACF506DF2338A15D8E2 /* Debug */,
+				D42DE6CE4E9F02C68ABD9FBA24DB4EA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368C3DD0176B92B220DED671C02C9D1D /* Build configuration list for PBXNativeTarget "Material-com.cosmicmind.material.fonts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A347C1160045EE8CC6732E7839BB74A /* Debug */,
+				D73D4E929DFBDF7E30D3F6D943CAF568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4494307C771EEC860128D1E36197C6 /* Build configuration list for PBXNativeTarget "Material-com.cosmicmind.material.icons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFE6A2D658F1658D45B829FB7772512 /* Debug */,
+				A8CF392F7F1F70D3A5E1FB160672150E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C840BB481B76E34B13902BF17847F1E /* Build configuration list for PBXNativeTarget "Motion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9C91911DB6719F9576BDCBFF8D678DB /* Debug */,
+				3215DECCDE1FAB38D8F36ADC64B5268D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B20DF4D56C06080D91965888078FA5E /* Build configuration list for PBXNativeTarget "KBNumberPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B6DEB31BE7A3E972063D9663D66F20 /* Debug */,
+				BC36B8AC1649752419AB8FE0D7263361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B8E2E04F4D2ED975774DAC8048AF38B /* Build configuration list for PBXNativeTarget "Pods-SDKDemoSadad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74A552BE9EF1621710E7E55964D31539 /* Debug */,
+				01E39BFD23A50E1091A6D81AF360BE82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7155AE59A19533F60ECE3B4045B01F0 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15011036DC276A3DEAE1BD2282592EF6 /* Debug */,
+				A0A080185E903F0D6BF0C541394BA394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

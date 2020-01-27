@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E89691B0-3AE8-4696-B0D4-AC16A78C7204"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F896DB1-9B62-40F3-B586-74A238EF6684"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SDKDemoSadad/ViewController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "ResponseData(DataDIC:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F896DB1-9B62-40F3-B586-74A238EF6684 - 9be54911d733dd9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in SDKDemoSadad.ViewController.ResponseData(DataDIC: __C.NSMutableDictionary) -&gt; ()"
+                  moduleName = "SDKDemoSadad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mehuls/Desktop/Hiren/SDKDemoSadad/SDKDemoSadad/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "2F896DB1-9B62-40F3-B586-74A238EF6684 - 9be54911d733dd9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in SDKDemoSadad.ViewController.ResponseData(DataDIC: __C.NSMutableDictionary) -&gt; ()"
+                  moduleName = "SDKDemoSadad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mehuls/Desktop/Hiren/SDKDemoSadad/SDKDemoSadad/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,32 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.5)
+  - KBNumberPad (1.0.1)
+  - Material (3.1.8):
+    - Material/Core (= 3.1.8)
+  - Material/Core (3.1.8):
+    - Motion (~> 3.1.1)
+  - Motion (3.1.3):
+    - Motion/Core (= 3.1.3)
+  - Motion/Core (3.1.3)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - KBNumberPad
+  - Material
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - KBNumberPad
+    - Material
+    - Motion
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  KBNumberPad: 37f5ebdd1065575afbe2a95c5a2084562d3f28d8
+  Material: a2a3f400a3b549d53ef89e56c58c4535b29db387
+  Motion: cf1e060e489f6661126374d5c60dbd2ed991605c
+
+PODFILE CHECKSUM: b96f61513ff5cd27d406347493159d8a82ef6b72
+
+COCOAPODS: 1.8.4
