@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SadadPaymentSDK
 import Foundation
 import JavaScriptCore
@@ -8,13 +8,14 @@ import Material
 @_exported import SadadPaymentSDK
 import Swift
 import UIKit
+import WebKit
 extension String {
   public func format(_ seprator: Swift.String) -> Swift.String
 }
 @objc public protocol SelectCardReponseDelegate {
   @objc func ResponseData(DataDIC: Foundation.NSMutableDictionary)
 }
-@objc public class SelectPaymentMethodVC : UIKit.UIViewController, SadadPaymentSDK.SelectCardReponseDelegate, SadadPaymentSDK.ResponseDelegate {
+@objc @_inheritsConvenienceInitializers public class SelectPaymentMethodVC : UIKit.UIViewController, SadadPaymentSDK.SelectCardReponseDelegate, SadadPaymentSDK.ResponseDelegate {
   public var delegate: SadadPaymentSDK.SelectCardReponseDelegate?
   public var strAccessToken: Swift.String
   public var amount: Swift.Int
@@ -25,15 +26,15 @@ extension String {
   @objc override dynamic public func viewWillLayoutSubviews()
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc public func ResponseData(DataDIC: Foundation.NSMutableDictionary)
+  @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 extension UIView {
   public func animShow()
   public func animHide()
 }
-public class MyFramework {
+@_hasMissingDesignatedInitializers public class MyFramework {
   public static func performSegueToFrameworkVC(caller: UIKit.UIViewController)
   @objc deinit
 }
