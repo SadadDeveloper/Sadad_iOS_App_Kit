@@ -1,0 +1,11 @@
+framework module SadadPaymentSDK {
+  umbrella header "SadadPaymentSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module SadadPaymentSDK.Swift {
+    header "SadadPaymentSDK-Swift.h"
+    requires objc
+}

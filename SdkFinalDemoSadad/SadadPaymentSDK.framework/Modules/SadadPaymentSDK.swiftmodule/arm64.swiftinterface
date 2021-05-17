@@ -1,10 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
-// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SadadPaymentSDK
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SadadPaymentSDK
 import Foundation
 import JavaScriptCore
-import KBNumberPad
-import Material
+import MaterialComponents
+import MaterialComponents.MaterialTextControls_FilledTextAreas
+import MaterialComponents.MaterialTextControls_FilledTextFields
 @_exported import SadadPaymentSDK
 import Swift
 import UIKit
@@ -26,9 +27,9 @@ extension String {
   @objc override dynamic public func viewWillLayoutSubviews()
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc public func ResponseData(DataDIC: Foundation.NSMutableDictionary)
-  @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 extension UIView {
   public func animShow()

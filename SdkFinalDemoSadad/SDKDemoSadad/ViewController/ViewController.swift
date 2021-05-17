@@ -99,11 +99,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
     }
     
     func ReturnWebserviceURl(){
-//        if URLswitch.isOn == true{
-//            Constant.strGenerateTokenURL = Constant.SANDBOX_strGenerateTokenURL
-//        }else{
-            Constant.strGenerateTokenURL = Constant.LIVE_strGenerateTokenURL
-//        }
+        Constant.strGenerateTokenURL = Constant.LIVE_strGenerateTokenURL
     }
 
     @IBAction func btnLoadFramework(_ sender: Any) {
@@ -147,7 +143,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
     func GenerateToken() {
         AppUtils.startLoading(self.view)
         let strGenerateTokenURL = Constant.strGenerateTokenURL
-        print(strGenerateTokenURL)
+//        print(strGenerateTokenURL)
         let Url = String(format: "\(strGenerateTokenURL)")
         guard let serviceUrl = URL(string: Url) else { return }
         let parameterDictionary = NSMutableDictionary()
@@ -187,7 +183,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
                             }                            
                         }
                     }
-                    print("AccessToken: ",self.strAccessToken)
+//                    print("AccessToken: ",self.strAccessToken)
                     AppUtils.stopLoading()
                 } catch {
                     print("Something went wrong please try again later.\(error)")

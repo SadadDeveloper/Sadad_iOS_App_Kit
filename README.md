@@ -1,26 +1,31 @@
+# What's New
+
+1. Added Support for Simulator and real device both. So, now you can add framework for simulator in your app and test.
+2. Support to swift 5
+
 # Steps for iOS Integration
 
 1.installed following depenaded pods in your project.
 
-'IQKeyboardManagerSwift'
+pod 'IQKeyboardManagerSwift'
+pod 'MaterialComponents/TextControls+FilledTextAreas'
+pod 'MaterialComponents/TextControls+FilledTextFields''
 
-'Material'
+2.Drag the framework 'SadadPaymentSDK' in top of your project. what ever you want to run app into(i.e. App or for simulator)
 
-'KBNumberPad'
-
-2.Drag the framework 'SadadPaymentSDK' in top of your project.
-
-3.Add the framework sadadPaymentSDK in Project -> General -> Embedded Binaries.
+3.Add the framework sadadPaymentSDK in Project -> General -> Frameworks and Libraries -> select Embed and Signin for that framework.
 
 4.Now go to the viewcontroller where you neeed to open or access framework and write.
-
+```
 import SadadPaymentSDK
+```
 
 
 # How To Use
 
 1)Create product array with following details.
 
+```
  `let arrProduct:NSMutableArray = NSMutableArray()`
    
  `let productDIC = NSMutableDictionary()`
@@ -32,6 +37,7 @@ import SadadPaymentSDK
  `productDIC.setValue(ProductOneAmount, forKey: "amount")`
  
  `arrProduct.add(productDIC)`
+ ```
    
    
    
@@ -39,7 +45,7 @@ import SadadPaymentSDK
    
    
    
-   
+```
 `let podBundle = Bundle(for: SelectPaymentMethodVC.self)`
 
 `let storyboard = UIStoryboard(name: "mainStoryboard", bundle: podBundle)`
@@ -61,3 +67,4 @@ import SadadPaymentSDK
 `let navigationController = UINavigationController(rootViewController: vc)`
 
 `self.present(navigationController, animated: true, completion: nil)`
+```

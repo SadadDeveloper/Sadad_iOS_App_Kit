@@ -6,7 +6,7 @@ target 'SDKDemoSadad' do
   use_frameworks!
 
   pod 'IQKeyboardManagerSwift'
-pod 'Material'
-pod 'KBNumberPad'
+  pod 'MaterialComponents/TextControls+FilledTextAreas'
+  pod 'MaterialComponents/TextControls+FilledTextFields'
 
 end
