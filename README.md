@@ -26,17 +26,17 @@ import SadadPaymentSDK
 1)Create product array with following details.
 
 ```
- `let arrProduct:NSMutableArray = NSMutableArray()`
+ let arrProduct:NSMutableArray = NSMutableArray()
    
- `let productDIC = NSMutableDictionary()`
+ let productDIC = NSMutableDictionary()
  
- `productDIC.setValue("GUCCI Perfume", forKey: "itemname")`
+ productDIC.setValue("GUCCI Perfume", forKey: "itemname")
  
- `productDIC.setValue(ProductOneQuantity, forKey: "quantity")`
+ productDIC.setValue(ProductOneQuantity, forKey: "quantity")
  
- `productDIC.setValue(ProductOneAmount, forKey: "amount")`
+ productDIC.setValue(ProductOneAmount, forKey: "amount")
  
- `arrProduct.add(productDIC)`
+ arrProduct.add(productDIC)
  ```
    
    
@@ -46,25 +46,25 @@ import SadadPaymentSDK
    
    
 ```
-`let podBundle = Bundle(for: SelectPaymentMethodVC.self)`
+let podBundle = Bundle(for: SelectPaymentMethodVC.self)
 
-`let storyboard = UIStoryboard(name: "mainStoryboard", bundle: podBundle)`
+let storyboard = UIStoryboard(name: "mainStoryboard", bundle: podBundle)
 
-`let vc = storyboard.instantiateViewController(withIdentifier: "SelectPaymentMethodVC") as! SelectPaymentMethodVC`
+let vc = storyboard.instantiateViewController(withIdentifier: "SelectPaymentMethodVC") as! SelectPaymentMethodVC
 
-`vc.delegate = self`
+vc.delegate = self
 
-`vc.isSandbox = false`
+vc.isSandbox = false
 
-`vc.strAccessToken = strAccessToken`
+vc.strAccessToken = strAccessToken
 
-`vc.amount = self.TotalValue()`
+vc.amount = self.TotalValue()
 
-`vc.arrProductDetails = self.arrProduct`
+vc.arrProductDetails = self.arrProduct
 
-`vc.modalPresentationStyle = .overCurrentContext`
+vc.modalPresentationStyle = .overCurrentContext
 
-`let navigationController = UINavigationController(rootViewController: vc)`
+let navigationController = UINavigationController(rootViewController: vc)
 
-`self.present(navigationController, animated: true, completion: nil)`
+self.present(navigationController, animated: true, completion: nil)
 ```
