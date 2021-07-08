@@ -68,3 +68,32 @@ let navigationController = UINavigationController(rootViewController: vc)
 
 self.present(navigationController, animated: true, completion: nil)
 ```
+
+
+3)To get the callback from this response extend your class with following Delegate:
+
+```
+class ViewController: UIViewController,SelectCardReponseDelegate {
+}
+```
+
+4)And call Its delegate method. In which you will get Success/Failure from the SDK. You will get response dictionary in below method. In my demo I have fetch message and statuscode and data from that dictionary and passed to another controller to display success failure message properly.
+
+```
+func ResponseData(DataDIC: NSMutableDictionary) {
+    DispatchQueue.main.async {
+        let objTransferResponse  = self.storyboard?.instantiateViewController(withIdentifier: "TransferResponseVC") as! TransferResponseVC
+        objTransferResponse.strMessage = DataDIC.value(forKey: "message") as! String
+        objTransferResponse.statusCode = DataDIC.value(forKey: "statusCode") as! Int
+        
+        if let strDic = DataDIC.value(forKey: "data") as? NSDictionary{
+            objTransferResponse.transferResponse = strDic
+            self.navigationController?.pushViewController(objTransferResponse, animated: true)
+        }
+    }
+}
+```
+
+5)As per the statuscode value set Success/failure message in your controller. For more details check **setResponse()** method in **TransferResponseVC.swift** file. included in demo. For success you will get **statuscode** value **200**. and for failed Transaction you will get **statuscode** value **400**.
+
+
