@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SadadPaymentSDK-Swift.h</key>
 		<data>
-		S0GT/tJjddN+XGq5RO/DEqesMV0=
+		S5bFGB56csR8tSRmk8mkIvE71QM=
 		</data>
 		<key>Headers/SadadPaymentSDK.h</key>
 		<data>
@@ -28,37 +28,69 @@
 		<data>
 		+R4H59T1dBD/y0MTsXZojN+s2nY=
 		</data>
+		<key>Modules/SadadPaymentSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		BfUMNBjsA4XnUcUTWQHPSR24SLU=
+		</data>
+		<key>Modules/SadadPaymentSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<data>
+		BfUMNBjsA4XnUcUTWQHPSR24SLU=
+		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		jN0gtI22odeT9Jx7FXycn6lUAsM=
+		FPEJd/tYXzmU+0Dv1SvvXqCioro=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		jN0gtI22odeT9Jx7FXycn6lUAsM=
+		FPEJd/tYXzmU+0Dv1SvvXqCioro=
+		</data>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		HKhSwlcLl/k2PjQXV57X+VHWGz8=
+		</data>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		udY2RR3u1keHjb7vu7rz8G24nNQ=
+		</data>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		VKgPlr6U40f2m3HZYO/LfsBb7VI=
+		</data>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftdoc</key>
+		<data>
+		HKhSwlcLl/k2PjQXV57X+VHWGz8=
+		</data>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		udY2RR3u1keHjb7vu7rz8G24nNQ=
+		</data>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftmodule</key>
+		<data>
+		VKgPlr6U40f2m3HZYO/LfsBb7VI=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		NSQok00qxYY1JVBK1gpArvxeSGY=
+		uOvBLymi1E/usUDfShJRzz6rB6k=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		k6KVRuRsrJYV2P+5yBYki8RqpcM=
+		BDxjm0VuzsURN0f3vLDqvRMnt0Y=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gWG4fd98g0mrOLXCNXwSiuzvy8M=
+		MfFb3hXPX9Zuq6mCHT06lbM2nv4=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		NSQok00qxYY1JVBK1gpArvxeSGY=
+		uOvBLymi1E/usUDfShJRzz6rB6k=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		k6KVRuRsrJYV2P+5yBYki8RqpcM=
+		BDxjm0VuzsURN0f3vLDqvRMnt0Y=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		gWG4fd98g0mrOLXCNXwSiuzvy8M=
+		MfFb3hXPX9Zuq6mCHT06lbM2nv4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -158,51 +190,51 @@
 		</data>
 		<key>mainStoryboard.storyboardc/7Xx-Bd-U1c-view-I43-bW-PZI.nib</key>
 		<data>
-		DT8PDWHpWvz9E0QDjOm3Or0LzIk=
+		GQW50Jw809GpAG9+tnWA4w/yGL0=
 		</data>
 		<key>mainStoryboard.storyboardc/BankWebviewVC.nib</key>
 		<data>
-		O5o3vvwNc2PWOm8ImndJnx5nQh0=
+		+LPbcbIa8aac1E+oRqVKcumwtWQ=
 		</data>
 		<key>mainStoryboard.storyboardc/CardDetailsVC.nib</key>
 		<data>
-		Upin431IamOnsqihYPmjE9Vo/Ro=
+		Uc+sZ4lRZqNTcRJa2mACIapNySs=
 		</data>
 		<key>mainStoryboard.storyboardc/Info.plist</key>
 		<data>
-		j+gPaZH8xUAaOIyC6BHbGWBH2fU=
+		21VMT1Ycp4+gHwID7df2mewj7sk=
 		</data>
 		<key>mainStoryboard.storyboardc/RecognizerViewController.nib</key>
 		<data>
-		6ZXqv8pAjqpGVgM+i5P9w0+ATgI=
+		jDBmxQqhO1w9pHDtmJns+abg32M=
 		</data>
 		<key>mainStoryboard.storyboardc/SelectPaymentMethodVC.nib</key>
 		<data>
-		MHx02fNLtHy8TUcNME5BdH3TEoE=
+		O7VmK+pHRM77u4e/uhASr5sVF7c=
 		</data>
 		<key>mainStoryboard.storyboardc/TransferResponseVC.nib</key>
 		<data>
-		WkKxSL7cen9uWWbU07CkQhwUvRU=
+		ex7ZpCha3YD4LzTAym2p76ujvfs=
 		</data>
 		<key>mainStoryboard.storyboardc/UINavigationController-rNj-WK-pf0.nib</key>
 		<data>
-		wTfcBL6NUvHPrzIFd0ZakmR5UqM=
+		H3FTdDkWiKq8Q3Va0cDm+dQOSYI=
 		</data>
 		<key>mainStoryboard.storyboardc/eqE-92-7zF-view-K0A-iJ-mEJ.nib</key>
 		<data>
-		MHBEUL3F+8zxjY9w27FLS7Ogadw=
+		X17DK1f4nqXFw27Mly0QK1K6f/k=
 		</data>
 		<key>mainStoryboard.storyboardc/mDa-7J-4Kc-view-9GU-EW-pB7.nib</key>
 		<data>
-		nWxP+etO526JyBwHXcm+K61J7ew=
+		BcGd00XRJ4see3/JJO9unSmwN1w=
 		</data>
 		<key>mainStoryboard.storyboardc/nHd-he-tPE-view-dI9-0E-qeQ.nib</key>
 		<data>
-		LA4wwONXp/uYyLllXEt+iqFRGbY=
+		ucv/Zzq66jjskKsSPcKPTdpsfps=
 		</data>
 		<key>mainStoryboard.storyboardc/rge-tV-reL-view-k4Q-XK-C91.nib</key>
 		<data>
-		a2izAEb/cXJh3kXRSoQrL6J89zI=
+		X7Nc40sJDEvfOj5TRcRV8qcDXmU=
 		</data>
 		<key>sadadlogo.png</key>
 		<data>
@@ -236,7 +268,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qu3OjgIh7eAGKdUAORdNOd4lfAPaZMfYGeKdqB05C74=
+			HH86lBFf51s8MHE9BZ73yDVYSe1yAcfrcV8VUgG7axo=
 			</data>
 		</dict>
 		<key>Headers/SadadPaymentSDK.h</key>
@@ -246,60 +278,116 @@
 			zKB8vme2phGLIZixGlyytrfNCONp0uQL9qUJ2NdlbkQ=
 			</data>
 		</dict>
+		<key>Modules/SadadPaymentSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			++q43efJGL54GInbw4G4dMHp9u/0YRe1Ju6194tt8y4=
+			</data>
+		</dict>
+		<key>Modules/SadadPaymentSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			++q43efJGL54GInbw4G4dMHp9u/0YRe1Ju6194tt8y4=
+			</data>
+		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mGGmblk5VliQQ0gAJwWCb4nrZV1uCi4PNsyB55tf7dE=
+			xrLWsJsKVHyZ9LVFPOX1KXQ4ABhjHcIlft+MFUVlhsE=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mGGmblk5VliQQ0gAJwWCb4nrZV1uCi4PNsyB55tf7dE=
+			xrLWsJsKVHyZ9LVFPOX1KXQ4ABhjHcIlft+MFUVlhsE=
+			</data>
+		</dict>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Gi4h3LvY11P5KRD2X0+m9mvFIuV4oCum0Iac+Up1AK4=
+			</data>
+		</dict>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yl4d7yzG/CkBD6PEhCtY7xHrA9XGp5aXUvmMXTlWFAM=
+			</data>
+		</dict>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RP+yvNUFiB3GysoZKO6xdqAC0oMoskKNAIq9j6pftNw=
+			</data>
+		</dict>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Gi4h3LvY11P5KRD2X0+m9mvFIuV4oCum0Iac+Up1AK4=
+			</data>
+		</dict>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yl4d7yzG/CkBD6PEhCtY7xHrA9XGp5aXUvmMXTlWFAM=
+			</data>
+		</dict>
+		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RP+yvNUFiB3GysoZKO6xdqAC0oMoskKNAIq9j6pftNw=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a8i5aw3sPRWZsHFs3rCcrapKgzIO3yxtuxIHqSA//3Y=
+			Xtki5Nq2GNKQlCyikAv3GL1ifMUsMSknqprr22ghCQo=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9cV98dcBwg3NRgEzOv4zO7OYLUxFQ0023Jmfr5mXRdQ=
+			vDymWjX7repG2VV0uU9QL0Ogl7eLqe3F1m3YswQ6HaY=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+VazvXdDbiNmTQElXg23sZ1OeR40zyaLdfXP9ZT+kMM=
+			wfd2NJeTJyAioMkUPA9ZvoCETpygqVK7rPXGN8iMO/Y=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a8i5aw3sPRWZsHFs3rCcrapKgzIO3yxtuxIHqSA//3Y=
+			Xtki5Nq2GNKQlCyikAv3GL1ifMUsMSknqprr22ghCQo=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9cV98dcBwg3NRgEzOv4zO7OYLUxFQ0023Jmfr5mXRdQ=
+			vDymWjX7repG2VV0uU9QL0Ogl7eLqe3F1m3YswQ6HaY=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+VazvXdDbiNmTQElXg23sZ1OeR40zyaLdfXP9ZT+kMM=
+			wfd2NJeTJyAioMkUPA9ZvoCETpygqVK7rPXGN8iMO/Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -474,84 +562,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yp5Fq+8ML+87aH9/iSAfmSeyNmb90JGUwzbROQ3TY08=
+			iO9VI+0fsrRjUryKJwrgBQV2P0Qehwbdv4ttDP0Skfo=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/BankWebviewVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjxywrqCsmMvy/h6VYtZCHFEnt6wPfSzMAeItXkaw9Y=
+			Q4sTUkKr7peE6vhbzunrMqe7KrpsRiSne0UAZjTHdVE=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/CardDetailsVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jS2Lsbi9C/XUCeUxiQpzFDBmJuYxWhGhYqhWmu13LzA=
+			ySbfQuZpLQAALLCF0vmyubLKh0AfepGFNvNllrvHqQg=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GZX2CHZz4TMeNXWhKsCgtjNgNlC1PkHx3NM1ilgYzIs=
+			Ae1fiJ9u2dM2A4bM1uCPD8hUGE3mO8wIHhYDa+fc008=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/RecognizerViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yNkqnzYl9JwWaIA27l5+WabmDu68Rq37+euXSBkufAM=
+			zxqe5dbxXx+vOaMOU6TAwlAHxGcKpvLOPzLvIZ9zN1I=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/SelectPaymentMethodVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tbWTzb7DMGrV//rtDNCAexGD8bXlFuRuCMBNFgfCgqg=
+			RpIUBZEqCO2bfrXUjDCef+9KSrgS4qwQiqqbH4rcnPs=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/TransferResponseVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7zRLD7KBdJQbeWmCKRJhFBtVIuEMPZsvcF3RLzSNzto=
+			vpirvPS6ckA1f6rC1i7KImY00+QxfT+jdwO//IFeZfs=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/UINavigationController-rNj-WK-pf0.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Npk9UjXdqWVnYDtflgRHo3Z9mDdq33N1H5fShi2lmfE=
+			76eUVYYqUVVtpoJKzUROYmJiVl7qr4WaqSyz50u/c0E=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/eqE-92-7zF-view-K0A-iJ-mEJ.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oY+oS8P6WJxIa4jSrYNtWF24FOpyLmJYHT8ykmve3MI=
+			J1nNIx6RRHDN942RbOI17U9TNACVt2qHnP6mqpl7J0s=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/mDa-7J-4Kc-view-9GU-EW-pB7.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ouax9Bsa+8wlQUQ9vl/s0FF1932PpStdR6lqN/S2vMw=
+			AftLmrHikBB+JJLf6LuodgV/ON6BnaUWzLaLfMT9oGk=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/nHd-he-tPE-view-dI9-0E-qeQ.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MWePjg5DLxAZ1O+JHFCaq55K7pqpO/A9AqzW8/skYvU=
+			kYf1XM2gyv14fi1g4lCz8Rtm6eq6shaQ3cQ3QFAmhMc=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/rge-tV-reL-view-k4Q-XK-C91.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dij3uD7UgfY5jLWNrnXi4jylwegBIdZuZyNnMlneza4=
+			kat1FzfXhZJohAKdIMN+N8Mx7tWBVqgtUyVvifR4HSc=
 			</data>
 		</dict>
 		<key>sadadlogo.png</key>
