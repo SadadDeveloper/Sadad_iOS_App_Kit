@@ -29,6 +29,7 @@ class AppUtils: NSObject {
     
     static func stopLoading(){
         for i in 0 ..< self.arrProgressView.count {
+            print("1")
             let progressObject : UIView! = self.arrProgressView.object(at: i) as? UIView;
             if(progressObject != nil){
                 DispatchQueue.main.async {
@@ -37,6 +38,7 @@ class AppUtils: NSObject {
             }else{
                 print("progressview is nil");
             }
+            print("2")
         }
         self.arrProgressView.removeAllObjects();
     }

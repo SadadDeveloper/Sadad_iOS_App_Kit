@@ -1,39 +1,45 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SadadPaymentSDK
 import Foundation
 import JavaScriptCore
 import MaterialComponents
 import MaterialComponents.MaterialTextControls_FilledTextAreas
 import MaterialComponents.MaterialTextControls_FilledTextFields
+import PassKit
 @_exported import SadadPaymentSDK
 import Swift
 import UIKit
 import WebKit
-extension String {
+import _Concurrency
+extension Swift.String {
   public func format(_ seprator: Swift.String) -> Swift.String
 }
 @objc public protocol SelectCardReponseDelegate {
   @objc func ResponseData(DataDIC: Foundation.NSMutableDictionary)
 }
-@objc @_inheritsConvenienceInitializers public class SelectPaymentMethodVC : UIKit.UIViewController, SadadPaymentSDK.SelectCardReponseDelegate, SadadPaymentSDK.ResponseDelegate {
-  public var delegate: SadadPaymentSDK.SelectCardReponseDelegate?
-  public var strAccessToken: Swift.String
-  public var amount: Swift.Int
-  public var arrProductDetails: Foundation.NSMutableArray
-  public var isSandbox: Swift.Bool
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewWillLayoutSubviews()
-  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @objc public func ResponseData(DataDIC: Foundation.NSMutableDictionary)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SelectPaymentMethodVC : UIKit.UIViewController, SadadPaymentSDK.SelectCardReponseDelegate, SadadPaymentSDK.ResponseDelegate {
+  @_Concurrency.MainActor(unsafe) public var delegate: SadadPaymentSDK.SelectCardReponseDelegate?
+  @_Concurrency.MainActor(unsafe) public var strAccessToken: Swift.String
+  @_Concurrency.MainActor(unsafe) public var amount: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var arrProductDetails: Foundation.NSMutableArray
+  @_Concurrency.MainActor(unsafe) public var isSandbox: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc public func ResponseData(DataDIC: Foundation.NSMutableDictionary)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension UIView {
-  public func animShow()
-  public func animHide()
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func animShow()
+  @_Concurrency.MainActor(unsafe) public func animHide()
+}
+extension SadadPaymentSDK.SelectPaymentMethodVC : PassKit.PKPaymentAuthorizationViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didAuthorizePayment payment: PassKit.PKPayment, handler completion: @escaping (PassKit.PKPaymentAuthorizationResult) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func paymentAuthorizationViewControllerDidFinish(_ controller: PassKit.PKPaymentAuthorizationViewController)
 }
 @_hasMissingDesignatedInitializers public class MyFramework {
   public static func performSegueToFrameworkVC(caller: UIKit.UIViewController)

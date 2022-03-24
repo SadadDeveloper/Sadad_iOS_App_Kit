@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,8 +19,8 @@
 		0E51875823DED5FE00664868 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51875223DED5FE00664868 /* Constant.swift */; };
 		0E51875923DED5FE00664868 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51875323DED5FE00664868 /* AppUtils.swift */; };
 		0E5187EB23DF09F900664868 /* Pods_SDKDemoSadad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34BC66CF1E748AC184D2A74 /* Pods_SDKDemoSadad.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		908F9915269FF89E00B4D848 /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908F9913269FF89800B4D848 /* SadadPaymentSDK.framework */; };
-		908F9916269FF89E00B4D848 /* SadadPaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 908F9913269FF89800B4D848 /* SadadPaymentSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90F8EBEF27EB53390034CC10 /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F8EBED27EB53280034CC10 /* SadadPaymentSDK.framework */; platformFilter = ios; };
+		90F8EBF027EB53390034CC10 /* SadadPaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90F8EBED27EB53280034CC10 /* SadadPaymentSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +30,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				908F9916269FF89E00B4D848 /* SadadPaymentSDK.framework in Embed Frameworks */,
+				90F8EBF027EB53390034CC10 /* SadadPaymentSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +53,8 @@
 		0E51875323DED5FE00664868 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		2EB8C1FA7AF39CA3CE7D76C1 /* Pods-SDKDemoSadad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKDemoSadad.release.xcconfig"; path = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad.release.xcconfig"; sourceTree = "<group>"; };
 		826571D20E7A2BBE242F2C2D /* Pods-SDKDemoSadad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKDemoSadad.debug.xcconfig"; path = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad.debug.xcconfig"; sourceTree = "<group>"; };
-		908F9913269FF89800B4D848 /* SadadPaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SadadPaymentSDK.framework; sourceTree = "<group>"; };
+		9026451327CF41930082010F /* SDKDemoSadad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDKDemoSadad.entitlements; sourceTree = "<group>"; };
+		90F8EBED27EB53280034CC10 /* SadadPaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SadadPaymentSDK.framework; sourceTree = "<group>"; };
 		E34BC66CF1E748AC184D2A74 /* Pods_SDKDemoSadad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKDemoSadad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				908F9915269FF89E00B4D848 /* SadadPaymentSDK.framework in Frameworks */,
+				90F8EBEF27EB53390034CC10 /* SadadPaymentSDK.framework in Frameworks */,
 				0E5187EB23DF09F900664868 /* Pods_SDKDemoSadad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +74,7 @@
 		0E51872B23DED5E700664868 = {
 			isa = PBXGroup;
 			children = (
-				908F9913269FF89800B4D848 /* SadadPaymentSDK.framework */,
+				90F8EBED27EB53280034CC10 /* SadadPaymentSDK.framework */,
 				0E51873623DED5E700664868 /* SDKDemoSadad */,
 				0E51873523DED5E700664868 /* Products */,
 				8A644AEDA3DC506A97A84BB6 /* Pods */,
@@ -92,9 +93,10 @@
 		0E51873623DED5E700664868 /* SDKDemoSadad */ = {
 			isa = PBXGroup;
 			children = (
+				9026451327CF41930082010F /* SDKDemoSadad.entitlements */,
 				0E51873723DED5E700664868 /* AppDelegate.swift */,
-				0E51873923DED5E700664868 /* SceneDelegate.swift */,
 				0E51875123DED5FE00664868 /* Models */,
+				0E51873923DED5E700664868 /* SceneDelegate.swift */,
 				0E51874E23DED5FE00664868 /* Sound */,
 				0E51874B23DED5FE00664868 /* ViewController */,
 				0E51873D23DED5E700664868 /* Main.storyboard */,
@@ -422,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BITCODE_GENERATION_MODE = "";
+				CODE_SIGN_ENTITLEMENTS = SDKDemoSadad/SDKDemoSadad.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PCC4P437Q7;
@@ -439,7 +442,7 @@
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadadSDK.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = AddHoc_SadadSDK_30Dec2020_DT;
+				PROVISIONING_PROFILE_SPECIFIER = AddHoc_SadadSDK_02March2022_DT;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BITCODE_GENERATION_MODE = "";
+				CODE_SIGN_ENTITLEMENTS = SDKDemoSadad/SDKDemoSadad.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PCC4P437Q7;
@@ -468,7 +472,7 @@
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadadSDK.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = AddHoc_SadadSDK_30Dec2020_DT;
+				PROVISIONING_PROFILE_SPECIFIER = AddHoc_SadadSDK_02March2022_DT;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
