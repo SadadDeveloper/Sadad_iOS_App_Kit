@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/SadadPaymentSDK-Swift.h</key>
 		<data>
-		iaTNaUb9JUUjT1tmFd0cGQIgTr8=
+		ilguZywBoxInm4f2KXr/o5YY4Q8=
 		</data>
 		<key>Headers/SadadPaymentSDK.h</key>
 		<data>
@@ -30,39 +30,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R6oKMo0lrFV/ZWOnrMPNI8Jp6KM=
+		Q5hunPP/uyff+Qeci7B/l2RbZkk=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		WQ7i/D5Z/ikBerK9/HxMLnf1tOI=
-		</data>
-		<key>Modules/SadadPaymentSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		WQ7i/D5Z/ikBerK9/HxMLnf1tOI=
+		IrxzwWrPhB4SnLmBJ49yPHiIbac=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		QPP9HHqbpVbeVSFNYsC35uxdGP8=
+		EUEgBZaC9VQQYJ2f3gphggVJVpI=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		PkycGYjO2qjaIBApFiCYIlM4t8I=
+		R5a6FxV4Q2+wXoQRFMNDAUVYMZQ=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		bQ0CwTgQXmh//NJpI+07XKaBdPM=
-		</data>
-		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		QPP9HHqbpVbeVSFNYsC35uxdGP8=
-		</data>
-		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		PkycGYjO2qjaIBApFiCYIlM4t8I=
-		</data>
-		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		bQ0CwTgQXmh//NJpI+07XKaBdPM=
+		nBGMj3rjhfrickbuqfmquxgkngg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -198,7 +182,7 @@
 		</data>
 		<key>mainStoryboard.storyboardc/eqE-92-7zF-view-K0A-iJ-mEJ.nib</key>
 		<data>
-		LekdRB0VRANXL+gGvY14zy5FWLc=
+		xmTOhII3DZCbGDGqDLrnfKz2OCw=
 		</data>
 		<key>mainStoryboard.storyboardc/mDa-7J-4Kc-view-9GU-EW-pB7.nib</key>
 		<data>
@@ -206,11 +190,11 @@
 		</data>
 		<key>mainStoryboard.storyboardc/nHd-he-tPE-view-dI9-0E-qeQ.nib</key>
 		<data>
-		v+/kxcXCPpctXaPkewqt9uBgk8o=
+		ii3s8LS8YZItw6w3oDo51DqR6XM=
 		</data>
 		<key>mainStoryboard.storyboardc/rge-tV-reL-view-k4Q-XK-C91.nib</key>
 		<data>
-		GFISZ5oEsM3/e9MlJfF3jZckIaY=
+		QADrC1qDfv75pHEHeBNrsqdSbnY=
 		</data>
 		<key>sadadlogo.png</key>
 		<data>
@@ -251,7 +235,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AsIhIRfhE4G24ynBk1yP1Ku9Q+DPmnm3qVQOBy1Xqzc=
+			4K6uTApeMXvcJWRs6wT6lmmzNZfrqheDpr/iurJPq+Y=
 			</data>
 		</dict>
 		<key>Headers/SadadPaymentSDK.h</key>
@@ -265,56 +249,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y3YCPfrtvXlR3vo7W8dkenENKBp2wKxtR2tHwsrh6Is=
-			</data>
-		</dict>
-		<key>Modules/SadadPaymentSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			y3YCPfrtvXlR3vo7W8dkenENKBp2wKxtR2tHwsrh6Is=
+			NSSEGaqTiuRLjQxesGzo8zYiPQIuDbTyLojQ9Q3FkCQ=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7rEQ1HXUYWziI28A42Ti6GohIPxCEqpBGYaiRGsgOFY=
+			Mn0iT7Zc1Yvah8uGpNg+okPgs1DOPP1+NoJ8ZbalCZI=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q2XwA48QGUbgK5pMabsf3AMTiFNAtTKVenSXwuXZFyg=
+			P2Cr7u94X+8r8TQYZOoXprpEID1c7RhVlPXgXx4x2Y0=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0LacoOoiwvPHtDGZ6x0WRciKZrN/z6LuVAOxb5HGx8Y=
-			</data>
-		</dict>
-		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7rEQ1HXUYWziI28A42Ti6GohIPxCEqpBGYaiRGsgOFY=
-			</data>
-		</dict>
-		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Q2XwA48QGUbgK5pMabsf3AMTiFNAtTKVenSXwuXZFyg=
-			</data>
-		</dict>
-		<key>Modules/SadadPaymentSDK.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0LacoOoiwvPHtDGZ6x0WRciKZrN/z6LuVAOxb5HGx8Y=
+			282Pjda8GIRdkTKNCkB7At1QXFfOVD4x/aB56NRYBpw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -552,7 +508,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ICHCiZbUeB4ISTM7y+UJS3YDhUy0AjkcgsQY+DrShio=
+			hvwGUNhlyXeB7pkH363DbIkAoP4m5B30DoUWZ+sDcG0=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/mDa-7J-4Kc-view-9GU-EW-pB7.nib</key>
@@ -566,14 +522,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iLd2x70vkFPRdoeBVoIIWq85MsMH+WLcAsflW61WcPs=
+			RSgDGpKZiidCKPbKU3l1Oq68vdrOajRpnoatQpP3TxI=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/rge-tV-reL-view-k4Q-XK-C91.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/bSs8+r+fTEWW3NZFrjxxNzfwxcH/e5jgmRD5pFle2c=
+			PzHcdxsKO5NMkhiNlb6pRWO6O5nIt+ocRt9eLDki2F0=
 			</data>
 		</dict>
 		<key>sadadlogo.png</key>
