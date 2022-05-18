@@ -30,11 +30,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Q5hunPP/uyff+Qeci7B/l2RbZkk=
+		Er70JE51eQs9KyjdCehDV4yUm4U=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		GAEC3MtKjmeyIjWHfp6p44B6F9g=
+		VnhI5ANGI9z3ap+dLH0kXDXGxRs=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		R5a6FxV4Q2+wXoQRFMNDAUVYMZQ=
+		UttLxa7lZEdZzL2vvX4egy5CtOw=
 		</data>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nBGMj3rjhfrickbuqfmquxgkngg=
+		OM14nY9ODboVUU31Tchqt+PHBJs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -160,9 +160,13 @@
 		<data>
 		SSkNmiPnB8jNtH5Wbvhi9chVs3A=
 		</data>
+		<key>mainStoryboard.storyboardc/Gqz-Im-E6x-view-3E4-ur-uMq.nib</key>
+		<data>
+		TOmZraNmJy9Zwdt5L5vTUzSdKDk=
+		</data>
 		<key>mainStoryboard.storyboardc/Info.plist</key>
 		<data>
-		TiksAO6mfmWY/soN0y8azqln1IQ=
+		7RMNRuqhy4Jk+zDD2ppZnyxRmek=
 		</data>
 		<key>mainStoryboard.storyboardc/RecognizerViewController.nib</key>
 		<data>
@@ -179,6 +183,10 @@
 		<key>mainStoryboard.storyboardc/UINavigationController-rNj-WK-pf0.nib</key>
 		<data>
 		UoyhrI4YMytTfLnF5Pou5kSkW5o=
+		</data>
+		<key>mainStoryboard.storyboardc/UserDetailsForApplePayVC.nib</key>
+		<data>
+		QY/TOh6SbYlUer3bB1n21MaO8l8=
 		</data>
 		<key>mainStoryboard.storyboardc/eqE-92-7zF-view-K0A-iJ-mEJ.nib</key>
 		<data>
@@ -249,7 +257,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			40lu7iXgWnmOz/oZyp2uEsPeXOzceslgrq67rbD+8pw=
+			uxofSutPIYUEWYNaLAyDtLLGkmRsi/rJvzIGwPMe8Mk=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -263,14 +271,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P2Cr7u94X+8r8TQYZOoXprpEID1c7RhVlPXgXx4x2Y0=
+			ultLvL83fLyV97sIYxMm1OWpyY2iV93R+CKXEeV85K0=
 			</data>
 		</dict>
 		<key>Modules/SadadPaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			282Pjda8GIRdkTKNCkB7At1QXFfOVD4x/aB56NRYBpw=
+			rJ68ev6M6LKEPil+TNPjTD4PNCCgULUfvzzVuIGLhDQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -469,11 +477,18 @@
 			09A29bR6DalRMzsr2QT9dlqvOnnvpiraehUDC9BbUCA=
 			</data>
 		</dict>
+		<key>mainStoryboard.storyboardc/Gqz-Im-E6x-view-3E4-ur-uMq.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZYSKIUexjtHBizcwCNy/JNL44SZv6QJWxESf+3A5Sf8=
+			</data>
+		</dict>
 		<key>mainStoryboard.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LvLTLF260ceQZmwReEug0mIZEHv0dU5Zg/5CLTcd6BQ=
+			jkA5krvnUrGea4hDPkjm2YewvA9JYjsHsvT9p4sPa8Y=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/RecognizerViewController.nib</key>
@@ -502,6 +517,13 @@
 			<key>hash2</key>
 			<data>
 			HD3U7211rPV2ZKzWf0evbuIBOqvQTvB37zCORunMqw8=
+			</data>
+		</dict>
+		<key>mainStoryboard.storyboardc/UserDetailsForApplePayVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k4+1p6FipbgNrIIQTrG7VtwFCXMLBQlm1bagIcnJUWE=
 			</data>
 		</dict>
 		<key>mainStoryboard.storyboardc/eqE-92-7zF-view-K0A-iJ-mEJ.nib</key>

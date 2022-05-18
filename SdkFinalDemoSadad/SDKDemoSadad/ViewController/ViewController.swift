@@ -66,7 +66,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
         arrProduct.removeAllObjects()
         setLayout()
         let DefaultAmvart = TotalValue()
-        print(DefaultAmvart)
+//        print(DefaultAmvart)
     }
     
     
@@ -128,14 +128,26 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
     
     func ResponseData(DataDIC: NSMutableDictionary) {
         DispatchQueue.main.async {
+//            print(DataDIC)
             let objTransferResponse  = self.storyboard?.instantiateViewController(withIdentifier: "TransferResponseVC") as! TransferResponseVC
             if let arrError = DataDIC.value(forKey: "error") as? [String:Any]{
                 objTransferResponse.strMessage = arrError["message"] as? String ?? ""
                 objTransferResponse.statusCode = arrError["statusCode"] as? Int ?? 0
                 objTransferResponse.totalAmount = Int(self.TotalAmount)
-            }else{
-                objTransferResponse.strMessage = DataDIC.value(forKey: "message") as! String
+            }else if let strMessage = DataDIC.value(forKey: "message") as? String{
+                objTransferResponse.strMessage = strMessage
                 objTransferResponse.statusCode = DataDIC.value(forKey: "statusCode") as! Int
+            }else{
+                if let numberAmount = DataDIC.value(forKey: "vpc_Amount") as? Int {
+                    objTransferResponse.totalAmount = numberAmount/100
+                    objTransferResponse.strMessage = "Transaction Failed"
+                    objTransferResponse.statusCode = 430
+                }else{
+                    objTransferResponse.totalAmount = (Int(DataDIC.value(forKey: "vpc_Amount") as? String ?? "0")!)/100
+                    objTransferResponse.strMessage = "Transaction Failed"
+                    objTransferResponse.statusCode = 430
+                }
+                
             }
             
             if let strDic = DataDIC.value(forKey: "data") as? NSDictionary{
@@ -143,6 +155,9 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
                 self.navigationController?.pushViewController(objTransferResponse, animated: true)
             }else if let arError = DataDIC.value(forKey: "error") as? NSDictionary{
                 objTransferResponse.transferResponse = arError
+                self.navigationController?.pushViewController(objTransferResponse, animated: true)
+            }else{
+                objTransferResponse.transferResponse = DataDIC
                 self.navigationController?.pushViewController(objTransferResponse, animated: true)
             }
         }
@@ -172,7 +187,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
             if let data = data {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    
+//                    print(json)
                     let TempResponse = json as! NSDictionary
                     if let strAccessToken = TempResponse.value(forKey: "accessToken") as? String{
                         self.strAccessToken = strAccessToken
@@ -181,6 +196,8 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
                             let podBundle = Bundle(for: SelectPaymentMethodVC.self)
                             let storyboard = UIStoryboard(name: "mainStoryboard", bundle: podBundle)
                             if let vc = storyboard.instantiateViewController(withIdentifier: "SelectPaymentMethodVC") as? SelectPaymentMethodVC{
+                                vc.strMobile = "7080618000"
+                                vc.strEmail = "test@gmail.com"
                                 vc.delegate = self
                                 vc.isSandbox = false
                                 vc.strAccessToken = strAccessToken
@@ -201,7 +218,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
                  print("Something went wrong please try again later.")
             }
             
-            AppUtils.stopLoading()
+//            AppUtils.stopLoading()
             }.resume()
         
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,8 +19,8 @@
 		0E51875823DED5FE00664868 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51875223DED5FE00664868 /* Constant.swift */; };
 		0E51875923DED5FE00664868 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51875323DED5FE00664868 /* AppUtils.swift */; };
 		0E5187EB23DF09F900664868 /* Pods_SDKDemoSadad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34BC66CF1E748AC184D2A74 /* Pods_SDKDemoSadad.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		90F8EBEF27EB53390034CC10 /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F8EBED27EB53280034CC10 /* SadadPaymentSDK.framework */; platformFilter = ios; };
-		90F8EBF027EB53390034CC10 /* SadadPaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90F8EBED27EB53280034CC10 /* SadadPaymentSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37A1A1C72834CB1200AA0A56 /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A1A1C52834CAF400AA0A56 /* SadadPaymentSDK.framework */; };
+		37A1A1C82834CB1200AA0A56 /* SadadPaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37A1A1C52834CAF400AA0A56 /* SadadPaymentSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +30,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				90F8EBF027EB53390034CC10 /* SadadPaymentSDK.framework in Embed Frameworks */,
+				37A1A1C82834CB1200AA0A56 /* SadadPaymentSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,9 +52,9 @@
 		0E51875223DED5FE00664868 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0E51875323DED5FE00664868 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		2EB8C1FA7AF39CA3CE7D76C1 /* Pods-SDKDemoSadad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKDemoSadad.release.xcconfig"; path = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad.release.xcconfig"; sourceTree = "<group>"; };
+		37A1A1C52834CAF400AA0A56 /* SadadPaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SadadPaymentSDK.framework; sourceTree = "<group>"; };
 		826571D20E7A2BBE242F2C2D /* Pods-SDKDemoSadad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKDemoSadad.debug.xcconfig"; path = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad.debug.xcconfig"; sourceTree = "<group>"; };
 		9026451327CF41930082010F /* SDKDemoSadad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDKDemoSadad.entitlements; sourceTree = "<group>"; };
-		90F8EBED27EB53280034CC10 /* SadadPaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SadadPaymentSDK.framework; sourceTree = "<group>"; };
 		E34BC66CF1E748AC184D2A74 /* Pods_SDKDemoSadad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKDemoSadad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F8EBEF27EB53390034CC10 /* SadadPaymentSDK.framework in Frameworks */,
+				37A1A1C72834CB1200AA0A56 /* SadadPaymentSDK.framework in Frameworks */,
 				0E5187EB23DF09F900664868 /* Pods_SDKDemoSadad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +74,7 @@
 		0E51872B23DED5E700664868 = {
 			isa = PBXGroup;
 			children = (
-				90F8EBED27EB53280034CC10 /* SadadPaymentSDK.framework */,
+				37A1A1C52834CAF400AA0A56 /* SadadPaymentSDK.framework */,
 				0E51873623DED5E700664868 /* SDKDemoSadad */,
 				0E51873523DED5E700664868 /* Products */,
 				8A644AEDA3DC506A97A84BB6 /* Pods */,
@@ -351,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -407,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = "";
@@ -425,24 +425,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BITCODE_GENERATION_MODE = "";
 				CODE_SIGN_ENTITLEMENTS = SDKDemoSadad/SDKDemoSadad.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sufalam Technologies Private Ltd. (4D7WM9KH8K)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = PCC4P437Q7;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = 4D7WM9KH8K;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SDKDemoSadad/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sadadSDK.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sufalam.sadadsufalam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = AddHoc_SadadSDK_02March2022_DT;
+				PROVISIONING_PROFILE_SPECIFIER = Sadad_sufalam_Adhoc_11May2022_DT;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,24 +456,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BITCODE_GENERATION_MODE = "";
 				CODE_SIGN_ENTITLEMENTS = SDKDemoSadad/SDKDemoSadad.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sufalam Technologies Private Ltd. (4D7WM9KH8K)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = PCC4P437Q7;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = 4D7WM9KH8K;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SDKDemoSadad/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sadadSDK.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sufalam.sadadsufalam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = AddHoc_SadadSDK_02March2022_DT;
+				PROVISIONING_PROFILE_SPECIFIER = Sadad_sufalam_Adhoc_11May2022_DT;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

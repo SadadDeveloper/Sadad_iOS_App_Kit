@@ -24,6 +24,8 @@ extension Swift.String {
   @_Concurrency.MainActor(unsafe) public var amount: Swift.Double
   @_Concurrency.MainActor(unsafe) public var arrProductDetails: Foundation.NSMutableArray
   @_Concurrency.MainActor(unsafe) public var isSandbox: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var strMobile: Swift.String
+  @_Concurrency.MainActor(unsafe) public var strEmail: Swift.String
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
