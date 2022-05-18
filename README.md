@@ -41,7 +41,7 @@ import SadadPaymentSDK
    
    
    
-2)Use following code for open framework from your project.
+2)Use following code for open framework from your project. Don't forget to pass EmailID and Mobile number of Logged in User in you Application.
    
    
    
@@ -51,6 +51,8 @@ let podBundle = Bundle(for: SelectPaymentMethodVC.self)
 let storyboard = UIStoryboard(name: "mainStoryboard", bundle: podBundle)
 
 let vc = storyboard.instantiateViewController(withIdentifier: "SelectPaymentMethodVC") as! SelectPaymentMethodVC
+vc.strMobile = "7080618000" //Mandatory
+vc.strEmail = "test@gmail.com" //Mandatory
 
 vc.delegate = self
 
