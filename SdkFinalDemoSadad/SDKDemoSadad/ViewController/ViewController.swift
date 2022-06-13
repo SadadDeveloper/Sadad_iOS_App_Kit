@@ -191,12 +191,14 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
         
         let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error) in
+            print(response)
             if response != nil {
+                AppUtils.stopLoading()
             }
             if let data = data {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
-//                    print(json)
+                    print(json)
                     let TempResponse = json as! NSDictionary
                     if let strAccessToken = TempResponse.value(forKey: "accessToken") as? String{
                         self.strAccessToken = strAccessToken
@@ -219,7 +221,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
                         }
                     }
 //                    print("AccessToken: ",self.strAccessToken)
-//                    AppUtils.stopLoading()
+                    AppUtils.stopLoading()
                 } catch {
                     print("Something went wrong please try again later.\(error)")
                 }
@@ -227,7 +229,7 @@ class ViewController: UIViewController,SelectCardReponseDelegate {
                  print("Something went wrong please try again later.")
             }
             
-//            AppUtils.stopLoading()
+            AppUtils.stopLoading()
             }.resume()
         
     }

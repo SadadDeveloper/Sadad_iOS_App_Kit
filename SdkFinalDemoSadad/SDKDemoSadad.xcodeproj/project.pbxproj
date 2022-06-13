@@ -19,8 +19,8 @@
 		0E51875823DED5FE00664868 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51875223DED5FE00664868 /* Constant.swift */; };
 		0E51875923DED5FE00664868 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51875323DED5FE00664868 /* AppUtils.swift */; };
 		0E5187EB23DF09F900664868 /* Pods_SDKDemoSadad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34BC66CF1E748AC184D2A74 /* Pods_SDKDemoSadad.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		375CB210284743F1002660CD /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375CB20E284743EA002660CD /* SadadPaymentSDK.framework */; };
-		375CB211284743F1002660CD /* SadadPaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 375CB20E284743EA002660CD /* SadadPaymentSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37414C8B285767DC001BE5A0 /* SadadPaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37414C89285767D8001BE5A0 /* SadadPaymentSDK.framework */; };
+		37414C8C285767DC001BE5A0 /* SadadPaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37414C89285767D8001BE5A0 /* SadadPaymentSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +30,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				375CB211284743F1002660CD /* SadadPaymentSDK.framework in Embed Frameworks */,
+				37414C8C285767DC001BE5A0 /* SadadPaymentSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +52,7 @@
 		0E51875223DED5FE00664868 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0E51875323DED5FE00664868 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		2EB8C1FA7AF39CA3CE7D76C1 /* Pods-SDKDemoSadad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKDemoSadad.release.xcconfig"; path = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad.release.xcconfig"; sourceTree = "<group>"; };
-		375CB20E284743EA002660CD /* SadadPaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SadadPaymentSDK.framework; sourceTree = "<group>"; };
+		37414C89285767D8001BE5A0 /* SadadPaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SadadPaymentSDK.framework; sourceTree = "<group>"; };
 		826571D20E7A2BBE242F2C2D /* Pods-SDKDemoSadad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKDemoSadad.debug.xcconfig"; path = "Target Support Files/Pods-SDKDemoSadad/Pods-SDKDemoSadad.debug.xcconfig"; sourceTree = "<group>"; };
 		9026451327CF41930082010F /* SDKDemoSadad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDKDemoSadad.entitlements; sourceTree = "<group>"; };
 		E34BC66CF1E748AC184D2A74 /* Pods_SDKDemoSadad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKDemoSadad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				375CB210284743F1002660CD /* SadadPaymentSDK.framework in Frameworks */,
+				37414C8B285767DC001BE5A0 /* SadadPaymentSDK.framework in Frameworks */,
 				0E5187EB23DF09F900664868 /* Pods_SDKDemoSadad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +74,7 @@
 		0E51872B23DED5E700664868 = {
 			isa = PBXGroup;
 			children = (
-				375CB20E284743EA002660CD /* SadadPaymentSDK.framework */,
+				37414C89285767D8001BE5A0 /* SadadPaymentSDK.framework */,
 				0E51873623DED5E700664868 /* SDKDemoSadad */,
 				0E51873523DED5E700664868 /* Products */,
 				8A644AEDA3DC506A97A84BB6 /* Pods */,
